@@ -1,0 +1,1375 @@
+BOOL    XCloudUI_Init();
+BOOL    XCloudUI_OpenAppCmd(const wchar_t* pCmdLine);
+void    XCloudUI_Exit();
+void  XCloudUI_EnableDependBrowser(BOOL bEnable);
+void  XCloudUI_EnableTipsWindow(BOOL bEnable);
+BOOL   XCloudUI_OpenUrl(const wchar_t* pUrl);
+void  XCloudUI_SetEventCallback(funCloudEvent pFun);
+int   XCloudUI_GetAppDir(out_ wchar_t* pOut, in_ int nOutlen);
+HELE  XDateTime_Create(int x, int y, int cx, int cy, HXCGUI hParent);
+void  XDateTime_SetStyle(HELE hEle, int nStyle);
+int  XDateTime_GetStyle(HELE hEle);
+void  XDateTime_EnableSplitSlash(HELE hEle, BOOL bSlash);
+void  XDateTime_GetTime(HELE hEle, int* pnHour, int* pnMinute, int* pnSecond);
+void  XDateTime_SetTime(HELE hEle, int nHour, int nMinute, int nSecond);
+void  XDateTime_GetDate(HELE hEle, int* pnYear, int* pnMonth, int* pnDay);
+void  XDateTime_SetDate(HELE hEle, int nYear, int nMonth, int nDay);
+COLORREF  XDateTime_GetSelBkColor(HELE hEle);
+void  XDateTime_SetSelBkColor(HELE hEle, COLORREF crSelectBk, BYTE alpha = 255);
+HELE  XDateTime_GetButton(HELE hEle, int nType);
+HELE  XMonthCal_Create(int x, int y, int cx, int cy, HXCGUI hParent);
+void  XMonthCal_SetToday(HELE hEle, int nYear, int nMonth, int nDay);
+void  XMonthCal_GetToday(HELE hEle, int* pnYear, int* pnMonth, int* pnDay);
+void  XMonthCal_SeSelDate(HELE hEle, int nYear, int nMonth, int nDay);
+void  XMonthCal_GetSelDate(HELE hEle, int* pnYear, int* pnMonth, int* pnDay);
+HELE  XMonthCal_GetButton(HELE hEle, monthCal_button_type_ nType);
+lua_State*  XC_InitLua();
+BOOL  XC_RunLua(const char*  pLuaFile);
+BOOL  XC_ExitLua();
+int  XC_UnicodeToAnsi(const wchar_t *pIn, int inLen, char *pOut, int outLen);
+int  XC_AnsiToUnicode(const char *pIn, int inLen, wchar_t *pOut, int outLen);
+int      XC_MessageBox(HWINDOW hWindow, const wchar_t* pText, const wchar_t* pCaption, int nFlags);
+LRESULT  XC_SendMessage(HWINDOW hWindow, UINT msg, WPARAM wParam, LPARAM lParam);
+BOOL     XC_PostMessage(HWINDOW hWindow, UINT msg, WPARAM wParam, LPARAM lParam);
+int  XC_CallUiThread(funCallUiThread pCall, int data);
+void  XC_DebugToFileInfo(const char *pInfo);//打印调试信息到文件 xcgui_debug.txt
+BOOL  XC_IsHELE(HXCGUI hEle); //检查句柄
+BOOL  XC_IsHWINDOW(HXCGUI hWindow); //检查句柄
+BOOL  XC_IsShape(HXCGUI hShape); //检查句柄
+BOOL  XC_IsHXCGUI(HXCGUI hXCGUI, XC_OBJECT_TYPE nType);
+HWINDOW  XC_hWindowFromHWnd(HWND hWnd);
+BOOL     XC_SetActivateTopWindow();
+BOOL  XC_SetProperty(HXCGUI hXCGUI, const wchar_t* pName, const wchar_t* pValue);
+const wchar_t*  XC_GetProperty(HXCGUI hXCGUI, const wchar_t* pName);
+BOOL  XC_RegisterWindowClassName(const wchar_t* pClassName); //注册窗口类名
+BOOL  XC_IsSViewExtend(HELE hEle);  //判断元素是否从滚动视图元素扩展的新元素,包含滚动视图元素
+XC_OBJECT_TYPE  XC_GetObjectType(HXCGUI hXCGUI);
+HXCGUI  XC_GetObjectByID(HWINDOW hWindow, int nID); //通过ID获取对象句柄
+HXCGUI  XC_GetObjectByIDName(HWINDOW hWindow, const wchar_t*  pName);
+HXCGUI  XC_GetObjectByUID(int nUID);
+HXCGUI  XC_GetObjectByUIDName(const wchar_t*  pName);
+HXCGUI  XC_GetObjectByName(const wchar_t*  pName);
+void  XC_SetPaintFrequency(int nMilliseconds); //设置UI绘制频率
+void  XC_SetTextRenderingHint(int  nType);   //设置文本渲染质量
+BOOL  XC_RectInRect(RECT *pRect1, RECT *pRect2);
+void  XC_CombineRect(RECT *pDest, RECT *pSrc1, RECT *pSrc2);
+void  XC_ShowLayoutFrame(BOOL bShow);
+void  XC_EnableDebugFile(BOOL bEnable);
+void  XC_EnableResMonitor(BOOL bEnable);
+void  XC_SetLayoutFrameColor(COLORREF color);
+void  XC_EnableErrorMessageBox(BOOL bEnabel);
+void  XC_EnableAutoExitApp(BOOL bEnabel);
+HXCGUI  XC_LoadLayout(const wchar_t *pFileName, HXCGUI hParent = NULL); //加载布局文件
+HXCGUI  XC_LoadLayoutZip(const wchar_t *pZipFileName, const wchar_t *pFileName, const wchar_t* pPassword = NULL, HXCGUI hParent = NULL);
+HXCGUI  XC_LoadLayoutFromString(const char *pStringXML, HXCGUI hParent = NULL);
+BOOL  XC_LoadResource(const wchar_t *pFileName);
+BOOL  XC_LoadResourceZip(const wchar_t *pZipFileName, const wchar_t *pFileName, const wchar_t* pPassword = NULL);
+BOOL  XC_LoadResourceFromString(const char *pStringXML, const wchar_t* pFileName);
+BOOL  XC_LoadStyle(const wchar_t *pFileName);
+BOOL  XC_LoadStyleZip(const wchar_t *pZipFile, const wchar_t *pFileName, const wchar_t* pPassword = NULL);
+void  XC_GetTextSize(const wchar_t* pString, int length, HFONTX hFontX, out_ SIZE* pOutSize);
+void  XC_GetTextShowSize(const wchar_t* pString, int length, HFONTX hFontX, out_ SIZE* pOutSize);
+HFONTX  XC_GetDefaultFont(); //获取默认字体
+void    XC_SetDefaultFont(HFONTX hFontX); //设置默认字体
+void   XC_AddFileSearchPath(const wchar_t* pPath);
+void   XC_InitFont(LOGFONTW *pFont, wchar_t *pName, int size, BOOL bBold = FALSE, BOOL bItalic = FALSE, BOOL bUnderline = FALSE, BOOL bStrikeOut = FALSE);
+void*  XC_Malloc(int size);
+void   XC_Free(void *p);
+void  _XC_SetType(HXCGUI hXCGUI, XC_OBJECT_TYPE nType);
+void  _XC_AddType(HXCGUI hXCGUI, XC_OBJECT_TYPE nType);
+void  _XC_BindData(HXCGUI hXCGUI, int data);
+int   _XC_GetBindData(HXCGUI hXCGUI);
+void   XC_Alert(const wchar_t* pText, const wchar_t* pTitle);
+void*  XC_Sys_ShellExecute(HWND hwnd, const wchar_t* lpOperation, const wchar_t* lpFile, const wchar_t* lpParameters, const wchar_t* lpDirectory, int nShowCmd);
+HMODULE  XC_LoadLibrary(const wchar_t* lpFileName);
+FARPROC  XC_GetProcAddress(HMODULE hModule, LPCSTR  lpProcName);
+BOOL     XC_FreeLibrary(HMODULE hModule);
+HMODULE  XC_LoadDll(const wchar_t* pDllFileName);
+BOOL  XInitXCGUI(wchar_t *pText = NULL);
+void  XRunXCGUI();
+void  XExitXCGUI();
+void  XC_PostQuitMessage(int nExitCode);
+XC_OBJECT_TYPE     XObj_GetType(HXCGUI hXCGUI);
+XC_OBJECT_TYPE     XObj_GetTypeBase(HXCGUI hXCGUI);
+XC_OBJECT_TYPE_EX  XObj_GetTypeEx(HXCGUI hXCGUI);
+void               XUI_SetStyle(HXCGUI hXCGUI, XC_OBJECT_STYLE nStyle);
+XC_OBJECT_STYLE    XUI_GetStyle(HXCGUI hXCGUI);
+BOOL    XWidget_IsShow(HXCGUI hXCGUI);
+void    XWidget_Show(HXCGUI hXCGUI, BOOL bShow);
+HELE    XWidget_GetParentEle(HXCGUI hXCGUI);
+HXCGUI  XWidget_GetParent(HXCGUI hXCGUI);
+HWND    XWidget_GetHWND(HXCGUI hXCGUI);
+HWINDOW  XWidget_GetHWINDOW(HXCGUI hXCGUI);
+void  XC_RegJsBind(const char* pName, int func);
+void  XC_RegFunIdle(funIdle func);
+void  XC_RegFunExit(funExit func);
+HBKM  XBkM_Create();
+void  XBkM_Destroy(HBKM hBkInfoM);
+int   XBkM_SetBkInfo(HBKM hBkInfoM, const wchar_t *pText);
+int   XBkM_AddInfo(HBKM hBkInfoM, const wchar_t *pText);
+void  XBkM_AddBorder(HBKM hBkInfoM, int nState, COLORREF color, BYTE alpha, int width);
+void  XBkM_AddFill(HBKM hBkInfoM, int nState, COLORREF color, BYTE alpha);
+void  XBkM_AddImage(HBKM hBkInfoM, int nState, HIMAGE hImage);
+int   XBkM_GetCount(HBKM hBkInfoM);
+void  XBkM_Clear(HBKM hBkInfoM);
+BOOL  XBkM_Draw(HBKM hBkInfoM, int nState, HDRAW hDraw, RECT* pRect);
+BOOL  XBkM_DrawEx(HBKM hBkInfoM, int nState, HDRAW hDraw, RECT* pRect, int nStateEx);
+HELE  XBtn_Create(int x, int y, int cx, int cy, const wchar_t *pName, HXCGUI hParent = NULL);
+BOOL  XBtn_IsCheck(HELE hEle); //按钮是否被选中
+BOOL  XBtn_SetCheck(HELE hEle, BOOL bCheck);
+void  XBtn_SetState(HELE hEle, common_state3_ nState);
+common_state3_   XBtn_GetState(HELE hEle);
+button_state_    XBtn_GetStateEx(HELE hEle);
+void  XBtn_SetStyle(HELE hEle, XC_OBJECT_STYLE  nStyle);
+XC_OBJECT_STYLE   XBtn_GetStyle(HELE hEle);
+void  XBtn_SetType(HELE hEle, XC_OBJECT_TYPE_EX nType);
+void  XBtn_SetTypeEx(HELE hEle, XC_OBJECT_TYPE_EX nType);
+XC_OBJECT_TYPE_EX   XBtn_GetType(HELE hEle);
+void  XBtn_SetGroupID(HELE hEle, int nID);
+int   XBtn_GetGroupID(HELE hEle);
+void  XBtn_SetBindEle(HELE hEle, HELE hBindEle);
+HELE  XBtn_GetBindEle(HELE hEle);
+void  XBtn_SetTextAlign(HELE hEle, int nFlags);
+int   XBtn_GetTextAlign(HELE hEle);
+void  XBtn_SetIconAlign(HELE hEle, button_icon_align_ align);
+void  XBtn_SetOffset(HELE hEle, int x, int y);
+void  XBtn_SetOffsetIcon(HELE hEle, int x, int y);
+void  XBtn_SetIconSpace(HELE hEle, int size);
+void  XBtn_GetText(HELE hEle, out_ wchar_t *pOut, int nOutLen);
+void  XBtn_SetText(HELE hEle, in_ const wchar_t *pName);
+void  XBtn_SetIcon(HELE hEle, HIMAGE hImage);
+void  XBtn_SetIconDisable(HELE hEle, HIMAGE hImage);
+HIMAGE  XBtn_GetIcon(HELE hEle, int nType);
+void  XBtn_AddAnimationFrame(HELE hEle, HIMAGE hImage, UINT uElapse);
+void  XBtn_EnableAnimation(HELE hEle, BOOL bEnable, BOOL bLoopPlay = FALSE);
+void  XBtn_AddBkBorder(HELE hEle, button_state_ nState, COLORREF color, BYTE alpha, int width);
+void  XBtn_AddBkFill(HELE hEle, button_state_ nState, COLORREF color, BYTE alpha);
+void  XBtn_AddBkImage(HELE hEle, button_state_ nState, HIMAGE hImage);
+int   XBtn_GetBkInfoCount(HELE hEle);
+void  XBtn_ClearBkInfo(HELE hEle);
+HELE  XComboBox_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+BOOL   XComboBox_SetSelItem(HELE hEle, int iIndex);
+void  XComboBox_GetButtonRect(HELE hEle, out_ RECT* pRect);
+void  XComboBox_SetButtonSize(HELE hEle, int size);
+void  XComboBox_SetDropHeight(HELE hEle, int height); //设置下拉列表高度
+int   XComboBox_GetDropHeight(HELE hEle);
+HXCGUI  XComboBox_CreateAdapter(HELE hEle);
+void  XComboBox_BindAdapter(HELE hEle, HXCGUI hAdapter);
+HXCGUI  XComboBox_GetAdapter(HELE hEle);
+void  XComboBox_SetBindName(HELE hEle, const wchar_t*  pName);
+void  XComboBox_SetItemTemplateXML(HELE hEle, const wchar_t* pXmlFile);
+void  XComboBox_SetItemTemplateXMLFromString(HELE hEle, const char* pStringXML);
+void  XComboBox_EnableDrawButton(HELE hEle, BOOL bEnable);
+void  XComboBox_EnableEdit(HELE hEle, BOOL bEdit);  //启动编辑内容
+void  XComboBox_EnableDropHeightFixed(HELE hEle, BOOL bEnable);
+void  XComboBox_AddBkBorder(HELE hEle, comboBox_state_ nState, COLORREF color, BYTE alpha, int width);
+void  XComboBox_AddBkFill(HELE hEle, comboBox_state_ nState, COLORREF color, BYTE alpha);
+void  XComboBox_AddBkImage(HELE hEle, comboBox_state_ nState, HIMAGE hImage);
+int   XComboboX_GetBkInfoCount(HELE hEle);
+void  XComboBox_ClearBkInfo(HELE hEle);
+int  XComboBox_GetSelItem(HELE hEle);
+comboBox_state_  XComboBox_GetState(HELE hEle);
+int  XComboBox_AddItemText(HELE hEle, const wchar_t* pText);
+int  XComboBox_AddItemTextEx(HELE hEle, const wchar_t* pName, const wchar_t* pText);
+int  XComboBox_AddItemImage(HELE hEle, HIMAGE hImage);
+int  XComboBox_AddItemImageEx(HELE hEle, const wchar_t* pName, HIMAGE hImage);
+int  XComboBox_InsertItemText(HELE hEle, int iItem, const wchar_t* pValue);
+int  XComboBox_InsertItemTextEx(HELE hEle, int iItem, const wchar_t* pName, const wchar_t* pValue);
+int  XComboBox_InsertItemImage(HELE hEle, int iItem, HIMAGE hImage);
+int  XComboBox_InsertItemImageEx(HELE hEle, int iItem, const wchar_t* pName, HIMAGE hImage);
+BOOL  XComboBox_SetItemText(HELE hEle, int iItem, int iColumn, const wchar_t* pText);
+BOOL  XComboBox_SetItemTextEx(HELE hEle, int iItem, const wchar_t* pName, const wchar_t* pText);
+BOOL  XComboBox_SetItemImage(HELE hEle, int iItem, int iColumn, HIMAGE hImage);
+BOOL  XComboBox_SetItemImageEx(HELE hEle, int iItem, const wchar_t* pName, HIMAGE hImage);
+BOOL  XComboBox_SetItemInt(HELE hEle, int iItem, int iColumn, int nValue);
+BOOL  XComboBox_SetItemIntEx(HELE hEle, int iItem, const wchar_t* pName, int nValue);
+BOOL  XComboBox_SetItemFloat(HELE hEle, int iItem, int iColumn, float fFloat);
+BOOL  XComboBox_SetItemFloatEx(HELE hEle, int iItem, const wchar_t* pName, float fFloat);
+BOOL  XComboBox_GetItemText(HELE hEle, int iItem, int iColumn, out_ wchar_t* pOut, int nOutLen);
+BOOL  XComboBox_GetItemTextEx(HELE hEle, int iItem, const wchar_t* pName, out_ wchar_t* pOut, int nOutLen);
+HIMAGE  XComboBox_GetItemImage(HELE hEle, int iItem, int iColumn);
+HIMAGE  XComboBox_GetItemImageEx(HELE hEle, int iItem, const wchar_t* pName);
+BOOL  XComboBox_GetItemInt(HELE hEle, int iItem, int iColumn, int* pOutValue);
+BOOL  XComboBox_GetItemIntEx(HELE hEle, int iItem, const wchar_t* pName, int* pOutValue);
+BOOL  XComboBox_GetItemFloat(HELE hEle, int iItem, int iColumn, float* pOutValue);
+BOOL  XComboBox_GetItemFloatEx(HELE hEle, int iItem, const wchar_t* pName, float* pOutValue);
+BOOL  XComboBox_DeleteItem(HELE hEle, int iItem);
+BOOL  XComboBox_DeleteItemEx(HELE hEle, int iItem, int nCount);
+void  XComboBox_DeleteItemAll(HELE hEle);
+void  XComboBox_DeleteColumnAll(HELE hEle);
+int  XComboBox_GetCount(HELE hEle);
+int  XComboBox_GetCountColumn(HELE hEle);
+void  XAd_Destroy(HXCGUI hAdapter);
+HXCGUI  XAdListView_Create();
+int   XAdListView_Group_AddColumn(HXCGUI hAdapter, const wchar_t *pName);
+int   XAdListView_Group_AddItemText(HXCGUI hAdapter, const wchar_t *pValue);
+int   XAdListView_Group_AddItemTextEx(HXCGUI hAdapter, const wchar_t* pName, const wchar_t *pValue);
+int   XAdListView_Group_AddItemImage(HXCGUI hAdapter, HIMAGE hImage);
+int   XAdListView_Group_AddItemImageEx(HXCGUI hAdapter, const wchar_t* pName, HIMAGE hImage);
+BOOL  XAdListView_Group_SetText(HXCGUI hAdapter, int iGroup, int iColumn, const wchar_t *pValue);
+BOOL  XAdListView_Group_SetTextEx(HXCGUI hAdapter, int iGroup, const wchar_t *pName, const wchar_t *pValue);
+BOOL  XAdListView_Group_SetImage(HXCGUI hAdapter, int iGroup, int iColumn, HIMAGE hImage);
+BOOL  XAdListView_Group_SetImageEx(HXCGUI hAdapter, int iGroup, const wchar_t *pName, HIMAGE hImage);
+int   XAdListView_Group_GetCount(HXCGUI hAdapter);
+int   XAdListView_Item_GetCount(HXCGUI hAdapter, int iGroup);
+int   XAdListView_Item_AddColumn(HXCGUI hAdapter, const wchar_t *pName);  //增加列
+int   XAdListView_Item_AddItemText(HXCGUI hAdapter, int iGroup, const wchar_t *pValue);
+int   XAdListView_Item_AddItemTextEx(HXCGUI hAdapter, int iGroup, const wchar_t *pName, const wchar_t *pValue);
+int   XAdListView_Item_AddItemImage(HXCGUI hAdapter, int iGroup, HIMAGE hImage);
+int   XAdListView_Item_AddItemImageEx(HXCGUI hAdapter, int iGroup, const wchar_t *pName, HIMAGE hImage);
+BOOL  XAdListView_Item_SetText(HXCGUI hAdapter, int iGroup, int iItem, int iColumn, const wchar_t* pValue);
+BOOL  XAdListView_Item_SetTextEx(HXCGUI hAdapter, int iGroup, int iItem, const wchar_t *pName, const wchar_t* pValue);
+BOOL  XAdListView_Item_SetImage(HXCGUI hAdapter, int iGroup, int iItem, int iColumn, HIMAGE hImage);
+BOOL  XAdListView_Item_SetImageEx(HXCGUI hAdapter, int iGroup, int iItem, const wchar_t *pName, HIMAGE hImage);
+BOOL  XAdListView_Group_DeleteItem(HXCGUI hAdapter, int iGroup);
+void  XAdListView_Group_DeleteAllChildItem(HXCGUI hAdapter, int iGroup);
+BOOL  XAdListView_Item_DeleteItem(HXCGUI hAdapter, int iGroup, int iItem);
+void  XAdListView_DeleteAll(HXCGUI hAdapter);
+void  XAdListView_DeleteAllGroup(HXCGUI hAdapter);
+void  XAdListView_DeleteAllItem(HXCGUI hAdapter);
+void  XAdListView_DeleteColumnGroup(HXCGUI hAdapter, int iColumn);
+void  XAdListView_DeleteColumnItem(HXCGUI hAdapter, int iColumn);
+BOOL  XAdListView_Item_GetTextEx(HXCGUI hAdapter, int iGroup, int iItem, const wchar_t* pName, out_ wchar_t* pOut, int nOutLen);
+HIMAGE  XAdListView_Item_GetImageEx(HXCGUI hAdapter, int iGroup, int iItem, const wchar_t* pName);
+HXCGUI  XAdTable_Create();
+void    XAdTable_Sort(HXCGUI hAdapter, int iColumn, BOOL bAscending);  //排序
+adapter_date_type_   XAdTable_GetItemDataType(HXCGUI hAdapter, int iItem, int iColumn);
+adapter_date_type_   XAdTable_GetItemDataTypeEx(HXCGUI hAdapter, int iItem, const wchar_t* pName);
+int  XAdTable_AddColumn(HXCGUI hAdapter, const wchar_t* pName);
+int  XAdTable_SetColumn(HXCGUI hAdapter, const wchar_t*  pColName);
+int  XAdTable_AddItemText(HXCGUI hAdapter, const wchar_t* pValue);
+int  XAdTable_AddItemTextEx(HXCGUI hAdapter, const wchar_t* pName, const wchar_t* pValue);
+int  XAdTable_AddItemImage(HXCGUI hAdapter, HIMAGE hImage);
+int  XAdTable_AddItemImageEx(HXCGUI hAdapter, const wchar_t* pName, HIMAGE hImage);
+int  XAdTable_InsertItemText(HXCGUI hAdapter, int iItem, const wchar_t* pValue);
+int  XAdTable_InsertItemTextEx(HXCGUI hAdapter, int iItem, const wchar_t* pName, const wchar_t* pValue);
+int  XAdTable_InsertItemImage(HXCGUI hAdapter, int iItem, HIMAGE hImage);
+int  XAdTable_InsertItemImageEx(HXCGUI hAdapter, int iItem, const wchar_t* pName, HIMAGE hImage);
+BOOL  XAdTable_SetItemText(HXCGUI hAdapter, int iItem, int iColumn, const wchar_t* pValue);
+BOOL  XAdTable_SetItemTextEx(HXCGUI hAdapter, int iItem, const wchar_t* pName, const wchar_t* pValue);
+BOOL  XAdTable_SetItemInt(HXCGUI hAdapter, int iItem, int iColumn, int nValue);
+BOOL  XAdTable_SetItemIntEx(HXCGUI hAdapter, int iItem, const wchar_t* pName, int nValue);
+BOOL  XAdTable_SetItemFloat(HXCGUI hAdapter, int iItem, int iColumn, float nValue);
+BOOL  XAdTable_SetItemFloatEx(HXCGUI hAdapter, int iItem, const wchar_t* pName, float nValue);
+BOOL  XAdTable_SetItemImage(HXCGUI hAdapter, int iItem, int iColumn, HIMAGE hImage);
+BOOL  XAdTable_SetItemImageEx(HXCGUI hAdapter, int iItem, const wchar_t* pName, HIMAGE hImage);
+BOOL  XAdTable_DeleteItem(HXCGUI hAdapter, int iItem);
+BOOL  XAdTable_DeleteItemEx(HXCGUI hAdapter, int iItem, int nCount);
+void  XAdTable_DeleteItemAll(HXCGUI hAdapter);
+void  XAdTable_DeleteColumnAll(HXCGUI hAdapter);
+int  XAdTable_GetCount(HXCGUI hAdapter);
+int  XAdTable_GetCountColumn(HXCGUI hAdapter);
+BOOL  XAdTable_GetItemText(HXCGUI hAdapter, int iItem, int iColumn, out_ wchar_t* pOut, int nOutLen);
+BOOL  XAdTable_GetItemTextEx(HXCGUI hAdapter, int iItem, const wchar_t* pName, out_ wchar_t* pOut, int nOutLen);
+HIMAGE  XAdTable_GetItemImage(HXCGUI hAdapter, int iItem, int iColumn);
+HIMAGE  XAdTable_GetItemImageEx(HXCGUI hAdapter, int iItem, const wchar_t* pName);
+BOOL  XAdTable_GetItemInt(HXCGUI hAdapter, int iItem, int iColumn, out_ int* pOutValue);
+BOOL  XAdTable_GetItemIntEx(HXCGUI hAdapter, int iItem, const wchar_t* pName, out_ int* pOutValue);
+BOOL  XAdTable_GetItemFloat(HXCGUI hAdapter, int iItem, int iColumn, out_ float* pOutValue);
+BOOL  XAdTable_GetItemFloatEx(HXCGUI hAdapter, int iItem, const wchar_t* pName, out_ float* pOutValue);
+HXCGUI  XAdTree_Create();
+int  XAdTree_AddColumn(HXCGUI hAdapter, const wchar_t* pName);
+int  XAdTree_SetColumn(HXCGUI hAdapter, const wchar_t* pColName);
+int  XAdTree_InsertItemText(HXCGUI hAdapter, const wchar_t* pValue, int nParentID = XC_ID_ROOT, int insertID = XC_ID_LAST);
+int  XAdTree_InsertItemTextEx(HXCGUI hAdapter, const wchar_t* pName, const wchar_t* pValue, int nParentID = XC_ID_ROOT, int insertID = XC_ID_LAST);
+int  XAdTree_InsertItemImage(HXCGUI hAdapter, HIMAGE hImage, int nParentID = XC_ID_ROOT, int insertID = XC_ID_LAST);
+int  XAdTree_InsertItemImageEx(HXCGUI hAdapter, const wchar_t* pName, HIMAGE hImage, int nParentID = XC_ID_ROOT, int insertID = XC_ID_LAST);
+int  XAdTree_GetCount(HXCGUI hAdapter);
+int  XAdTree_GetCountColumn(HXCGUI hAdapter);
+BOOL  XAdTree_SetItemText(HXCGUI hAdapter, int nID, int iColumn, const wchar_t* pValue);
+BOOL  XAdTree_SetItemTextEx(HXCGUI hAdapter, int nID, const wchar_t* pName, const wchar_t* pValue);
+BOOL  XAdTree_SetItemImage(HXCGUI hAdapter, int nID, int iColumn, HIMAGE hImage);
+BOOL  XAdTree_SetItemImageEx(HXCGUI hAdapter, int nID, const wchar_t* pName, HIMAGE hImage);
+BOOL  XAdTree_GetItemText(HXCGUI hAdapter, int nID, int iColumn, out_ wchar_t* pOut, int nOutLen);
+HIMAGE  XAdTree_GetItemImage(HXCGUI hAdapter, int nID, int iColumn);
+BOOL  XAdTree_GetItemTextEx(HXCGUI hAdapter, int nID, const wchar_t* pName, out_ wchar_t* pOut, int nOutLen);
+HIMAGE  XAdTree_GetItemImageEx(HXCGUI hAdapter, int nID, const wchar_t* pName);
+BOOL  XAdTree_DeleteItem(HXCGUI hAdapter, int nID);
+void  XAdTree_DeleteItemAll(HXCGUI hAdapter);
+void  XAdTree_DeleteColumnAll(HXCGUI hAdapter);
+HXCGUI  XAdMap_Create();
+BOOL  XAdMap_AddItemText(HXCGUI hAdapter, const wchar_t* pName, const wchar_t* pValue);
+BOOL  XAdMap_AddItemImage(HXCGUI hAdapter, const wchar_t* pName, HIMAGE hImage);
+BOOL  XAdMap_DeleteItem(HXCGUI hAdapter, const wchar_t* pName);
+int   XAdMap_GetCount(HXCGUI hAdapter);
+BOOL  XAdMap_GetItemText(HXCGUI hAdapter, const wchar_t* pName, out_ wchar_t* pOut, int nOutLen);
+HIMAGE  XAdMap_GetItemImage(HXCGUI hAdapter, const wchar_t* pName);
+BOOL  XAdMap_SetItemText(HXCGUI hAdapter, const wchar_t* pName, const wchar_t* pValue);
+BOOL  XAdMap_SetItemImage(HXCGUI hAdapter, const wchar_t* pName, HIMAGE hImage);
+void  DebugPrint(int  level, const char *pInfo);
+void  xtrace(const char *pFormat, ...);
+void  xtracew(const wchar_t *pFormat, ...);
+HDRAW  XDraw_Create(HDC hdc); //创建
+void   XDraw_Destroy(HDRAW hDraw); //销毁
+void   XDraw_SetOffset(HDRAW hDraw, int x, int y); //设置坐标偏移量
+void   XDraw_GetOffset(HDRAW hDraw, out_ int *pX, out_ int *pY); //获取坐标偏移量
+void   XDraw_RestoreGDIOBJ(HDRAW hDraw);  //还原状态,释放用户绑定的GDI对象
+HDC    XDraw_GetHDC(HDRAW hDraw);
+void  XDraw_SetBrushColor(HDRAW hDraw, COLORREF color, BYTE alpha = 255);
+void  XDraw_SetTextAlign(HDRAW hDraw, int nFlag);
+void  XDraw_SetTextVertical(HDRAW hDraw, BOOL bVertical);
+void  XDraw_SetFontX(HDRAW hDraw, HFONTX  hFontx);
+void  XDraw_SetLineWidth(HDRAW hDraw, int nWidth);
+int   XDraw_SetBkMode(HDRAW hDraw, BOOL bTransparent);
+void  XDraw_SetClipRect(HDRAW hDraw, RECT*  pRect);
+void  XDraw_ClearClip(HDRAW hDraw);
+void  XDraw_EnableSmoothingMode(HDRAW hDraw, BOOL  bEnable);   //启用平滑模式
+HBRUSH  XDraw_CreateSolidBrush(HDRAW hDraw, COLORREF crColor);
+HPEN  XDraw_CreatePen(HDRAW hDraw, int fnPenStyle, int nWidth, COLORREF crColor);
+HRGN  XDraw_CreateRectRgn(HDRAW hDraw, int nLeftRect, int nTopRect, int nRightRect, int nBottomRect);
+HRGN  XDraw_CreateRoundRectRgn(HDRAW hDraw, int nLeftRect, int nTopRect, int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
+HRGN  XDraw_CreatePolygonRgn(HDRAW hDraw, POINT *pPt, int cPoints, int fnPolyFillMode);
+int  XDraw_SelectClipRgn(HDRAW hDraw, HRGN hRgn);
+void  XDraw_FillRect(HDRAW hDraw, RECT *pRect);
+void  XDraw_FillRectColor(HDRAW hDraw, RECT *pRect, COLORREF color, BYTE alpha = 255);
+BOOL  XDraw_FillRgn(HDRAW hDraw, HRGN hrgn, HBRUSH hbr);
+void  XDraw_FillEllipse(HDRAW hDraw, RECT *pRect);
+void  XDraw_DrawEllipse(HDRAW hDraw, RECT *pRect);
+void  XDraw_FillRoundRect(HDRAW hDraw, RECT *pRect, int nWidth, int nHeight); //填充圆角矩形
+void  XDraw_DrawRoundRect(HDRAW hDraw, RECT *pRect, int nWidth, int nHeight); //绘制圆角矩形边框
+void  XDraw_FillRoundRectEx(HDRAW hDraw, RECT *pRect, int nLeftTop, int nRightTop, int nRightBottom, int nLeftBottom); //填充圆角矩形
+void  XDraw_DrawRoundRectEx(HDRAW hDraw, RECT *pRect, int nLeftTop, int nRightTop, int nRightBottom, int nLeftBottom); //绘制圆角矩形边框
+BOOL  XDraw_Rectangle(HDRAW hDraw, int nLeftRect, int nTopRect, int nRightRect, int nBottomRect);
+void  XDraw_DrawGroupBox_Rect(HDRAW hDraw, RECT *pRect, const wchar_t* pName, COLORREF textColor, BYTE textAlpha, POINT* pOffset);
+void  XDraw_DrawGroupBox_RoundRect(HDRAW hDraw, RECT *pRect, const wchar_t* pName, COLORREF textColor, BYTE textAlpha, POINT* pOffset, int nWidth, int nHeight);
+void  XDraw_GradientFill2(HDRAW hDraw, COLORREF color1, BYTE alpha1, COLORREF color2, BYTE alpha2, RECT *pRect, int mode);
+BOOL  XDraw_GradientFill4(HDRAW hDraw, COLORREF color1, COLORREF color2, COLORREF color3, COLORREF color4, RECT *pRect, int mode);
+BOOL  XDraw_FrameRgn(HDRAW hDraw, HRGN hrgn, HBRUSH hbr, int nWidth, int nHeight);
+void   XDraw_FrameRect(HDRAW hDraw, RECT *pRect);
+void  XDraw_FocusRect(HDRAW hDraw, RECT *pRect);
+void  XDraw_DrawLine(HDRAW hDraw, int x1, int y1, int x2, int y2);
+BOOL  XDraw_MoveToEx(HDRAW hDraw, int X, int Y, LPPOINT lpPoint = NULL);
+BOOL  XDraw_LineTo(HDRAW hDraw, int nXEnd, int nYEnd);
+BOOL  XDraw_Polyline(HDRAW hDraw, in_ POINT *pArrayPt, int arrayPtSize);
+void  XDraw_Dottedline(HDRAW hDraw, int x1, int y1, int x2, int y2);  //绘制虚线
+COLORREF  XDraw_SetPixel(HDRAW hDraw, int X, int Y, COLORREF crColor);
+void  XDraw_Check(HDRAW hDraw, int x, int y, COLORREF color, BOOL bCheck);
+BOOL  XDraw_DrawIconEx(HDRAW hDraw, int xLeft, int yTop, HICON hIcon, int cxWidth, int cyWidth, UINT istepIfAniCur, HBRUSH hbrFlickerFreeDraw, UINT diFlags);
+BOOL  XDraw_BitBlt(HDRAW hDrawDest, int nXDest, int nYDest, int nWidth, int nHeight, HDC hdcSrc, int nXSrc, int nYSrc, DWORD dwRop);
+BOOL  XDraw_BitBlt2(HDRAW hDrawDest, int nXDest, int nYDest, int nWidth, int nHeight, HDRAW hDrawSrc, int nXSrc, int nYSrc, DWORD dwRop);
+BOOL  XDraw_AlphaBlend(HDRAW hDraw, int nXOriginDest, int nYOriginDest, int nWidthDest, int nHeightDest, HDC hdcSrc, int nXOriginSrc, int nYOriginSrc, int nWidthSrc, int nHeightSrc, int alpha);
+void  XDraw_TriangularArrow(HDRAW hDraw, int align, int x, int y, int width, int height);
+void  XDraw_DrawPolygon(HDRAW hDraw, in_ POINT *points, int nCount);
+void  XDraw_DrawPolygonF(HDRAW hDraw, in_ POINTF *points, int nCount);
+void  XDraw_FillPolygon(HDRAW hDraw, in_ POINT *points, int nCount);
+void  XDraw_FillPolygonF(HDRAW hDraw, in_ POINTF *points, int nCount);
+void  XDraw_Image(HDRAW hDraw, HIMAGE hImageFrame, int x, int y);
+void  XDraw_Image2(HDRAW hDraw, HIMAGE hImageFrame, int x, int y, int width, int height);
+void  XDraw_ImageStretch(HDRAW hDraw, HIMAGE hImageFrame, int x, int y, int width, int height);
+void  XDraw_ImageAdaptive(HDRAW hDraw, HIMAGE hImageFrame, RECT *pRect, BOOL bOnlyBorder = FALSE);
+void  XDraw_ImageExTile(HDRAW hDraw, HIMAGE hImageFrame, RECT *pRect, int flag = 0);
+void  XDraw_ImageSuper(HDRAW hDraw, HIMAGE hImageFrame, RECT *pRect, BOOL bClip = FALSE);
+void  XDraw_ImageSuper2(HDRAW hDraw, HIMAGE hImageFrame, RECT *pRcDest, RECT *pSrcRect);
+void  XDraw_ImageSuperMask(HDRAW hDraw, HIMAGE hImageFrame, HIMAGE hImageFrameMask, RECT *pRect, RECT *pRectMask, BOOL bClip = FALSE);
+void  XDraw_ImageMask(HDRAW hDraw, HIMAGE hImageFrame, HIMAGE hImageFrameMask, int x, int y, int x2, int y2);
+void  XDraw_DrawText(HDRAW hDraw, const wchar_t * lpString, int nCount, RECT* lpRect);
+void  XDraw_DrawTextUnderline(HDRAW hDraw, const wchar_t * lpString, int nCount, RECT* lpRect, COLORREF colorLine, BYTE alphaLine = 255);
+void  XDraw_TextOut(HDRAW hDraw, int nXStart, int nYStart, const wchar_t * lpString, int cbString);
+void  XDraw_TextOutEx(HDRAW hDraw, int nXStart, int nYStart, const wchar_t * lpString);
+void  XDraw_TextOutA(HDRAW hDraw, int nXStart, int nYStart, const char * lpString);
+void  XDraw_SetAlpha(HDRAW hDraw, BYTE alpha);  //设置透明通道度
+void  XDraw_SetAlphaEx(HDC hdc, BYTE alpha);  //设置透明通道度
+HELE  XEditor_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+BOOL  XEditor_SetBreakpoint(HELE hEle, int iPosition, BOOL bActivate = TRUE);       //添加断点
+BOOL  XEditor_RemoveBreakpoint(HELE hEle, int iPosition);    //添加断点
+void  XEditor_ClearBreakpoint(HELE hEle);
+BOOL  XEditor_SetActivateBreakpoint(HELE hEle, int iPosition, BOOL bActivate);    //设置当前命中行
+BOOL  XEditor_SetRunRow(HELE hEle, int iPosition);
+int   XEditor_GetBreakpointCount(HELE hEle);
+int   XEditor_GetBreakpoints(HELE hEle, out_ int* aPoints, int nCount);
+HELE  XEdit_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+void  XEdit_SetText(HELE hEle, const wchar_t* pString);
+int   XEdit_GetText(HELE hEle, wchar_t* pOut, int nOutlen);
+int   XEdit_GetTextLength(HELE hEle);
+void  XEdit_SetCaretColor(HELE hEle, COLORREF  color);
+void  XEdit_SetSelectBkColor(HELE hEle, COLORREF color, BYTE alpha = 255);
+void  XEdit_AddKeyword(HELE hEle, const wchar_t* pKeyword, COLORREF color);
+BOOL  XEdit_GetSegment(HELE hEle, int iRow, int iCol, edit_segment_i* pOut);
+void  XEdit_DrawSegment(HELE hEle, HDRAW hDraw, edit_segment_i* info);
+BOOL  XEdit_ClipboardPaste(HELE hEle);    //粘贴 粘贴剪贴板内容
+HELE  XEle_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+BOOL  _XEle_RegEvent(HELE hEle, UINT nEvent, xc_event* pEvent);
+BOOL  _XEle_RemoveEvent(HELE hEle, UINT nEvent, xc_event* pEvent);
+BOOL  XEle_RegEventC(HELE hEle, int nEvent, void *pFun); //注册事件C方式
+BOOL  XEle_RegEventC1(HELE hEle, int nEvent, void *pFun);
+BOOL  XEle_RegEventC2(HELE hEle, int nEvent, void *pFun);
+BOOL  XEle_RemoveEventC(HELE hEle, int nEvent, void *pFun); //移除事件函数C方式
+int   XEle_SendEvent(HELE hEle, HELE hEventEle, int nEvent, WPARAM wParam, LPARAM lParam);
+BOOL  XEle_PostEvent(HELE hEle, HELE hEventEle, int nEvent, WPARAM wParam, LPARAM lParam);
+BOOL  XEle_IsShow(HELE hEle);
+BOOL  XEle_IsEnable(HELE hEle);
+BOOL  XEle_IsEnableFocus(HELE hEle);
+BOOL  XEle_IsDrawFocus(HELE hEle);
+BOOL  XEle_IsEnableEvent_XE_PAINT_END(HELE hEle);
+BOOL  XEle_IsMouseThrough(HELE hEle);
+BOOL  XEle_IsBkTransparent(HELE hEle);
+BOOL  XEle_IsKeyTab(HELE hEle);
+BOOL  XEle_IsSwitchFocus(HELE hEle);
+BOOL  XEle_IsEnable_XE_MOUSEWHEEL(HELE hEle);
+BOOL  XEle_IsChildEle(HELE hEle, HELE hChildEle);
+BOOL  XEle_IsEnableCanvas(HELE hEle);
+BOOL  XEle_IsFocus(HELE hEle);
+BOOL  XEle_IsFocusEx(HELE hEle);
+void  XEle_Enable(HELE hEle, BOOL bEnable);
+void  XEle_EnableFocus(HELE hEle, BOOL bEnable);
+void  XEle_EnableDrawFocus(HELE hEle, BOOL bEnable);
+void  XEle_EnableDrawBorder(HELE hEle, BOOL bEnable);
+void  XEle_EnableCanvas(HELE hEle, BOOL bEnable);
+void  XEle_EnableEvent_XE_PAINT_END(HELE hEle, BOOL bEnable);
+void  XEle_EnableBkTransparent(HELE hEle, BOOL bEnable);
+void  XEle_EnableMouseThrough(HELE hEle, BOOL bEnable);
+void  XEle_EnableKeyTab(HELE hEle, BOOL bEnable);
+void  XEle_EnableSwitchFocus(HELE hEle, BOOL bEnable);
+void  XEle_EnableEvent_XE_MOUSEWHEEL(HELE hEle, BOOL bEnable);
+int   XEle_SetRect(HELE hEle, RECT *pRect, BOOL bRedraw = FALSE, int nFlags = xc_adjustLayout_all);
+int   XEle_SetRectEx(HELE hEle, int x, int y, int cx, int cy, BOOL bRedraw = FALSE, int nFlags = xc_adjustLayout_all);
+int   XEle_SetRectLogic(HELE hEle, RECT *pRect, BOOL bRedraw = FALSE, int nFlags = xc_adjustLayout_all); //逻辑模式坐标
+void  XEle_GetRect(HELE hEle, RECT *pRect);   //相对与父坐标,人眼观察模式
+void  XEle_GetRectLogic(HELE hEle, RECT *pRect); //相对与父坐标,逻辑模式
+void  XEle_GetClientRect(HELE hEle, RECT *pRect);  //左上角为0，0坐标
+void  XEle_GetWndClientRect(HELE hEle, out_ RECT *pRect);
+void  XEle_SetWidth(HELE hEle, int nWidth);
+void  XEle_SetHeight(HELE hEle, int nHeight);
+int   XEle_GetWidth(HELE hEle);
+int   XEle_GetHeight(HELE hEle);
+void  XEle_RectWndClientToEleClient(HELE hEle, in_out_ RECT *pRect);
+void  XEle_PointWndClientToEleClient(HELE hEle, in_out_ POINT *pPt);
+void  XEle_RectClientToWndClient(HELE hEle, in_out_ RECT *pRect);
+void  XEle_PointClientToWndClient(HELE hEle, in_out_ POINT *pPt);
+BOOL  XEle_AddChild(HELE hEle, HXCGUI hChild);
+BOOL  XEle_InsertChild(HELE hEle, HXCGUI hChild, int index);  //插入到指定位置
+void  XEle_RemoveEle(HELE hEle);
+BOOL  XEle_SetZOrder(HELE hEle, int index);
+BOOL  XEle_SetZOrderEx(HELE hEle, HELE hDestEle, zorder_ nType);
+int   XEle_GetZOrder(HELE hEle);
+BOOL  XEle_SetTopmost(HELE hEle, BOOL bTopmost);
+void  XEle_EnableCSS(HELE hEle, BOOL bEnable);
+void  XEle_SetCssName(HELE hEle, const wchar_t *pName);
+const wchar_t*  XEle_GetCssName(HELE hEle);
+void  XEle_ShowEle(HELE hEle, BOOL bShow);
+XC_OBJECT_TYPE  XEle_GetType(HELE hEle);
+HWND  XEle_GetHWND(HELE hEle);
+HWINDOW  XEle_GetHWINDOW(HELE hEle);
+void  XEle_SetCursor(HELE hEle, HCURSOR hCursor);
+HCURSOR  XEle_GetCursor(HELE hEle);
+void  XEle_SetID(HELE hEle, int nID);
+int   XEle_GetID(HELE hEle);
+void  XEle_SetUID(HELE hEle, int nUID);
+int   XEle_GetUID(HELE hEle);
+void  XEle_SetName(HELE hEle, const wchar_t* pName);
+const wchar_t*  XEle_GetName(HELE hEle);
+HELE  XEle_GetParentEle(HELE hEle);
+HXCGUI  XEle_GetParent(HELE hEle);
+void  XEle_SetTextColor(HELE hEle, COLORREF color, BYTE alpha = 255);
+COLORREF  XEle_GetTextColor(HELE hEle);
+COLORREF  XEle_GetTextColorEx(HELE hEle);
+void  XEle_SetFocusBorderColor(HELE hEle, COLORREF color, BYTE alpha = 255);
+COLORREF  XEle_GetFocusBorderColor(HELE hEle);
+void  XEle_SetFont(HELE hEle, HFONTX hFontx);
+HFONTX  XEle_GetFont(HELE hEle);
+HFONTX  XEle_GetFontEx(HELE hEle);
+void  XEle_SetAlpha(HELE hEle, BYTE alpha);
+int   XEle_GetChildCount(HELE hEle);
+HXCGUI  XEle_GetChildByIndex(HELE hEle, int index);
+HXCGUI  XEle_GetChildByID(HELE hEle, int nID);
+void  XEle_SetBorderSize(HELE hEle, int left, int top, int right, int bottom);
+void  XEle_GetBorderSize(HELE hEle, BorderSize_i* pBorder);
+void  XEle_SetPadding(HELE hEle, int left, int top, int right, int bottom);
+void  XEle_GetPadding(HELE hEle, PaddingSize_i* pPadding);
+void  XEle_SetDragBorder(HELE hEle, int nFlags);
+void  XEle_SetDragBorderBindEle(HELE hEle, int nFlags, HELE hBindEle, int nSpace);
+void  XEle_SetMinSize(HELE hEle, int nWidth, int nHeight);
+void  XEle_SetMaxSize(HELE hEle, int nWidth, int nHeight);
+void  XEle_SetLockScroll(HELE hEle, BOOL bHorizon, BOOL bVertical);
+HELE  XEle_HitChildEle(HELE hEle, in_ POINT  *pPt);
+void  XEle_SetUserData(HELE hEle, int nData);
+int   XEle_GetUserData(HELE hEle);
+void  XEle_GetContentSize(HELE hEle, out_ SIZE* pSize);
+void  XEle_SetCapture(HELE hEle, BOOL b);
+void  XEle_SetLayoutWidth(HELE hEle, layout_size_type_ nType, int nWidth);
+void  XEle_SetLayoutHeight(HELE hEle, layout_size_type_ nType, int nHeight);
+void  XEle_GetLayoutWidth(HELE hEle, out_ layout_size_type_ *pType, out_ int *pWidth);
+void  XEle_GetLayoutHeight(HELE hEle, out_ layout_size_type_ *pType, out_ int *pHeight);
+void  XEle_RedrawEle(HELE hEle, BOOL bImmediate = FALSE);
+void  XEle_RedrawRect(HELE hEle, RECT *pRect, BOOL bImmediate = FALSE);
+void  XEle_Destroy(HELE hEle);  //销毁
+void  XEle_AddBkBorder(HELE hEle, COLORREF color, BYTE alpha, int width);
+void  XEle_AddBkFill(HELE hEle, COLORREF color, BYTE alpha);
+void  XEle_AddBkImage(HELE hEle, HIMAGE hImage);
+int   XEle_GetBkInfoCount(HELE hEle);
+void  XEle_ClearBkInfo(HELE hEle);
+HBKM  XEle_GetBkManager(HELE hEle);
+HBKM  XEle_GetBkManagerEx(HELE hEle);
+int   XEle_GetStateFlags(HELE hEle); //获取组合状态
+BOOL  XEle_DrawFocus(HELE hEle, HDRAW hDraw, RECT* pRect);
+void  XEle_DrawEle(HELE hEle, HDRAW hDraw);
+void  XEle_EnableTransparentChannel(HELE hEle, BOOL bEnable);
+BOOL  XEle_SetXCTimer(HELE hEle, UINT nIDEvent, UINT uElapse);
+BOOL  XEle_KillXCTimer(HELE hEle, UINT nIDEvent);
+void  XEle_SetToolTip(HELE hEle, const wchar_t* pText);
+void  XEle_GetToolTip(HELE hEle, out_ wchar_t  *pOut, int nOutLen);
+void  XEle_PopupToolTip(HELE hEle, int x, int y);
+void  XEle_AdjustLayout(HELE hEle);
+void  XEle_AdjustLayoutEx(HELE hEle, int nFlags = xc_adjustLayout_self);
+// BOOL  XEle_RegEventC_js(HELE hEle, int nEvent, const char* pFunName);
+// BOOL  XEle_RegEventC1_js(HELE hEle, int nEvent, const char* pFunName);
+// BOOL  XEle_RegEventC2_js(HELE hEle, int nEvent, const char* pFunName);
+HFONTX  XFont_Create(int size);//创建字体
+HFONTX  XFont_Create2(const wchar_t *pName = L"宋体", int size = 12, int style = xc_fontStyle_regular);
+HFONTX  XFont_Create3(xc_font_info_i*  pInfo);
+HFONTX  XFont_CreateEx(LOGFONTW *pFontInfo);
+HFONTX  XFont_CreateFromHFONT(HFONT hFont);
+HFONTX  XFont_CreateFromFont(void*  pFont);
+HFONTX  XFont_CreateFromFile(const wchar_t*  pFontFile, int size = 12, int style = xc_fontStyle_regular);
+void    XFont_EnableAutoDestroy(HFONTX hFontX, BOOL bEnable);
+void*  XFont_GetFont(HFONTX hFontX);
+void   XFont_GetFontInfo(HFONTX hFontX, out_ xc_font_info_i*  pInfo);
+void   XFont_AddRef(HFONTX hFontX);   //增加引用计数
+void   XFont_Release(HFONTX hFontX);  //释放引用计数
+int    XFont_GetRefCount(HFONTX hFontX);
+void   XFont_Destroy(HFONTX hFontX);  //销毁字体
+HWINDOW  XFrameWnd_Create(int x, int y, int cx, int cy, const wchar_t *pTitle, HWND hWndParent, int XCStyle);  //创建窗口
+HWINDOW  XFrameWnd_CreateEx(DWORD dwExStyle, wchar_t* lpClassName, wchar_t* lpWindowName, DWORD dwStyle, int x, int y, int cx, int cy, HWND hWndParent, int XCStyle);  //创建窗口
+void  XFrameWnd_GetLayoutAreaRect(HWINDOW hWindow, out_ RECT *pRect); //获取客户区布局区域坐标
+void  XFrameWnd_SetView(HWINDOW hWindow, HELE hEle);
+void  XFrameWnd_SetPaneSplitBarColor(HWINDOW hWindow, COLORREF color, BYTE alpha = 255);
+BOOL  XFrameWnd_SaveLayoutToFile(HWINDOW hWindow, const wchar_t* pFileName);
+BOOL  XFrameWnd_LoadLayoutFile(HWINDOW hWindow, HELE* aPaneList, int nEleCount, const wchar_t* pFileName);
+BOOL  XFrameWnd_AddPane(HWINDOW hWindow, HELE hPaneDest, HELE hPaneNew, align_type_ align);
+BOOL  XFrameWnd_MergePane(HWINDOW hWindow, HELE hPaneDest, HELE hPaneNew);
+HIMAGE  XImgSrc_LoadFile(const wchar_t *pImageName);//从文件中加载图片
+HIMAGE  XImgSrc_LoadFileRect(const wchar_t *pImageName, int x, int y, int cx, int cy);  //加载图片,指定区域
+HIMAGE  XImgSrc_LoadRes(int id, const wchar_t *pType);//从资源中加载图片
+HIMAGE  XImgSrc_LoadZip(const wchar_t *pZipFileName, const wchar_t *pImageName, const wchar_t *pPassword = NULL);//从ZIP中加载图片
+HIMAGE  XImgSrc_LoadZipRect(const wchar_t *pZipFileName, const wchar_t *pImageName, const wchar_t *pPassword, int x, int y, int cx, int cy);
+HIMAGE  XImgSrc_LoadMemory(void* pBuffer, int nSize);
+HIMAGE  XImgSrc_LoadMemoryRect(void* pBuffer, int nSize, int x, int y, int cx, int cy);
+HIMAGE  XImgSrc_LoadFromImage(void *pImage);
+HIMAGE  XImgSrc_LoadFromExtractIcon(const wchar_t *pImageName);
+HIMAGE  XImgSrc_LoadFromHICON(HICON hIcon);
+HIMAGE  XImgSrc_LoadFromHBITMAP(HBITMAP hBitmap);
+void  XImgSrc_EnableAutoDestroy(HIMAGE hImage, BOOL bEnable); //启用或关闭自动销毁,当与UI元素关联时有效
+int  XImgSrc_GetWidth(HIMAGE hImage);
+int  XImgSrc_GetHeight(HIMAGE hImage);
+void  XImgSrc_AddRef(HIMAGE hImage);
+void  XImgSrc_Release(HIMAGE hImage);
+int   XImgSrc_GetRefCount(HIMAGE hImage);
+void  XImgSrc_Destroy(HIMAGE hImage);
+HIMAGE  XImage_LoadFile(const wchar_t *pImageName, BOOL bStretch = FALSE);//从文件中加载图片
+HIMAGE  XImage_LoadFileAdaptive(const wchar_t *pImageName, int leftSize, int topSize, int rightSize, int bottomSize);//从文件中加载图片
+HIMAGE  XImage_LoadFileRect(const wchar_t *pImageName, int x, int y, int cx, int cy);  //加载图片,指定区域
+HIMAGE  XImage_LoadResAdaptive(int id, const wchar_t *pType, int leftSize, int topSize, int rightSize, int bottomSize);//从资源中加载图片
+HIMAGE  XImage_LoadRes(int id, const wchar_t *pType, BOOL bStretch = FALSE);//从资源中加载图片
+HIMAGE  XImage_LoadZip(const wchar_t *pZipFileName, const wchar_t *pImageName, const wchar_t *pPassword = NULL, BOOL bStretch = FALSE);//从ZIP中加载图片
+HIMAGE  XImage_LoadZipAdaptive(const wchar_t *pZipFileName, const wchar_t *pImageName, const wchar_t *pPassword, int x1, int x2, int y1, int y2);//从ZIP中加载图片
+HIMAGE  XImage_LoadZipRect(const wchar_t *pZipFileName, const wchar_t *pImageName, const wchar_t *pPassword, int x, int y, int cx, int cy);
+HIMAGE  XImage_LoadMemory(void* pBuffer, int nSize, BOOL bStretch);
+HIMAGE  XImage_LoadMemoryRect(void* pBuffer, int nSize, int x, int y, int cx, int cy, BOOL bStretch);
+HIMAGE  XImage_LoadMemoryAdaptive(void* pBuffer, int nSize, int leftSize, int topSize, int rightSize, int bottomSize);
+HIMAGE  XImage_LoadFromImage(void *pImage);
+HIMAGE  XImage_LoadFromExtractIcon(const wchar_t *pImageName);
+HIMAGE  XImage_LoadFromHICON(HICON hIcon);
+HIMAGE  XImage_LoadFromHBITMAP(HBITMAP hBitmap);
+BOOL  XImage_IsStretch(HIMAGE hImage);   //是否拉伸图片
+BOOL  XImage_IsAdaptive(HIMAGE hImage);  //是否为自适应图片
+BOOL  XImage_IsTile(HIMAGE hImage);      //是否为平铺图片
+BOOL  XImage_SetDrawType(HIMAGE hImage, image_draw_type_ nType);//设置图片绘制类型
+BOOL  XImage_SetDrawTypeAdaptive(HIMAGE hImage, int leftSize, int topSize, int rightSize, int bottomSize);//设置图片自适应
+void  XImage_SetTranColor(HIMAGE hImage, COLORREF color); //设置透明色
+void  XImage_SetTranColorEx(HIMAGE hImage, COLORREF color, BYTE tranColor); //设置透明色
+float  XImage_SetRotateAngle(HIMAGE hImage, float  fAngle);
+void  XImage_SetSplitEqual(HIMAGE hImage, int nCount, int iIndex);
+void  XImage_EnableTranColor(HIMAGE hImage, BOOL bEnable); //启用透明色
+void  XImage_EnableAutoDestroy(HIMAGE hImage, BOOL bEnable); //启用或关闭自动销毁,当与UI元素关联时有效
+void  XImage_EnableCenter(HIMAGE hImage, BOOL bCenter); //bCenter
+BOOL  XImage_IsCenter(HIMAGE hImage);
+image_draw_type_  XImage_GetDrawType(HIMAGE hImage); //获取图片绘制类型
+int  XImage_GetWidth(HIMAGE hImage);
+int  XImage_GetHeight(HIMAGE hImage);
+HIMAGE  XImage_GetImageSrc(HIMAGE hImage);
+void  XImage_AddRef(HIMAGE hImage);
+void  XImage_Release(HIMAGE hImage);
+int   XImage_GetRefCount(HIMAGE hImage);
+void  XImage_Destroy(HIMAGE hImage);
+HELE  XLayout_Create(int x, int y, int cx, int cy, HXCGUI hParent);
+HELE  XLayout_CreateEx(HXCGUI hParent);
+BOOL  XLayout_IsEnableLayout(HELE hEle);
+void  XLayout_EnableLayout(HELE hEle, BOOL bEnable);
+void  XLayout_ShowLayoutFrame(HELE hEle, BOOL bEnable);
+int   XLayout_GetWidthIn(HELE hEle);
+int   XLayout_GetHeightIn(HELE hEle);
+void  XLayout_SetHorizon(HELE hEle, BOOL bHorizon);
+void  XLayout_SetAlignH(HELE hEle, layout_align_ nAlign);
+void  XLayout_SetAlignV(HELE hEle, layout_align_ nAlign);
+void  XLayout_SetSpace(HELE hEle, int nSpace);
+void  XLayout_SetPadding(HELE hEle, int left, int top, int right, int bottom);
+void  XLayout_GetLayoutPadding(HELE hEle, PaddingSize_i *pPadding);
+HELE  XListBox_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+void  XListBox_SetDrawItemBkFlags(HELE hEle, int nFlags);
+BOOL  XListBox_SetItemData(HELE hEle, int iItem, int nUserData);
+int   XListBox_GetItemData(HELE hEle, int iItem);
+BOOL  XListBox_SetItemInfo(HELE hEle, int iItem, in_ listBox_item_info_i *pItem);
+BOOL  XListBox_GetItemInfo(HELE hEle, int iItem, out_ listBox_item_info_i *pItem);
+void  XListBox_AddItemBkBorder(HELE hEle, list_item_state_ nState, COLORREF color, BYTE alpha, int width);
+void  XListBox_AddItemBkFill(HELE hEle, list_item_state_ nState, COLORREF color, BYTE alpha);
+void  XListBox_AddItemBkImage(HELE hEle, list_item_state_ nState, HIMAGE hImage);
+int   XListBox_GetItemBkInfoCount(HELE hEle);
+void  XListBox_ClearItemBkInfo(HELE hEle);
+BOOL  XListBox_SetSelectItem(HELE hEle, int iItem);
+int   XListBox_GetSelectItem(HELE hEle);
+BOOL  XListBox_CancelSelectItem(HELE hEle, int iItem);
+BOOL  XListBox_CancelSelectAll(HELE hEle);
+int   XListBox_GetSelectAll(HELE hEle, out_ int *pArray, int nArraySize);
+int   XListBox_GetSelectCount(HELE hEle);
+int   XListBox_GetItemMouseStay(HELE hEle);
+BOOL  XListBox_SelectAll(HELE hEle);
+void  XListBox_VisibleItem(HELE hEle, int iItem);
+void  XListBox_SetItemHeightDefault(HELE hEle, int nHeight, int nSelHeight);
+void  XListBox_GetItemHeightDefault(HELE hEle, out_ int *pHeight, out_ int *pSelHeight);
+int   XListBox_GetItemIndexFromHXCGUI(HELE hEle, HXCGUI hXCGUI);
+void  XListBox_SetRowSpace(HELE hEle, int nSpace);
+int   XListBox_GetRowSpace(HELE hEle);
+int   XListBox_HitTest(HELE hEle, POINT *pPt);
+int   XListBox_HitTestOffset(HELE hEle, POINT *pPt); //自动添加滚动视图偏移量
+BOOL  XListBox_SetItemTemplateXML(HELE hEle, const wchar_t* pXmlFile);
+BOOL  XListBox_SetItemTemplateXMLFromString(HELE hEle, const char* pStringXML);
+BOOL  XListBox_SetItemTemplate(HELE hEle, HTEMP hTemp);
+HXCGUI  XListBox_GetTemplateObject(HELE hEle, int iItem, int nTempItemID);
+void  XListBox_EnableMultiSel(HELE hEle, BOOL bEnable);
+HXCGUI  XListBox_CreateAdapter(HELE hEle);
+void    XListBox_BindAdapter(HELE hEle, HXCGUI hAdapter);
+HXCGUI  XListBox_GetAdapter(HELE hEle);
+void  XListBox_Sort(HELE hEle, int iColumnAdapter, BOOL bAscending);  //设置排序
+void  XListBox_RefreshData(HELE hEle);
+void  XListBox_RefreshItem(HELE hEle, int iItem);
+int  XListBox_AddItemText(HELE hEle, const wchar_t* pText);
+int  XListBox_AddItemTextEx(HELE hEle, const wchar_t* pName, const wchar_t* pText);
+int  XListBox_AddItemImage(HELE hEle, HIMAGE hImage);
+int  XListBox_AddItemImageEx(HELE hEle, const wchar_t* pName, HIMAGE hImage);
+int  XListBox_InsertItemText(HELE hEle, int iItem, const wchar_t* pValue);
+int  XListBox_InsertItemTextEx(HELE hEle, int iItem, const wchar_t* pName, const wchar_t* pValue);
+int  XListBox_InsertItemImage(HELE hEle, int iItem, HIMAGE hImage);
+int  XListBox_InsertItemImageEx(HELE hEle, int iItem, const wchar_t* pName, HIMAGE hImage);
+BOOL  XListBox_SetItemText(HELE hEle, int iItem, int iColumn, const wchar_t* pText);
+BOOL  XListBox_SetItemTextEx(HELE hEle, int iItem, const wchar_t* pName, const wchar_t* pText);
+BOOL  XListBox_SetItemImage(HELE hEle, int iItem, int iColumn, HIMAGE hImage);
+BOOL  XListBox_SetItemImageEx(HELE hEle, int iItem, const wchar_t* pName, HIMAGE hImage);
+BOOL  XListBox_SetItemInt(HELE hEle, int iItem, int iColumn, int nValue);
+BOOL  XListBox_SetItemIntEx(HELE hEle, int iItem, const wchar_t* pName, int nValue);
+BOOL  XListBox_SetItemFloat(HELE hEle, int iItem, int iColumn, float fFloat);
+BOOL  XListBox_SetItemFloatEx(HELE hEle, int iItem, const wchar_t* pName, float fFloat);
+BOOL  XListBox_GetItemText(HELE hEle, int iItem, int iColumn, out_ wchar_t* pOut, int nOutLen);
+BOOL  XListBox_GetItemTextEx(HELE hEle, int iItem, const wchar_t* pName, out_ wchar_t* pOut, int nOutLen);
+HIMAGE  XListBox_GetItemImage(HELE hEle, int iItem, int iColumn);
+HIMAGE  XListBox_GetItemImageEx(HELE hEle, int iItem, const wchar_t* pName);
+BOOL  XListBox_GetItemInt(HELE hEle, int iItem, int iColumn, int* pOutValue);
+BOOL  XListBox_GetItemIntEx(HELE hEle, int iItem, const wchar_t* pName, int* pOutValue);
+BOOL  XListBox_GetItemFloat(HELE hEle, int iItem, int iColumn, float* pOutValue);
+BOOL  XListBox_GetItemFloatEx(HELE hEle, int iItem, const wchar_t* pName, float* pOutValue);
+BOOL  XListBox_DeleteItem(HELE hEle, int iItem);
+BOOL  XListBox_DeleteItemEx(HELE hEle, int iItem, int nCount);
+void  XListBox_DeleteItemAll(HELE hEle);
+void  XListBox_DeleteColumnAll(HELE hEle);
+int   XListBox_GetCount_AD(HELE hEle);
+int   XListBox_GetCountColumn_AD(HELE hEle);
+HTEMP  XTemp_Load(listItemTemp_type_ nType, const wchar_t* pFileName);  //加载模板 返回模板对象
+HTEMP  XTemp_LoadZip(listItemTemp_type_ nType, const wchar_t* pZipFile, const wchar_t* pFileName, const wchar_t* pPassword = NULL);
+BOOL   XTemp_LoadEx(listItemTemp_type_ nType, const wchar_t* pFileName, out_ HTEMP *pOutTemp1, out_ HTEMP *pOutTemp2);
+BOOL   XTemp_LoadZipEx(listItemTemp_type_ nType, const wchar_t* pZipFile, const wchar_t* pFileName, const wchar_t* pPassword, out_ HTEMP *pOutTemp1, out_ HTEMP *pOutTemp2);
+HTEMP  XTemp_LoadFromString(listItemTemp_type_ nType, const char* pStringXML);  //加载模板,从内存, 返回模板对象
+BOOL   XTemp_LoadFromStringEx(listItemTemp_type_ nType, const char* pStringXML, out_ HTEMP *pOutTemp1, out_ HTEMP *pOutTemp2);
+listItemTemp_type_  XTemp_GetType(HTEMP hTemp);
+BOOL   XTemp_Destroy(HTEMP hTemp);
+HTEMP  XTemp_Create(listItemTemp_type_ nType);
+BOOL   XTemp_AddNodeRoot(HTEMP hTemp, void* pNode);
+BOOL   XTemp_AddNode(void* pParentNode, void* pNode);
+void*  XTemp_CreateNode(XC_OBJECT_TYPE nType);
+BOOL   XTemp_SetNodeAttribute(void* pNode, const wchar_t* pName, const wchar_t* pAttr);
+BOOL   XTemp_SetNodeAttributeEx(void* pNode, int itemID, const wchar_t* pName, const wchar_t* pAttr);
+void*  XTemp_List_GetNode(HTEMP hTemp, int index);
+void*  XTemp_GetNode(void* pNode, int itemID);
+void*  XTemp_CloneNode(void* pNode);
+HELE  XList_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+int  XList_AddColumn(HELE hEle, int width); //增加列
+int  XList_InsertColumn(HELE hEle, int width, int iItem);
+void  XList_EnableMultiSel(HELE hEle, BOOL bEnable);
+void  XList_EnableDragChangeColumnWidth(HELE hEle, BOOL bEnable);
+void  XList_EnableVScrollBarTop(HELE hEle, BOOL bTop);
+void  XList_EnableItemBkFullRow(HELE hEle, BOOL bFull);
+void  XList_SetSort(HELE hEle, int iColumn, int iColumnAdapter, BOOL bEnable);//设置排序
+void  XList_SetDrawItemBkFlags(HELE hEle, int style);
+void  XList_SetColumnWidth(HELE hEle, int iItem, int width);
+void  XList_SetColumnMinWidth(HELE hEle, int iItem, int width);
+void  XList_SetColumnWidthFixed(HELE hEle, int iColumn, BOOL bFixed);
+int   XList_GetColumnWidth(HELE hEle, int iColumn);  //获取列宽
+int   XList_GetColumnCount(HELE hEle);  //获取列数量
+BOOL  XList_DeleteColumn(HELE hEle, int iItem);
+void  XList_DeleteColumnAll(HELE hEle);
+BOOL  XList_SetItemData(HELE hEle, int iItem, int iSubItem, int data);
+int   XList_GetItemData(HELE hEle, int iItem, int iSubItem);
+BOOL  XList_SetSelectItem(HELE hEle, int iItem);
+int   XList_GetSelectItem(HELE hEle);
+int   XList_GetSelectItemCount(HELE hEle);
+void  XList_SetSelectAll(HELE hEle);
+int   XList_GetSelectAll(HELE hEle, out_ int *pArray, int nArraySize);
+void  XList_VisibleItem(HELE hEle, int iItem);
+BOOL  XList_CancelSelectItem(HELE hEle, int iItem);
+void  XList_CancelSelectAll(HELE hEle);
+HELE  XList_GetHeaderHELE(HELE hEle);
+void  XList_BindAdapter(HELE hEle, HXCGUI hAdapter);
+void  XList_BindAdapterHeader(HELE hEle, HXCGUI hAdapter);
+HXCGUI  XList_CreateAdapter(HELE hEle);
+HXCGUI  XList_CreateAdapterHeader(HELE hEle);
+HXCGUI  XList_GetAdapter(HELE hEle);
+HXCGUI  XList_GetAdapterHeader(HELE hEle);
+BOOL  XList_SetItemTemplateXML(HELE hEle, const wchar_t* pXmlFile);
+BOOL  XList_SetItemTemplateXMLFromString(HELE hEle, const char* pStringXML);
+BOOL  XList_SetItemTemplate(HELE hEle, HTEMP hTemp);
+HXCGUI  XList_GetTemplateObject(HELE hEle, int iItem, int iSubItem, int nTempItemID); //通过模板项ID,获取实例化模板项ID对应的对象.
+int     XList_GetItemIndexFromHXCGUI(HELE hEle, HXCGUI hXCGUI);
+HXCGUI  XList_GetHeaderTemplateObject(HELE hEle, int iItem, int nTempItemID);
+int     XList_GetHeaderItemIndexFromHXCGUI(HELE hEle, HXCGUI hXCGUI);
+void  XList_SetHeaderHeight(HELE hEle, int height);
+int   XList_GetHeaderHeight(HELE hEle);
+void  XList_GetVisibleRowRange(HELE hEle, out_ int *piStart, out_ int* piEnd);
+void  XList_AddItemBkBorder(HELE hEle, list_item_state_ nState, COLORREF color, BYTE alpha, int width);
+void  XList_AddItemBkFill(HELE hEle, list_item_state_ nState, COLORREF color, BYTE alpha);
+void  XList_AddItemBkImage(HELE hEle, list_item_state_ nState, HIMAGE hImage);
+int   XList_GetItemBkInfoCount(HELE hEle);
+void  XList_ClearItemBkInfo(HELE hEle);
+void  XList_SetItemHeightDefault(HELE hEle, int nHeight, int nSelHeight);
+void  XList_GetItemHeightDefault(HELE hEle, out_ int *pHeight, out_ int *pSelHeight);
+void  XList_SetRowSpace(HELE hEle, int nSpace);
+int   XList_GetRowSpace(HELE hEle);
+void  XList_SetLockColumnLeft(HELE hEle, int iColumn);
+void  XList_SetLockColumnRight(HELE hEle, int iColumn);
+void  XList_SetLockRowBottom(HELE hEle, BOOL bLock);
+BOOL  XList_HitTest(HELE hEle, POINT *pPt, out_ int *piItem, out_ int *piSubItem);
+BOOL  XList_HitTestOffset(HELE hEle, POINT *pPt, out_ int *piItem, out_ int *piSubItem);
+void  XList_RefreshData(HELE hEle);
+void  XList_RefreshItem(HELE hEle, int iItem);
+int  XList_AddColumnText(HELE hEle, int nWidth, const wchar_t* pText);
+int  XList_AddItemText(HELE hEle, const wchar_t* pText);
+int  XList_AddItemTextEx(HELE hEle, const wchar_t* pName, const wchar_t* pText);
+int  XList_AddItemImage(HELE hEle, HIMAGE hImage);
+int  XList_AddItemImageEx(HELE hEle, const wchar_t* pName, HIMAGE hImage);
+int  XList_InsertItemText(HELE hEle, int iItem, const wchar_t* pValue);
+int  XList_InsertItemTextEx(HELE hEle, int iItem, const wchar_t* pName, const wchar_t* pValue);
+int  XList_InsertItemImage(HELE hEle, int iItem, HIMAGE hImage);
+int  XList_InsertItemImageEx(HELE hEle, int iItem, const wchar_t* pName, HIMAGE hImage);
+BOOL  XList_SetItemText(HELE hEle, int iItem, int iColumn, const wchar_t* pText);
+BOOL  XList_SetItemTextEx(HELE hEle, int iItem, const wchar_t* pName, const wchar_t* pText);
+BOOL  XList_SetItemImage(HELE hEle, int iItem, int iColumn, HIMAGE hImage);
+BOOL  XList_SetItemImageEx(HELE hEle, int iItem, const wchar_t* pName, HIMAGE hImage);
+BOOL  XList_SetItemInt(HELE hEle, int iItem, int iColumn, int nValue);
+BOOL  XList_SetItemIntEx(HELE hEle, int iItem, const wchar_t* pName, int nValue);
+BOOL  XList_SetItemFloat(HELE hEle, int iItem, int iColumn, float fFloat);
+BOOL  XList_SetItemFloatEx(HELE hEle, int iItem, const wchar_t* pName, float fFloat);
+BOOL  XList_GetItemText(HELE hEle, int iItem, int iColumn, out_ wchar_t* pOut, int nOutLen);
+BOOL  XList_GetItemTextEx(HELE hEle, int iItem, const wchar_t* pName, out_ wchar_t* pOut, int nOutLen);
+HIMAGE  XList_GetItemImage(HELE hEle, int iItem, int iColumn);
+HIMAGE  XList_GetItemImageEx(HELE hEle, int iItem, const wchar_t* pName);
+BOOL  XList_GetItemInt(HELE hEle, int iItem, int iColumn, int* pOutValue);
+BOOL  XList_GetItemIntEx(HELE hEle, int iItem, const wchar_t* pName, int* pOutValue);
+BOOL  XList_GetItemFloat(HELE hEle, int iItem, int iColumn, float* pOutValue);
+BOOL  XList_GetItemFloatEx(HELE hEle, int iItem, const wchar_t* pName, float* pOutValue);
+BOOL  XList_DeleteItem(HELE hEle, int iItem);
+BOOL  XList_DeleteItemEx(HELE hEle, int iItem, int nCount);
+void  XList_DeleteItemAll(HELE hEle);
+void  XList_DeleteColumnAll_AD(HELE hEle);
+int  XList_GetCount_AD(HELE hEle);
+int  XList_GetCountColumn_AD(HELE hEle);
+HELE  XListView_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+HXCGUI  XListView_CreateAdapter(HELE hEle);
+void    XListView_BindAdapter(HELE hEle, HXCGUI hAdapter);
+HXCGUI  XListView_GetAdapter(HELE hEle);
+BOOL  XListView_SetItemTemplateXML(HELE hEle, const wchar_t* pXmlFile);
+BOOL  XListView_SetItemTemplateXMLFromString(HELE hEle, const char* pStringXML);
+BOOL  XListView_SetItemTemplate(HELE hEle, HTEMP hTemp);
+HXCGUI  XListView_GetTemplateObject(HELE hEle, int iGroup, int iItem, int nTempItemID);
+HXCGUI  XListView_GetTemplateObjectGroup(HELE hEle, int iGroup, int nTempItemID);
+BOOL  XListView_GetItemIDFromHXCGUI(HELE hEle, HXCGUI hXCGUI, out_ int* piGroup, out_ int* piItem);
+BOOL  XListView_HitTest(HELE hEle, in_ POINT* pPt, out_ int* pOutGroup, out_ int* pOutItem);
+int   XListView_HitTestOffset(HELE hEle, in_ POINT *pPt, out_ int* pOutGroup, out_ int* pOutItem); //自动添加滚动视图偏移量
+void  XListView_EnableMultiSel(HELE hEle, BOOL bEnable);
+void  XListView_SetDrawItemBkFlags(HELE hEle, int nFlags);
+BOOL  XListView_SetSelectItem(HELE hEle, int iGroup, int iItem);
+BOOL  XListView_GetSelectItem(HELE hEle, int *piGroup, int *piItem);
+void  XListView_VisibleItem(HELE hEle, int iGroup, int iItem);
+int   XListView_GetSelectItemCount(HELE hEle);
+int   XListView_GetSelectItemAll(HELE hEle, out_ listView_item_id_i *pArray, int nArraySize);
+void  XListView_SetSelectItemAll(HELE hEle);
+void  XListView_CancelSelectItemAll(HELE hEle);
+void  XListView_SetColumnSpace(HELE hEle, int space); //设置列间隔
+void  XListView_SetRowSpace(HELE hEle, int space); //设置行间隔
+void  XListView_SetAlignSizeLeft(HELE hEle, int size);
+void  XListView_SetAlignSizeTop(HELE hEle, int size);
+void  XListView_SetItemSize(HELE hEle, int width, int height);
+void  XListView_GetItemSize(HELE hEle, SIZE* pSize);
+void  XListView_SetGroupHeight(HELE hEle, int height);
+int   XListView_GetGroupHeight(HELE hEle);
+void  XListView_SetGroupUserData(HELE hEle, int iGroup, int nData);
+void  XListView_SetItemUserData(HELE hEle, int iGroup, int iItem, int nData);
+int  XListView_GetGroupUserData(HELE hEle, int iGroup);
+int  XListView_GetItemUserData(HELE hEle, int iGroup, int iItem);
+void  XListView_AddItemBkBorder(HELE hEle, list_item_state_ nState, COLORREF color, BYTE alpha, int width);
+void  XListView_AddItemBkFill(HELE hEle, list_item_state_ nState, COLORREF color, BYTE alpha);
+void  XListView_AddItemBkImage(HELE hEle, list_item_state_ nState, HIMAGE hImage);
+int   XListView_GetItemBkInfoCount(HELE hEle);
+void  XListView_ClearItemBkInfo(HELE hEle);
+void  XListView_RefreshData(HELE hEle);
+void  XListView_RefreshItem(HELE hEle, int iGroup, int iItem);
+BOOL  XListView_ExpandGroup(HELE hEle, int iGroup, BOOL bExpand);
+int   XListView_Group_AddColumn(HELE hEle, const wchar_t *pName);
+int   XListView_Group_AddItemText(HELE hEle, const wchar_t *pValue);
+int   XListView_Group_AddItemTextEx(HELE hEle, const wchar_t* pName, const wchar_t *pValue);
+int   XListView_Group_AddItemImage(HELE hEle, HIMAGE hImage);
+int   XListView_Group_AddItemImageEx(HELE hEle, const wchar_t* pName, HIMAGE hImage);
+BOOL  XListView_Group_SetText(HELE hEle, int iGroup, int iColumn, const wchar_t *pValue);
+BOOL  XListView_Group_SetTextEx(HELE hEle, int iGroup, const wchar_t *pName, const wchar_t *pValue);
+BOOL  XListView_Group_SetImage(HELE hEle, int iGroup, int iColumn, HIMAGE hImage);
+BOOL  XListView_Group_SetImageEx(HELE hEle, int iGroup, const wchar_t *pName, HIMAGE hImage);
+int   XListView_Group_GetCount(HELE hEle);
+int   XListView_Item_GetCount(HELE hEle, int iGroup);
+int   XListView_Item_AddColumn(HELE hEle, const wchar_t *pName);  //增加列
+int   XListView_Item_AddItemText(HELE hEle, int iGroup, const wchar_t *pValue);
+int   XListView_Item_AddItemTextEx(HELE hEle, int iGroup, const wchar_t *pName, const wchar_t *pValue);
+int   XListView_Item_AddItemImage(HELE hEle, int iGroup, HIMAGE hImage);
+int   XListView_Item_AddItemImageEx(HELE hEle, int iGroup, const wchar_t *pName, HIMAGE hImage);
+BOOL  XListView_Item_SetText(HELE hEle, int iGroup, int iItem, int iColumn, const wchar_t* pValue);
+BOOL  XListView_Item_SetTextEx(HELE hEle, int iGroup, int iItem, const wchar_t *pName, const wchar_t* pValue);
+BOOL  XListView_Item_SetImage(HELE hEle, int iGroup, int iItem, int iColumn, HIMAGE hImage);
+BOOL  XListView_Item_SetImageEx(HELE hEle, int iGroup, int iItem, const wchar_t *pName, HIMAGE hImage);
+BOOL  XListView_Group_DeleteItem(HELE hEle, int iGroup);
+void  XListView_Group_DeleteAllChildItem(HELE hEle, int iGroup);
+BOOL  XListView_Item_DeleteItem(HELE hEle, int iGroup, int iItem);
+void  XListView_DeleteAll(HELE hEle);
+void  XListView_DeleteAllGroup(HELE hEle);
+void  XListView_DeleteAllItem(HELE hEle);
+void  XListView_DeleteColumnGroup(HELE hEle, int iColumn);
+void  XListView_DeleteColumnItem(HELE hEle, int iColumn);
+BOOL  XListView_Item_GetTextEx(HELE hEle, int iGroup, int iItem, const wchar_t* pName, out_ wchar_t* pOut, int nOutLen);
+HIMAGE  XListView_Item_GetImageEx(HELE hEle, int iGroup, int iItem, const wchar_t* pName);
+HELE  XMenuBar_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+int   XMenuBar_AddButton(HELE hEle, const wchar_t *pText);     //增加弹出菜单按钮
+void  XMenuBar_SetButtonHeight(HELE hEle, int height);
+HMENUX  XMenuBar_GetMenu(HELE hEle, int nIndex);
+BOOL  XMenuBar_DeleteButton(HELE hEle, int nIndex); //删除菜单项并且销毁,同时该按钮下的弹出菜单也被销毁
+HMENUX  XMenu_Create();
+void  XMenu_AddItem(HMENUX hMenu, int nID, const wchar_t *pText, int parentId = XC_ID_ROOT, int nFlags = 0); //添加菜单项
+void  XMenu_AddItemIcon(HMENUX hMenu, int nID, const wchar_t *pText, int nParentID, HIMAGE hImage, int nFlags = 0);
+void  XMenu_InsertItem(HMENUX hMenu, int nID, const wchar_t *pText, int nFlags, int insertID);
+void  XMenu_InsertItemIcon(HMENUX hMenu, int nID, const wchar_t *pText, HIMAGE hIcon, int nFlags, int insertID);
+int   XMenu_GetFirstChildItem(HMENUX hMenu, int nID);
+int   XMenu_GetEndChildItem(HMENUX hMenu, int nID);
+int   XMenu_GetPrevSiblingItem(HMENUX hMenu, int nID);
+int   XMenu_GetNextSiblingItem(HMENUX hMenu, int nID);
+int   XMenu_GetParentItem(HMENUX hMenu, int nID);
+void  XMenu_SetAutoDestroy(HMENUX hMenu, BOOL bAuto); //是否自动销毁对象,默认弹出菜单关闭后自动销毁
+void  XMenu_EnableDrawBackground(HMENUX hMenu, BOOL bEnable); //是否有用户绘制菜单背景
+void  XMenu_EnableDrawItem(HMENUX hMenu, BOOL bEnable);
+BOOL  XMenu_Popup(HMENUX hMenu, HWND hParentWnd, int x, int y, HELE hParentEle = NULL, menu_popup_position_ nPosition = menu_popup_position_left_top); //弹出菜单
+void  XMenu_DestroyMenu(HMENUX hMenu);
+void  XMenu_CloseMenu(HMENUX hMenu);
+void  XMenu_SetBkImage(HMENUX hMenu, HIMAGE hImage);
+BOOL  XMenu_SetItemText(HMENUX hMenu, int nID, const wchar_t *pText); //设置项文本
+BOOL  XMenu_GetItemText(HMENUX hMenu, int nID, out_ wchar_t *pOut, int nOutLen);
+int   XMenu_GetItemTextLength(HMENUX hMenu, int nID);
+BOOL  XMenu_SetItemIcon(HMENUX hMenu, int nID, HIMAGE hIcon);
+BOOL  XMenu_SetItemFlags(HMENUX hMenu, int nID, int uFlags);   //设置项属性
+void  XMenu_SetItemHeight(HMENUX hMenu, int height); //设置菜单项高度
+int   XMenu_GetItemHeight(HMENUX hMenu);
+void  XMenu_SetBorderColor(HMENUX hMenu, COLORREF crColor, BYTE alpha = 255);
+void  XMenu_SetBorderSize(HMENUX hMenu, int nLeft, int nTop, int nRight, int nBottom);
+int   XMenu_GetLeftWidth(HMENUX hMenu); //获取左侧宽度
+int   XMenu_GetLeftSpaceText(HMENUX hMenu);  //获取菜单项文本左间隔
+int   XMenu_GetItemCount(HMENUX hMenu); //获取菜单项数量,包含子菜单项
+BOOL  XMenu_SetItemCheck(HMENUX hMenu, int nID, BOOL bCheck);
+BOOL  XMenu_IsItemCheck(HMENUX hMenu, int nID);
+HWINDOW  XModalWnd_Create(int nWidth, int nHeight, const wchar_t *pTitle, HWND hWndParent, int XCStyle = xc_window_style_modal);
+HWINDOW  XModalWnd_CreateEx(DWORD dwExStyle, const wchar_t* lpClassName, const wchar_t* lpWindowName, DWORD dwStyle, int x, int y, int cx, int cy, HWND hWndParent, int XCStyle = xc_window_style_modal);  //创建窗口
+void  XModalWnd_EnableAutoClose(HWINDOW hWindow, BOOL bEnable);
+void  XModalWnd_EnableEscClose(HWINDOW hWindow, BOOL bEnable);
+int   XModalWnd_DoModal(HWINDOW hWindow);     //启动模态窗口
+void  XModalWnd_EndModal(HWINDOW hWindow, int nResult); //终止
+HELE  XPane_Create(const wchar_t *pName, int nWidth, int nHeight, HWINDOW hFrameWnd = NULL);
+void  XPane_SetView(HELE hEle, HELE hView);
+BOOL  XPane_IsShowPane(HELE hEle); //判断窗格是否隐藏
+void  XPane_SetSize(HELE hEle, int nWidth, int nHeight);
+pane_state_  XPane_GetState(HELE hEle);
+void  XPane_GetViewRect(HELE hEle, out_ RECT* pRect);
+void  XPane_SetTitle(HELE hEle, wchar_t* pTitle);
+void  XPane_GetTitle(HELE hEle, out_ wchar_t* pOut, int nOutLen);
+void  XPane_SetCaptionHeight(HELE hEle, int nHeight);
+int   XPane_GetCaptionHeight(HELE hEle);
+void   XPane_HidePane(HELE hEle);     //隐藏窗格
+void   XPane_ShowPane(HELE hEle);     //隐藏-显示窗格
+void   XPane_DockPane(HELE hEle);      //停靠窗格,自动隐藏
+void   XPane_LockPane(HELE hEle);      //锁定窗格
+void   XPane_FloatPane(HELE hEle);     //弹出窗格,当在码头上
+BOOL  XFloatWnd_EnableCaptionContent(HWINDOW hWindow, BOOL bEnable);
+HXCGUI  XFloatWnd_GetCaptionLayout(HWINDOW hWindow);
+HXCGUI  XFloatWnd_GetCaptionShapeText(HWINDOW hWindow);
+HELE    XFloatWnd_GetCaptionButtonClose(HWINDOW hWindow);
+void   XFloatWnd_SetTitle(HWINDOW hWindow, const wchar_t*  pTitle);
+void   XFloatWnd_GetTitle(HWINDOW hWindow, out_ wchar_t*  pOut, int nOutLen);
+HELE  XProgBar_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+void  XProgBar_SetRange(HELE hEle, int range);
+int   XProgBar_GetRange(HELE hEle);
+void  XProgBar_SetSpaceTwo(HELE hEle, int leftSize, int rightSize);
+void  XProgBar_SetPos(HELE hEle, int pos);
+int   XProgBar_GetPos(HELE hEle);
+void  XProgBar_SetHorizon(HELE hEle, BOOL bHorizon);
+void  XProgBar_SetImageLoad(HELE hEle, HIMAGE hImage);
+HELE  XPGrid_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+int   XPGrid_AddItem(HELE hEle, const wchar_t *pName, propertyGrid_item_type_ nType, int nParentID = XC_ID_ROOT); //添加项
+int   XPGrid_AddItemString(HELE hEle, const wchar_t *pName, const wchar_t *pValue, int nParentID = XC_ID_ROOT);
+int   XPGrid_AddItemEle(HELE hEle, HELE hElePanel, int nParentID = XC_ID_ROOT);
+void  XPGrid_DeleteAll(HELE hEle);
+HELE  XPGrid_GetItemHELE(HELE hEle, int nItemID);
+void  XPGrid_SetWidth(HELE hEle, int nWidth);
+BOOL  XPGrid_SetItemValue(HELE hEle, int nItemID, const wchar_t* pValue);
+BOOL  XPGrid_SetItemValueInt(HELE hEle, int nItemID, int nValue);
+BOOL  XPGrid_SetItemData(HELE hEle, int nItemID, int nUserData);
+int   XPGrid_GetItemData(HELE hEle, int nItemID);
+const wchar_t*  XPGrid_GetItemValue(HELE hEle, int nItemID);
+int   XPGrid_HitTest(HELE hEle, POINT *pPt, BOOL *pbExpandButton);
+int   XPGrid_HitTestOffset(HELE hEle, POINT *pPt, BOOL *pbExpandButton);
+BOOL  XPGrid_ExpandItem(HELE hEle, int nItemID, BOOL bExpand);//展开项
+int   XPGrid_GetSelItem(HELE hEle);
+BOOL  XPGrid_SetSelItem(HELE hEle, int nItemID);
+void  XPGrid_SetDrawItemBkFlags(HELE hEle, int nFlags);
+void    XRes_EnableDelayLoad(BOOL bEnable);
+void    XRes_SetLoadFileCallback(funLoadFile pFun);
+int     XRes_GetIDValue(const wchar_t *pName);  //获取资源ID值
+HIMAGE  XRes_GetImage(const wchar_t *pName);  //获取资源图片
+HIMAGE  XRes_GetImageEx(const wchar_t *pFileName, const wchar_t *pName); //获取资源图片
+COLORREF  XRes_GetColor(const wchar_t *pName);  //获取资源颜色
+HFONTX    XRes_GetFont(const wchar_t *pName);  //获取资源字体
+HBKM      XRes_GetBkM(const wchar_t *pName);  //获取资源背景信息
+HELE  XRichEditColor_Create(int x, int y, int cx, int cy, HXCGUI hParent);
+void  XRichEditColor_SetColor(HELE hEle, COLORREF color);//设置颜色
+COLORREF  XRichEditColor_GetColor(HELE hEle); //获取颜色RGB值
+HELE  XRichEditSet_Create(int x, int y, int cx, int cy, HXCGUI hParent);
+HELE  XRichEditFile_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+void  XRichEditFile_SetOpenFileType(HELE hEle, const wchar_t *pType); //设置打开文件类型
+void  XRichEditFile_SetDefaultFile(HELE hEle, const wchar_t *pFile); //设置默认目录文件
+void  XRichEditFile_SetRelativeDir(HELE hEle, const wchar_t *pDir); //TODO:设置相对路径
+HELE  XRichEditFolder_Create(int x, int y, int cx, int cy, HXCGUI hParent);
+void  XRichEditFolder_SetDefaultDir(HELE hEle, const wchar_t* pDir);  //设置默认目录
+HELE  XRichEdit_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+void  XRichEdit_InsertString(HELE hEle, const wchar_t *pString, HFONTX hFont = NULL);
+BOOL  XRichEdit_InsertImage(HELE hEle, HIMAGE hImage, const wchar_t *pImagePath);
+BOOL  XRichEdit_InsertGif(HELE hEle, HIMAGE hImage, const wchar_t *pImagePath);
+void  XRichEdit_InsertStringEx(HELE hEle, int iRow, int iColumn, const wchar_t *pString, HFONTX hFont = NULL);
+BOOL  XRichEdit_InsertImageEx(HELE hEle, int iRow, int iColumn, HIMAGE hImage, const wchar_t *pImagePath);
+BOOL  XRichEdit_InsertGifEx(HELE hEle, int iRow, int iColumn, HIMAGE hImage, const wchar_t *pImagePath);
+void  XRichEdit_EnableReadOnly(HELE hEle, BOOL bEnable);
+void  XRichEdit_EnableMultiLine(HELE hEle, BOOL bEnable);
+void  XRichEdit_EnablePassword(HELE hEle, BOOL bEnable);
+void  XRichEdit_EnableEvent_XE_RICHEDIT_CHANGE(HELE hEle, BOOL bEnable);
+void  XRichEdit_EnableAutoWrap(HELE hEle, BOOL bEnable);
+void  XRichEdit_EnableAutoSelAll(HELE hEle, BOOL bEnable);
+void  XRichEdit_EnableVerticalCenter(HELE hEle, BOOL bEnable);
+BOOL  XRichEdit_IsEmpty(HELE hEle);
+BOOL  XRichEdit_IsReadOnly(HELE hEle);
+BOOL  XRichEdit_IsMultiLine(HELE hEle);
+BOOL  XRichEdit_IsPassword(HELE hEle);
+BOOL  XRichEdit_IsAutoWrap(HELE hEle);
+void  XRichEdit_SetLimitNum(HELE hEle, int nNumber);
+void  XRichEdit_SetCaretColor(HELE hEle, COLORREF  color);
+void  XRichEdit_SetText(HELE hEle, const wchar_t* pString);
+void  XRichEdit_SetTextInt(HELE hEle, int nVaule);
+int   XRichEdit_GetText(HELE hEle, out_ wchar_t* pOut, int len);
+void   XRichEdit_GetHTMLFormat(HELE hEle, out_ wchar_t* pOut, int len);  //获取HTML格式内容
+void*  XRichEdit_GetData(HELE hEle, out_ int *pDataSize = NULL);
+BOOL   XRichEdit_InsertData(HELE hEle, void *pData, int iRow, int iColumn);
+int   XRichEdit_GetTextLength(HELE hEle);
+void  XRichEdit_SetRowHeight(HELE hEle, UINT nHeight); //设置默认行高
+void  XRichEdit_SetDefaultText(HELE hEle, const wchar_t*  pString);
+void  XRichEdit_SetDefaultTextColor(HELE hEle, COLORREF color, BYTE alpha);
+void  XRichEdit_SetCurrentInputTextColor(HELE hEle, COLORREF color, BYTE alpha);
+int   XRichEdit_GetCurrentRow(HELE hEle);
+int   XRichEdit_GetCurrentColumn(HELE hEle);
+void  XRichEdit_SetCurrentPos(HELE hEle, int iRow, int iColumn);
+int  XRichEdit_GetRowCount(HELE hEle);
+int  XRichEdit_GetRowLength(HELE hEle, int iRow);
+int  XRichEdit_GetRowHeight(HELE hEle, int iRow);
+int  XRichEdit_GetSelectText(HELE hEle, out_ wchar_t* pOut, int len);
+BOOL  XRichEdit_GetSelectPosition(HELE hEle, out_ Position_i *pBegin, out_ Position_i *pEnd);
+BOOL  XRichEdit_SetSelect(HELE hEle, int iStartRow, int iStartCol, int iEndRow, int iEndCol);
+BOOL  XRichEdit_SetItemFontEx(HELE hEle, int beginRow, int beginColumn, int endRow, int endColumn, HFONTX hFont);
+BOOL  XRichEdit_SetItemColorEx(HELE hEle, int beginRow, int beginColumn, int endRow, int endColumn, COLORREF color, BYTE alpha = 255);
+void  XRichEdit_CancelSelect(HELE hEle);
+void  XRichEdit_SetSelectBkColor(HELE hEle, COLORREF color, BYTE alpha = 255);
+void  XRichEdit_SetPasswordCharacter(HELE hEle, wchar_t  ch);
+BOOL  XRichEdit_SelectAll(HELE hEle);    //选择所有内容
+BOOL  XRichEdit_DeleteSelect(HELE hEle); //删除选择内容
+void  XRichEdit_DeleteAll(HELE hEle);    //删除所有
+BOOL  XRichEdit_ClipboardCut(HELE hEle);      //剪切
+BOOL  XRichEdit_ClipboardCopy(HELE hEle);     //复制 选择的内容
+BOOL  XRichEdit_ClipboardPaste(HELE hEle);    //粘贴 粘贴剪贴板内容
+HELE  XSBar_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+void  XSBar_SetRange(HELE hEle, int range);
+int   XSBar_GetRange(HELE hEle);
+void   XSBar_ShowButton(HELE hEle, BOOL bShow);
+void  XSBar_SetSliderLength(HELE hEle, int length); //设置滑块长度
+void  XSBar_SetSliderMinLength(HELE hEle, int minLength); //设置滑块最小长度
+void  XSBar_SetSliderPadding(HELE hEle, int nPadding);
+BOOL  XSBar_SetHorizon(HELE hEle, BOOL bHorizon);  //水平显示或垂直
+int   XSBar_GetSliderMaxLength(HELE hEle);
+BOOL  XSBar_ScrollUp(HELE hEle);       //向左滚动
+BOOL  XSBar_ScrollDown(HELE hEle);     //向右滚动
+BOOL  XSBar_ScrollTop(HELE hEle);      //滚动到顶部
+BOOL  XSBar_ScrollBottom(HELE hEle);   //滚动到底部
+BOOL  XSBar_ScrollPos(HELE hEle, int pos); //滚动到指定点
+HELE  XSBar_GetButtonUp(HELE hEle);
+HELE  XSBar_GetButtonDown(HELE hEle);
+HELE  XSBar_GetButtonSlider(HELE hEle);
+HELE  XSView_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+BOOL  XSView_SetTotalSize(HELE hEle, int cx, int cy); //设置视图内容总大小(不包含边框间隔)
+void  XSView_GetTotalSize(HELE hEle, SIZE *pSize);  //获取设置的内容大小
+BOOL  XSView_SetLineSize(HELE hEle, int nWidth, int nHeight);
+void  XSView_GetLineSize(HELE hEle, out_ SIZE *pSize);
+void  XSView_SetScrollBarSize(HELE hEle, int size); //设置滚动条大小
+int   XSView_GetViewPosH(HELE hEle);   //获取视口原点X坐标
+int   XSView_GetViewPosV(HELE hEle);   //获取视口原点Y坐标
+int   XSView_GetViewWidth(HELE hEle);
+int   XSView_GetViewHeight(HELE hEle);
+void  XSView_GetViewRect(HELE hEle, out_ RECT *pRect); //获取视口坐标(不含边框间隔),left为视口左间隔大小,top为视口上间隔大小,非(0,0).
+HELE  XSView_GetScrollBarH(HELE hEle); //获取水平滚动条
+HELE  XSView_GetScrollBarV(HELE hEle); //获取垂直滚动条
+void  XSView_SetBorderSize(HELE hEle, int left, int top, int right, int bottom);
+void  XSView_GetBorderSize(HELE hEle, out_ BorderSize_i* pBorder);
+BOOL  XSView_ScrollPosH(HELE hEle, int pos); //滚动到指定点
+BOOL  XSView_ScrollPosV(HELE hEle, int pos); //滚动到指定点
+BOOL  XSView_ScrollPosXH(HELE hEle, int posX); //滚动到指定坐标
+BOOL  XSView_ScrollPosYV(HELE hEle, int posY); //滚动到指定坐标
+void  XSView_ShowSBarH(HELE hEle, BOOL bShow); //启用水平滚动条
+void  XSView_ShowSBarV(HELE hEle, BOOL bShow); //启用垂直滚动条
+void  XSView_EnableAutoShowScrollBar(HELE hEle, BOOL bEnable);
+BOOL  XSView_ScrollLeftLine(HELE hEle);    //向左滚动
+BOOL  XSView_ScrollRightLine(HELE hEle);   //向右滚动
+BOOL  XSView_ScrollTopLine(HELE hEle);     //向上滚动
+BOOL  XSView_ScrollBottomLine(HELE hEle);    //向下滚动
+BOOL  XSView_ScrollLeft(HELE hEle);    //水平滚动到左侧
+BOOL  XSView_ScrollRight(HELE hEle);   //水平滚动到右侧
+BOOL  XSView_ScrollTop(HELE hEle);     //滚动到顶部
+BOOL  XSView_ScrollBottom(HELE hEle);  //滚动到底部
+HELE  XShape_GetParentEle(HXCGUI hShape);
+HWINDOW  XShape_GetHWINDOW(HXCGUI hShape);
+HXCGUI   XShape_GetParent(HXCGUI hShape);
+void   XShape_RemoveShape(HXCGUI hShape);
+void  XShape_SetID(HXCGUI hShape, int nID);
+int   XShape_GetID(HXCGUI hShape);
+void  XShape_SetUID(HXCGUI hShape, int nUID);
+int   XShape_GetUID(HXCGUI hShape);
+void  XShape_SetName(HXCGUI hShape, const wchar_t* pName);
+const wchar_t*  XShape_GetName(HXCGUI hShape);
+int   XShape_GetZOrder(HXCGUI hShape);
+void  XShape_Redraw(HXCGUI hShape);
+int   XShape_GetWidth(HXCGUI hShape);
+int   XShape_GetHeight(HXCGUI hShape);
+void  XShape_GetRect(HXCGUI hShape, out_ RECT* pRect);
+void  XShape_SetRect(HXCGUI hShape, in_  RECT* pRect);
+void  XShape_GetWndClientRect(HXCGUI hShape, out_ RECT *pRect);
+void  XShape_GetContentSize(HXCGUI hShape, out_ SIZE* pSize);//获取内容大小
+void  XShape_ShowLayout(HXCGUI hShape, BOOL bShow);
+void  XShape_AdjustLayout(HXCGUI hShape);
+void  XShape_Destroy(HXCGUI hShape);
+HXCGUI  XShapeText_Create(int x, int y, int cx, int cy, const wchar_t *pName, HXCGUI hParent = NULL);
+void   XShapeText_SetText(HXCGUI hTextBlock, const wchar_t *pName);
+void   XShapeText_GetText(HXCGUI hTextBlock, out_ wchar_t *pOut, int nOutLen);
+int    XShapeText_GetTextLength(HXCGUI hTextBlock);
+void   XShapeText_SetFont(HXCGUI hTextBlock, HFONTX hFontx);
+HFONTX  XShapeText_GetFont(HXCGUI hTextBlock);
+void  XShapeText_SetTextColor(HXCGUI hTextBlock, COLORREF color, BYTE alpha);
+COLORREF  XShapeText_GetTextColor(HXCGUI hTextBlock);
+void  XShapeText_SetTextAlign(HXCGUI hTextBlock, int align);
+void  XShapeText_SetOffset(HXCGUI hTextBlock, int x, int y);
+void  XShapeText_SetLayoutWidth(HXCGUI hTextBlock, layout_size_type_ nType, int width);
+void  XShapeText_SetLayoutHeight(HXCGUI hTextBlock, layout_size_type_ nType, int height);
+void  XShapeText_GetLayoutWidth(HXCGUI hTextBlock, out_ layout_size_type_ *pType, out_ int *pWidth);
+void  XShapeText_GetLayoutHeight(HXCGUI hTextBlock, out_ layout_size_type_ *pType, out_ int *pHeight);
+void  XShapeText_EnableCSS(HXCGUI hTextBlock, BOOL bEnable);
+void  XShapeText_SetCssName(HXCGUI hTextBlock, const wchar_t* pName);
+const wchar_t*  XShapeText_GetCssName(HXCGUI hTextBlock);
+HXCGUI  XShapePic_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+void    XShapePic_SetImage(HXCGUI hShape, HIMAGE hImage);
+HIMAGE  XShapePic_GetImage(HXCGUI hShape);
+void  XShapePic_SetLayoutWidth(HXCGUI hShape, layout_size_type_ nType, int width);
+void  XShapePic_SetLayoutHeight(HXCGUI hShape, layout_size_type_ nType, int height);
+void  XShapePic_GetLayoutWidth(HXCGUI hShape, out_ layout_size_type_ *pType, out_ int *pWidth);
+void  XShapePic_GetLayoutHeight(HXCGUI hShape, out_ layout_size_type_ *pType, out_ int *pHeight);
+HXCGUI  XShapeGif_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+void    XShapeGif_SetImage(HXCGUI hShape, HIMAGE hImage);
+HIMAGE  XShapeGif_GetImage(HXCGUI hShape);
+void  XShapeGif_SetLayoutWidth(HXCGUI hShape, layout_size_type_ nType, int width);
+void  XShapeGif_SetLayoutHeight(HXCGUI hShape, layout_size_type_ nType, int height);
+void  XShapeGif_GetLayoutWidth(HXCGUI hShape, out_ layout_size_type_ *pType, out_ int *pWidth);
+void  XShapeGif_GetLayoutHeight(HXCGUI hShape, out_ layout_size_type_ *pType, out_ int *pHeight);
+HXCGUI  XShapeRect_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+void  XShapeRect_SetBorderColor(HXCGUI hShape, COLORREF color, BYTE alpha = 255);
+void  XShapeRect_SetFillColor(HXCGUI hShape, COLORREF color, BYTE alpha = 255);
+void  XShapeRect_SetRoundAngle(HXCGUI hShape, int nWidth, int nHeight);
+void  XShapeRect_GetRoundAngle(HXCGUI hShape, out_ int *pWidth, out_ int *pHeight);
+void  XShapeRect_EnableBorder(HXCGUI hShape, BOOL bEnable);
+void  XShapeRect_EnableFill(HXCGUI hShape, BOOL bEnable);
+void  XShapeRect_EnableRoundAngle(HXCGUI hShape, BOOL bEnable);
+HXCGUI  XShapeEllipse_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+void  XShapeEllipse_SetBorderColor(HXCGUI hShape, COLORREF color, BYTE alpha = 255);
+void  XShapeEllipse_SetFillColor(HXCGUI hShape, COLORREF color, BYTE alpha = 255);
+void  XShapeEllipse_EnableBorder(HXCGUI hShape, BOOL bEnable);
+void  XShapeEllipse_EnableFill(HXCGUI hShape, BOOL bEnable);
+HXCGUI  XShapeGroupBox_Create(int x, int y, int cx, int cy, const wchar_t* pName, HXCGUI hParent = NULL);
+void  XShapeGroupBox_SetBorderColor(HXCGUI hShape, COLORREF color, BYTE alpha = 255);
+void  XShapeGroupBox_SetTextColor(HXCGUI hShape, COLORREF color, BYTE alpha = 255);
+void  XShapeGroupBox_SetFontX(HXCGUI hShape, HFONTX hFontX);
+void  XShapeGroupBox_SetTextOffset(HXCGUI hShape, int offsetX, int offsetY);
+void  XShapeGroupBox_SetRoundAngle(HXCGUI hShape, int nWidth, int nHeight);
+void  XShapeGroupBox_SetText(HXCGUI hShape, const wchar_t* pText);
+void  XShapeGroupBox_GetTextOffset(HXCGUI hShape, out_ int *pOffsetX, out_ int *pOffsetY);
+void  XShapeGroupBox_GetRoundAngle(HXCGUI hShape, out_ int *pWidth, out_ int *pHeight);
+void  XShapeGroupBox_EnableRoundAngle(HXCGUI hShape, BOOL bEnable);
+HXCGUI  XShapeLine_Create(int x1, int y1, int x2, int y2, HXCGUI hParent = NULL);
+void  XShapeLine_SetPosition(HXCGUI hShape, int x1, int y1, int x2, int y2);
+void  XShapeLine_SetColor(HXCGUI hShape, COLORREF color, BYTE alpha);
+HELE  XSliderBar_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+void  XSliderBar_SetRange(HELE hEle, int range);
+int   XSliderBar_GetRange(HELE hEle);
+void  XSliderBar_SetButtonWidth(HELE hEle, int width);
+void  XSliderBar_SetButtonHeight(HELE hEle, int height);
+void  XSliderBar_SetSpaceTwo(HELE hEle, int leftSize, int rightSize);
+void  XSliderBar_SetPos(HELE hEle, int pos);
+int   XSliderBar_GetPos(HELE hEle);
+HELE  XSliderBar_GetButton(HELE hEle);
+void  XSliderBar_SetHorizon(HELE hEle, BOOL bHorizon);
+void  XSliderBar_SetImageLoad(HELE hEle, HIMAGE hImage);
+extern "C"
+const char*     XC_itoa(int nValue);
+const wchar_t*  XC_itow(int nValue);
+const char*     XC_ftoa(float fValue);
+const wchar_t*  XC_ftow(float fValue);
+const wchar_t*  XC_atow(const char* pValue);
+const char*     XC_wtoa(const wchar_t* pValue);
+const wchar_t*  XC_utf8tow(const char* pUtf8);
+const wchar_t*  XC_utf8towEx(const char* pUtf8, int length);
+const char*     XC_utf8toa(const char* pUtf8);
+const char*     XC_atoutf8(const char* pValue);
+const char*     XC_wtoutf8(const wchar_t* pValue);
+const char*     XC_wtoutf8Ex(const wchar_t* pValue, int length);
+HELE  XTabBar_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+int   XTabBar_AddLabel(HELE hEle, const wchar_t *pName); //添加一个标签
+int   XTabBar_InsertLabel(HELE hEle, int index, wchar_t *pName);
+BOOL  XTabBar_DeleteLabel(HELE hEle, int index);  //删除
+void  XTabBar_DeleteLabelAll(HELE hEle);  //删除所有TAB
+HELE  XTabBar_GetLabel(HELE hEle, int index);//获取标签按钮Button
+HELE  XTabBar_GetLabelClose(HELE hEle, int index);
+HELE  XTabBar_GetButtonLeft(HELE hEle);
+HELE  XTabBar_GetButtonRight(HELE hEle);
+int   XTabBar_GetSelect(HELE hEle);  //获取选择的标签
+int   XTabBar_GetLabelSpacing(HELE hEle); //获取标签间距, 0没有间距
+int   XTabBar_GetLabelCount(HELE hEle); //获取标签项数量
+int   XTabBar_GetindexByEle(HELE hEle, HELE hLabel);
+void  XTabBar_SetLabelSpacing(HELE hEle, int spacing);//设置标签间距, 0没有间距
+void  XTabBar_SetPadding(HELE hEle, int left, int top, int right, int bottom);
+void  XTabBar_SetSelect(HELE hEle, int index);   //设置选择标签
+void  XTabBar_SetUp(HELE hEle);    //左滚动
+void  XTabBar_SetDown(HELE hEle);  //右滚动
+void  XTabBar_EnableTile(HELE hEle, BOOL bTile);  //平铺标签,每个标签显示相同大小
+void  XTabBar_EnableClose(HELE hEle, BOOL bEnable);
+void  XTabBar_SetCloseSize(HELE hEle, SIZE *pSize);
+void  XTabBar_SetTurnButtonSize(HELE hEle, SIZE *pSize);
+void  XTabBar_SetLabelWidth(HELE hEle, int index, int nWidth);
+BOOL  XTabBar_ShowLabel(HELE hEle, int index, BOOL bShow); //显示或隐藏指定项
+HELE  XTextLink_Create(int x, int y, int cx, int cy, const wchar_t* pName, HXCGUI hParent = NULL);
+void  XTextLink_EnableUnderlineLeave(HELE hEle, BOOL bEnable);
+void  XTextLink_EnableUnderlineStay(HELE hEle, BOOL bEnable);
+void  XTextLink_SetTextColorStay(HELE hEle, COLORREF color, BYTE alpha);
+void  XTextLink_SetUnderlineColorLeave(HELE hEle, COLORREF color, BYTE alpha);
+void  XTextLink_SetUnderlineColorStay(HELE hEle, COLORREF color, BYTE alpha);
+HELE  XToolBar_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+int  XToolBar_InsertEle(HELE hEle, HELE hNewEle, int index = -1); //添加元素到工具条, -1插入到末尾
+int  XToolBar_InsertSeparator(HELE hEle, int index = -1, COLORREF color = RGB(128, 128, 128)); //添加分隔符, -1插入到末尾
+void  XToolBar_EnableButtonMenu(HELE hEle, BOOL bEnable);  //显示隐藏项菜单按钮
+HELE  XToolBar_GetEle(HELE hEle, int index);  //获取工具条上元素句柄
+HELE  XToolBar_GetButtonLeft(HELE hEle);   //获取工具条左滚动按钮Button
+HELE  XToolBar_GetButtonRight(HELE hEle);  //获取工具条右滚动按钮Button
+HELE  XToolBar_GetButtonMenu(HELE hEle);   //获取弹出菜单按钮
+void  XToolBar_SetSpace(HELE hEle, int nSize);
+void  XToolBar_DeleteEle(HELE hEle, int index); //移除工具条上元素并销毁
+void  XToolBar_DeleteAllEle(HELE hEle);
+HELE  XTree_Create(int x, int y, int cx, int cy, HXCGUI hParent = NULL);
+void  XTree_EnableDragItem(HELE hEle, BOOL bEnable);
+void  XTree_EnableConnectLine(HELE hEle, BOOL bEnable, BOOL bSolid);
+void  XTree_EnableExpand(HELE hEle, BOOL bEnable);
+void  XTree_SetConnectLineColor(HELE hEle, COLORREF color, BYTE alpha);
+void  XTree_SetExpandButtonSize(HELE hEle, int nWidth, int nHeight);
+void  XTree_SetConnectLineLength(HELE hEle, int nLength);
+void  XTree_SetDragInsertPositionColor(HELE hEle, COLORREF color, BYTE alpha);
+BOOL  XTree_SetItemTemplateXML(HELE hEle, const wchar_t* pXmlFile);
+BOOL  XTree_SetItemTemplateXMLSel(HELE hEle, const wchar_t* pXmlFile);
+BOOL  XTree_SetItemTemplate(HELE hEle, HTEMP hTemp);
+BOOL  XTree_SetItemTemplateSel(HELE hEle, HTEMP hTemp);
+BOOL  XTree_SetItemTemplateXMLFromString(HELE hEle, const char* pStringXML);
+BOOL  XTree_SetItemTemplateXMLSelFromString(HELE hEle, const char* pStringXML);
+void  XTree_SetDrawItemBkFlags(HELE hEle, int nFlags);
+BOOL  XTree_SetItemData(HELE hEle, int nID, int nUserData);
+int   XTree_GetItemData(HELE hEle, int nID);
+BOOL  XTree_SetSelectItem(HELE hEle, int nID);
+int   XTree_GetSelectItem(HELE hEle);
+void  XTree_VisibleItem(HELE hEle, int nID);
+BOOL  XTree_IsExpand(HELE hEle, int nID);
+BOOL  XTree_ExpandItem(HELE hEle, int nID, BOOL bExpand);
+BOOL  XTree_ExpandAllChildItem(HELE hEle, int nID, BOOL bExpand);
+int   XTree_HitTest(HELE hEle, POINT *pPt);
+int   XTree_HitTestOffset(HELE hEle, POINT *pPt);
+int   XTree_GetFirstChildItem(HELE hEle, int nID);
+int   XTree_GetEndChildItem(HELE hEle, int nID);
+int   XTree_GetPrevSiblingItem(HELE hEle, int nID);
+int   XTree_GetNextSiblingItem(HELE hEle, int nID);
+int   XTree_GetParentItem(HELE hEle, int nID);
+void  XTree_SetIndentation(HELE hEle, int nWidth);
+int   XTree_GetIndentation(HELE hEle);
+void  XTree_SetItemHeight(HELE hEle, int nID, int nHeight, int nSelHeight);
+void  XTree_GetItemHeight(HELE hEle, int nID, out_ int *pHeight, out_ int *pSelHeight);
+void  XTree_SetRowSpace(HELE hEle, int nSpace);
+int   XTree_GetRowSpace(HELE hEle);
+BOOL  XTree_MoveItem(HELE hEle, int nMoveItem, int nDestItem, int nType);
+void  XTree_AddItemBkBorder(HELE hEle, tree_item_state_ nState, COLORREF color, BYTE alpha, int width);
+void  XTree_AddItemBkFill(HELE hEle, tree_item_state_ nState, COLORREF color, BYTE alpha);
+void  XTree_AddItemBkImage(HELE hEle, tree_item_state_ nState, HIMAGE hImage);
+int   XTree_GetItemBkInfoCount(HELE hEle);
+void  XTree_ClearItemBkInfo(HELE hEle);
+void  XTree_SetItemHeightDefault(HELE hEle, int nHeight, int nSelHeight);
+void  XTree_GetItemHeightDefault(HELE hEle, out_ int *pHeight, out_ int *pSelHeight);
+HXCGUI  XTree_GetTemplateObject(HELE hEle, int nID, int nTempItemID); //通过模板项ID,获取实例化模板项ID对应的对象.
+int     XTree_GetItemIDFromHXCGUI(HELE hEle, HXCGUI hXCGUI);
+HXCGUI  XTree_CreateAdapter(HELE hEle);
+void  XTree_BindAdapter(HELE hEle, HXCGUI hAdapter);
+HXCGUI  XTree_GetAdapter(HELE hEle);
+void  XTree_RefreshData(HELE hEle);
+void  XTree_RefreshItem(HELE hEle, int nID);
+int  XTree_InsertItemText(HELE hEle, const wchar_t* pValue, int nParentID = XC_ID_ROOT, int insertID = XC_ID_LAST);
+int  XTree_InsertItemTextEx(HELE hEle, const wchar_t* pName, const wchar_t* pValue, int nParentID = XC_ID_ROOT, int insertID = XC_ID_LAST);
+int  XTree_InsertItemImage(HELE hEle, HIMAGE hImage, int nParentID = XC_ID_ROOT, int insertID = XC_ID_LAST);
+int  XTree_InsertItemImageEx(HELE hEle, const wchar_t* pName, HIMAGE hImage, int nParentID = XC_ID_ROOT, int insertID = XC_ID_LAST);
+int  XTree_GetCount(HELE hEle);
+int  XTree_GetCountColumn(HELE hEle);
+BOOL  XTree_SetItemText(HELE hEle, int nID, int iColumn, const wchar_t* pValue);
+BOOL  XTree_SetItemTextEx(HELE hEle, int nID, const wchar_t* pName, const wchar_t* pValue);
+BOOL  XTree_SetItemImage(HELE hEle, int nID, int iColumn, HIMAGE hImage);
+BOOL  XTree_SetItemImageEx(HELE hEle, int nID, const wchar_t* pName, HIMAGE hImage);
+BOOL  XTree_GetItemText(HELE hEle, int nID, int iColumn, out_ wchar_t* pOut, int nOutLen);
+HIMAGE  XTree_GetItemImage(HELE hEle, int nID, int iColumn);
+BOOL  XTree_GetItemTextEx(HELE hEle, int nID, const wchar_t* pName, out_ wchar_t* pOut, int nOutLen);
+HIMAGE  XTree_GetItemImageEx(HELE hEle, int nID, const wchar_t* pName);
+BOOL  XTree_DeleteItem(HELE hEle, int nID);
+void  XTree_DeleteItemAll(HELE hEle);
+void  XTree_DeleteColumnAll(HELE hEle);
+BOOL  _XWnd_RegEvent(HWINDOW hWindow, UINT nEvent, xc_event* pEvent);
+BOOL  _XWnd_RemoveEvent(HWINDOW hWindow, UINT nEvent, xc_event* pEvent);
+BOOL  XWnd_RegEventC(HWINDOW hWindow, int nEvent, void *pFun);
+BOOL  XWnd_RegEventC1(HWINDOW hWindow, int nEvent, void *pFun);
+BOOL  XWnd_RemoveEventC(HWINDOW hWindow, int nEvent, void *pFun);
+HWINDOW  XWnd_Create(int x, int y, int cx, int cy, const wchar_t *pTitle, HWND hWndParent = NULL, int XCStyle = xc_window_style_default);
+HWINDOW  XWnd_CreateEx(DWORD dwExStyle, const wchar_t* lpClassName, const wchar_t* lpWindowName, DWORD dwStyle, int x, int y, int cx, int cy, HWND hWndParent = NULL, int XCStyle = xc_window_style_default);
+BOOL  XWnd_AddChild(HWINDOW hWindow, HXCGUI hChild);
+BOOL  XWnd_InsertChild(HWINDOW hWindow, HXCGUI hChild, int index);
+HWND  XWnd_GetHWND(HWINDOW hWindow);
+void  XWnd_EnableDragBorder(HWINDOW hWindow, BOOL bEnable);
+void  XWnd_EnableDragWindow(HWINDOW hWindow, BOOL bEnable);
+void  XWnd_EnableDragCaption(HWINDOW hWindow, BOOL bEnable);
+void  XWnd_EnableDrawBk(HWINDOW hWindow, BOOL bEnable);
+void  XWnd_EnableAutoFocus(HWINDOW hWindow, BOOL bEnable); //当鼠标左键按下是否获得焦点
+void  XWnd_EnableMaxWindow(HWINDOW hWindow, BOOL bEnable);
+void  XWnd_EnableLayout(HWINDOW hWindow, BOOL bEnable);
+void  XWnd_ShowLayoutFrame(HWINDOW hWindow, BOOL bEnable);
+BOOL  XWnd_IsEnableLayout(HWINDOW hWindow);
+void  XWnd_RedrawWnd(HWINDOW hWindow, BOOL bImmediate = FALSE);
+void  XWnd_RedrawWndRect(HWINDOW hWindow, RECT *pRect, BOOL bImmediate = FALSE); //重绘窗口指定区域
+void  XWnd_SetFocusEle(HWINDOW hWindow, HELE hFocusEle);
+HELE  XWnd_GetFocusEle(HWINDOW hWindow);
+HELE  XWnd_GetStayHELE(HWINDOW hWindow);  //获取当前鼠标所停留元素
+void  XWnd_DrawWindow(HWINDOW hWindow, HDRAW hDraw);
+void  XWnd_Center(HWINDOW hWindow);
+void  XWnd_CenterEx(HWINDOW hWindow, int width, int height);
+void  XWnd_SetCursor(HWINDOW hWindow, HCURSOR hCursor);
+HCURSOR  XWnd_GetCursor(HWINDOW hWindow);
+HCURSOR  XWnd_SetCursorSys(HWINDOW hWindow, HCURSOR hCursor);
+void  XWnd_SetFont(HWINDOW hWindow, HFONTX hFontx);
+void  XWnd_SetTextColor(HWINDOW hWindow, COLORREF color, BYTE alpha);
+COLORREF  XWnd_GetTextColor(HWINDOW hWindow);
+COLORREF  XWnd_GetTextColorEx(HWINDOW hWindow);
+void  XWnd_SetID(HWINDOW hWindow, int nID);
+int   XWnd_GetID(HWINDOW hWindow);
+void  XWnd_SetCaptureEle(HWINDOW hWindow, HELE hEle);
+HELE  XWnd_GetCaptureEle(HWINDOW hWindow);
+BOOL  XWnd_BindLayoutEle(HWINDOW hWindow, window_position_ nPosition, HELE hEle);
+HELE  XWnd_GetLayoutEle(HWINDOW hWindow, window_position_ nPosition);
+void  XWnd_SetLayoutSize(HWINDOW hWindow, int left, int top, int right, int bottom);
+void  XWnd_GetLayoutSize(HWINDOW hWindow, out_ BorderSize_i  *pBorderSize);
+void  XWnd_SetLayoutHorizon(HWINDOW hWindow, BOOL bHorizon);
+void  XWnd_SetLayoutAlignH(HWINDOW hWindow, layout_align_ nAlign);
+void  XWnd_SetLayoutAlignV(HWINDOW hWindow, layout_align_ nAlign);
+void  XWnd_SetLayoutSpace(HWINDOW hWindow, int nSpace);
+void  XWnd_SetLayoutPadding(HWINDOW hWindow, int left, int top, int right, int bottom);
+void  XWnd_SetDragBorderSize(HWINDOW hWindow, int left, int top, int right, int bottom); //设置拖动边框大小
+void  XWnd_GetDragBorderSize(HWINDOW hWindow, out_ BorderSize_i* pSize);
+void  XWnd_SetMinimumSize(HWINDOW hWindow, int width, int height);
+HELE  XWnd_HitChildEle(HWINDOW hWindow, POINT *pPt);
+int   XWnd_GetChildCount(HWINDOW hWindow);
+HXCGUI  XWnd_GetChildByIndex(HWINDOW hWindow, int index);
+HXCGUI  XWnd_GetChildByID(HWINDOW hWindow, int nID);
+HXCGUI  XWnd_GetChild(HWINDOW hWindow, int nID);
+void  XWnd_GetDrawRect(HWINDOW hWindow, RECT *pRcPaint);
+BOOL  XWnd_ShowWindow(HWINDOW hWindow, int nCmdShow);
+void  XWnd_AdjustLayout(HWINDOW hWindow);
+void  XWnd_AdjustLayoutEx(HWINDOW hWindow, int nFlags = xc_adjustLayout_self);
+void  XWnd_CloseWindow(HWINDOW hWindow);
+void  XWnd_CreateCaret(HWINDOW hWindow, HELE hEle, int x, int y, int width, int height);//创建插入符
+void  XWnd_SetCaretSize(HWINDOW hWindow, int width, int height); //设置插入符大小
+void  XWnd_SetCaretPos(HWINDOW hWindow, int x, int y); //设置插入符位置
+void  XWnd_SetCaretPosEx(HWINDOW hWindow, int x, int y, int width, int height); //设置插入符位置
+void  XWnd_SetCaretColor(HWINDOW hWindow, COLORREF color); //设置插入符颜色
+void  XWnd_ShowCaret(HWINDOW hWindow, BOOL bShow);  //显示插入符
+void  XWnd_DestroyCaret(HWINDOW hWindow);    //销毁插入符
+HELE  XWnd_GetCaretHELE(HWINDOW hWindow);
+BOOL  XWnd_GetClientRect(HWINDOW hWindow, out_ RECT *pRect); //获取客户区坐标
+void  XWnd_GetBodyRect(HWINDOW hWindow, out_ RECT *pRect);  //获取窗口body坐标
+UINT  XWnd_SetTimer(HWINDOW hWindow, UINT nIDEvent, UINT uElapse); //设置定时器
+BOOL  XWnd_KillTimer(HWINDOW hWindow, UINT nIDEvent);
+BOOL  XWnd_SetXCTimer(HWINDOW hWindow, UINT nIDEvent, UINT uElapse); //设置定时器
+BOOL  XWnd_KillXCTimer(HWINDOW hWindow, UINT nIDEvent);
+HBKM  XWnd_GetBkManager(HWINDOW hWindow);
+HBKM  XWnd_GetBkManagerEx(HWINDOW hWindow);
+void  XWnd_SetTransparentType(HWINDOW hWindow, window_transparent_ nType);  //设置透明窗口
+void  XWnd_SetTransparentAlpha(HWINDOW hWindow, BYTE alpha); //设置窗口透明度
+void  XWnd_SetTransparentColor(HWINDOW hWindow, COLORREF color); //设置窗口透明色
+void  XWnd_SetShadowInfo(HWINDOW hWindow, int nSize, int nDepth, int nAngeleSize, BOOL bRightAngle, COLORREF color);
+window_transparent_  XWnd_GetTransparentType(HWINDOW hWindow);
+void  XWnd_GetShadowInfo(HWINDOW hWindow, int *pnSize, int *pnDepth, int *pnAngeleSize, BOOL *pbRightAngle, COLORREF *pColor);
+void    XWnd_EnableCSS(HWINDOW hWindow, BOOL bEnable);
+void    XWnd_SetCssName(HWINDOW hWindow, const wchar_t *pName);
+const wchar_t*  XWnd_GetCssName(HWINDOW hWindow);
+BOOL  XJS_InitJS();
+void  XJS_ExitJS();
+BOOL  XJS_RunJS(const char* pJsFile);
+BOOL  XJS_RunJsString(const char* pString);
+BOOL  XJS_RunJsStringUtf8(const char* pString);
+void  XJS_EnableDebugInfo(BOOL bEnable);
+void  XJS_Callback_Reg(const wchar_t *pFunName, user_clallback fun);
+int   XJS_Callback_GetArgsCount(void *args); //获取回调参数数量
+BOOL  XJS_Callback_IsNumber(void *args, int index);//获取参数类型
+BOOL  XJS_Callback_IsString(void *args, int index);
+BOOL  XJS_Callback_IsBool(void *args, int index);
+BOOL  XJS_Callback_IsFunction(void *args, int index);
+BOOL  XJS_Callback_IsObject(void *args, int index);
+void  XJS_Callback_SetReturnValueNumber(void *args, int nValue);
+void  XJS_Callback_SetReturnValueString(void *args, const wchar_t* nValue);
+int   XJS_Callback_GetNumber(void *args, int index);
+BOOL  XJS_Callback_GetBool(void *args, int index);
+const wchar_t*   XJS_Callback_GetString(void *args, int index);
+void  XJS_FreeString(const wchar_t* pString);
+int   XEle_Move(HELE hEle, int x, int y, BOOL bRedraw = FALSE, int nFlags = xc_adjustLayout_all); //逻辑模式坐标
+void  XWnd_Move(HWINDOW hWindow, int x, int y);  //获取窗口body坐标

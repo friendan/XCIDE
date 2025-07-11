@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frameWnd_layout x="453" x="453" y="97" width="1295" height="882" maximize="0">
+	<cell state="1" dockAlign="0" type="5" size="1194" show="1" calcLayout="1">
+		<cell state="1" dockAlign="0" type="4" size="242" show="1" calcLayout="1">
+			<group activate="0" state="1" dockAlign="0" type="2" size="420" show="1" calcLayout="1">
+				<pane id="1001" show="1" title="项目视图" />
+				<pane id="1022" show="1" title="本地模块" />
+				<pane id="1020" show="1" title="函数列表" />
+			</group>
+			<pane id="1002" title="文档大纲" state="1" dockAlign="0" type="1" size="366" show="0" calcLayout="1" />
+		</cell>
+		<cell state="1" dockAlign="0" type="4" size="1037" show="1" calcLayout="1">
+			<cell state="1" dockAlign="0" type="5" size="562" show="1" calcLayout="1">
+				<pane id="1000" title="快速面板" state="1" dockAlign="0" type="1" size="100" show="0" calcLayout="1" />
+				<view state="1" dockAlign="0" type="3" size="1037" show="1" calcLayout="1" />
+				<cell state="1" dockAlign="0" type="4" size="281" show="1" calcLayout="1">
+					<group activate="-1" state="1" dockAlign="0" type="2" size="294" show="1" calcLayout="1">
+						<pane id="1003" show="0" title="工具箱" />
+						<pane id="1005" show="0" title="事件行为" />
+					</group>
+					<group activate="-1" state="1" dockAlign="0" type="2" size="500" show="1" calcLayout="1">
+						<pane id="1004" show="0" title="属性" />
+						<pane id="1011" show="0" title="背景" />
+					</group>
+				</cell>
+			</cell>
+			<group activate="-1" state="1" dockAlign="0" type="2" size="100" show="1" calcLayout="1" />
+			<cell state="1" dockAlign="0" type="5" size="229" show="1" calcLayout="1">
+				<group activate="3" state="1" dockAlign="0" type="2" size="423" show="1" calcLayout="1">
+					<pane id="1017" show="0" title="局部变量" />
+					<pane id="1018" show="1" title="断点列表" />
+					<pane id="1019" show="0" title="监视" />
+					<pane id="1021" show="1" title="帮助" />
+					<pane id="1023" show="1" title="书签" />
+				</group>
+				<group activate="1" state="1" dockAlign="0" type="2" size="720" show="1" calcLayout="1">
+					<pane id="1016" show="1" title="调用堆栈" />
+					<pane id="1012" show="1" title="调试输出" />
+					<pane id="1013" show="1" title="查找和替换" />
+					<pane id="1014" show="1" title="查找引用" />
+				</group>
+			</cell>
+		</cell>
+	</cell>
+</frameWnd_layout>

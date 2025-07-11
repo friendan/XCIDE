@@ -1,0 +1,114 @@
+﻿[{
+		"name":	"如果",
+		"comment":	"模板",
+		"data":	"如果 (真)\n\t占位"
+	}, {
+		"name":	"if",
+		"comment":	"模板",
+		"data":	"如果 (真)\n\t占位"
+	}, {
+		"name":	"如果...否则...",
+		"comment":	"模板",
+		"data":	"如果 (条件)\n\t占位\n否则 (条件)\n\t占位\n否则\n\t占位"
+	}, {
+		"name":	"if...else...",
+		"comment":	"模板",
+		"data":	"如果 (条件)\n\t占位\n否则 (条件)\n\t占位\n否则\n\t占位"
+	}, {
+		"name":	"循环",
+		"comment":	"模板",
+		"data":	"循环 (条件)\n\t占位"
+	}, {
+		"name":	"while",
+		"comment":	"模板",
+		"data":	"循环 (条件)\n\t占位"
+	}, {
+		"name":	"计次循环",
+		"comment":	"模板",
+		"data":	"计次循环 (整型 i=0; 3)\n\t调试输出(i)"
+	}, {
+		"name":	"for_count",
+		"comment":	"模板",
+		"data":	"计次循环 (整型 i=0; 3)\n\t调试输出(i)"
+	}, {
+		"name":	"列表循环",
+		"comment":	"模板",
+		"data":	"列表循环 (整型 i=0;  数组)\n\t调试输出(数组[i])"
+	}, {
+		"name":	"for_list",
+		"comment":	"模板",
+		"data":	"列表循环 (整型 i=0;  数组)\n\t调试输出(数组[i])"
+	}, {
+		"name":	"变量循环",
+		"comment":	"模板",
+		"data":	"变量循环 (整型 i=0; i<3; i++)\n\t调试输出(i)"
+	}, {
+		"name":	"for_var",
+		"comment":	"模板",
+		"data":	"变量循环 (整型 i=0; i<3; i++)\n\t调试输出(i)"
+	}, {
+		"name":	"分支判断",
+		"comment":	"模板",
+		"data":	"分支判断 (变量)\n\t分支 1\n\t\t调试输出(1)\n\t\t跳出\n\t分支 2\n\t\t调试输出(2)\n\t\t跳出\n\t其他\n\t\t调试输出(3)"
+	}, {
+		"name":	"switch",
+		"comment":	"模板",
+		"data":	"分支判断 (变量)\n\t分支 1\n\t\t调试输出(1)\n\t\t跳出\n\t分支 2\n\t\t调试输出(2)\n\t\t跳出\n\t其他\n\t\t调试输出(3)"
+	}, {
+		"name":	"分支判断跳出",
+		"comment":	"模板",
+		"data":	"分支判断跳出 (变量)\n\t分支 1\n\t\t调试输出(1)\n\t分支 2\n\t\t调试输出(2)\n\t其他\n\t\t调试输出(3)"
+	}, {
+		"name":	"switch_break",
+		"comment":	"模板",
+		"data":	"分支判断跳出 (变量)\n\t分支 1\n\t\t调试输出(1)\n\t分支 2\n\t\t调试输出(2)\n\t其他\n\t\t调试输出(3)"
+	}, {
+		"name":	"def_函数()",
+		"comment":	"模板",
+		"data":	"函数 整型 $name$()\n\t返回 1"
+	}, {
+		"name":	"def_函数(整型 参数1, 整型 参数2)",
+		"comment":	"模板",
+		"data":	"函数 整型 $name$(整型 参数1, 整型 参数2)\n\t返回 1"
+	}, {
+		"name":	"class_类",
+		"comment":	"模板",
+		"data":	"类 $name$\n\t整型  _变量\n\t函数 构造()\n\t\t_变量=0\n\n\t函数 析构()\n\t\t占位\n\n\t函数 整型 函数(整型 参数A, 整型 参数B)\n\t\t返回 0\n\n\t占位"
+	}, {
+		"name":	"struct_结构体",
+		"comment":	"模板",
+		"data":	"结构体 $name$\n\t整型  变量1\n\t整型  变量2"
+	}, 
+	{
+		"name":	"循环判断首",
+		"comment":	"",
+		"data":	"循环判断首\n\t调试输出(1)\n循环判断尾 (条件)"
+	}, {
+		"name":	"变量循环扩展",
+		"comment":	"",
+		"data":	"变量循环扩展 (起始值, 目标值, 递增值, 循环变量)\n\t调试输出(循环变量)"
+	}, {
+		"name":	"函数类型",
+		"comment":	"模板",
+		"data":	"#函数类型  整型 (*函数类型1)(整型 a, 整型 b)"
+	}, {
+		"name":	"函数类型(WINAPI)",
+		"comment":	"模板",
+		"data":	"#函数类型  整型 (WINAPI *函数类型1)(整型 a, 整型 b)"
+	}, {
+		"name":	"函数类型(编译方式C)",
+		"comment":	"模板",
+		"data":	"#函数类型 编译方式C 整型 (WINAPI *函数类型1)(整型 a, 整型 b)"
+	}, {
+		"name":	"函数类型(例子)",
+		"comment":	"模板",
+		"data":	"#函数类型 整型 (*函数类型1)(整型 a, 整型 b)\n整型 返回值 = ((函数类型1)函数地址)(a, b)"
+	}, {
+		"name":	"嵌入代码",
+		"comment":	"模板",
+		"data":	"#嵌入代码\n#嵌入代码结束"
+	}, {
+		"name":	"DLL导入表",
+		"comment":	"模板",
+		"data":	"//格式如下: [DLL名称, 编译C,回调函数]\n#DLL导入表[\"DLL文件名.dll\"] //指定DLL名称, 编译C, 可指定 回调函数 动态修改DLL路径\n\t函数 整型 WINAPI DLL中函数_add(整型 a1) : dll_add //dll_add 原始名称, 如果没有那么就没有别名"
+	}]

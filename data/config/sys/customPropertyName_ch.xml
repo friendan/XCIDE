@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!--炫彩界面库-自定义属性名-->
+<CustomPropertyName>
+    <item name="alpha" value="透明度" />
+    <item name="angleHeight" value="圆角高度" />
+    <item name="angleWidth" value="圆角宽度" />
+    <item name="bindEle" value="绑定元素" />
+    <item name="bkInfoM" value="背景信息" />
+    <item name="borderColor" value="边框颜色" />
+    <item name="style" value="样式" />
+    <item name="buttonType" value="按钮类型" />
+    <item name="center" value="居中" />
+    <item name="check" value="是否选中" />
+    <item name="className" value="窗口类名" />
+    <item name="color" value="颜色" />
+	<item name="caretColor" value="插入符颜色" />
+    <item name="content" value="内容" />
+    <item name="contentTips" value="提示内容" />
+	<item name="contentTipsColor" value="提示内容颜色" />
+    <item name="css.enable" value="CSS-启用样式" />
+    <item name="css.name" value="CSS-套用样式" />
+    <item name="dragBorder" value="拖动边框" />
+    <item name="dragWindow" value="拖动窗口" />
+    <item name="drawBk" value="绘制背景" />
+    <item name="drawBorder" value="绘制默认边框" />
+    <item name="drawFocus" value="绘制焦点" />
+    <item name="enable" value="启用" />
+    <item name="enableFocus" value="启用焦点" />
+    <item name="enableToolTip" value="启用工具提示" />
+    <item name="expandButton" value="项展开按钮" />
+    <item name="fill" value="填充" />
+    <item name="fillColor" value="填充颜色" />
+    <item name="font" value="字体" />
+    <item name="groupID" value="组ID" />
+    <item name="height" value="高度(height)" />
+    <item name="iconAlign" value="图标对齐" />
+    <item name="iconSpace" value="图标间隔" />
+    <item name="id" value="ID" />
+	<item name="name" value="名称(name)" />
+	<item name="nameTable" value="名称前缀" />
+    <item name="image" value="图片" />
+    <item name="imageIcon" value="图标" />
+    <item name="imageIconDisable" value="图标-禁用" />
+    <item name="imageLoad" value="图片-进度" />
+	  
+	 <item name="edit.type" value="Edit类型" />
+	 <item name="multiLine" value="多行模式" />
+	
+    <item name="left" value="左边(left)" />
+	<item name="horizon" value="水平/垂直" />
+    <item name="mouseThrough" value="鼠标穿透" />
+    <item name="pointX1" value="坐标点X1" />
+    <item name="pointX2" value="坐标点X2" />
+    <item name="pointY1" value="坐标点Y1" />
+    <item name="pointY2" value="坐标点Y2" />
+    <item name="roundAngle" value="圆角" />
+    <item name="scrollBarAuto" value="滚动条自动" />
+    <item name="scrollBarShowH" value="水平滚动条" />
+    <item name="scrollBarShowV" value="垂直滚动条" />
+    <item name="shadowAngleSize" value="角内收大小" />
+    <item name="shadowColor" value="阴影颜色" />
+    <item name="shadowDepth" value="阴影深度(0-255)" />
+    <item name="shadowRightAngle" value="是否直角" />
+    <item name="shadowSize" value="阴影大小" />
+    <item name="show" value="显示" />
+    <item name="textAlign" value="文本对齐" />
+    <item name="textColor" value="文本颜色" />
+    <item name="textColorStay" value="文字颜色-停留" />
+    <item name="textOffsetX" value="文本偏移X" />
+    <item name="textOffsetY" value="文本偏移Y" />
+    <item name="toolTip" value="工具提示" />
+    <item name="top" value="上边(top)" />
+    <item name="transparent" value="背景透明" />
+    <item name="transparentAlpha" value="透明度" />
+    <item name="transparentColor" value="透明色" />
+    <item name="transparentFlag" value="窗口透明" />
+    <item name="uid" value="UID" />
+    <item name="underlineColorLeave" value="下滑线颜色-离开" />
+    <item name="underlineColorStay" value="下滑线颜色-停留" />
+    <item name="underlineLeave" value="下划线-离开" />
+    <item name="underlineStay" value="下划线-停留" />
+    <item name="width" value="宽度(width)" />
+    <item name="windowType" value="窗口类型" />
+	<item name="maxWindow" value="启动时窗口最大化" />
+	<item name="enableLayout" value="启用-布局" />	
+	<item name="enableCanvas" value="启用-画布" />	
+	<item name="cursor" value="光标" />	
+	<item name="rowCount" value="行数" />	
+	<item name="colCount" value="列数" />
+	
+	<item name="border" value="边框(0,0,0,0)" />
+	<item name="padding" value="内填充(0,0,0,0)" /> 
+	<item name="offsetIconXY" value="图标偏移(x,y)" />
+    <item name="offsetXY" value="内容偏移(x,y)" />
+	
+	<item name="layout.alignH" value="水平对齐" />
+    <item name="layout.alignV" value="垂直对齐" />
+    <item name="layout.height" value="布局高度" />
+    <item name="layout.horizon" value="水平/垂直" />
+    <item name="layout.space" value="子项间距" />
+	<item name="layout.spaceRow" value="行间距" />
+    <item name="layout.width" value="布局宽度" />
+	<item name="layout.float" value="项浮动" />
+	<item name="layout.wrap" value="项换行" />
+	<item name="layout.autoWrap" value="自动换行" />
+	<item name="layout.swap" value="项属性交换" />
+	
+	<item name="layoutControl" value="布局控制" />
+	<item name="overlayBorder" value="覆盖窗口边框" />
+	<item name="layout.overflowHide" value="溢出隐藏" />
+	<item name="layout.position" value="固定位置(0,0,0,0)" />
+	
+	<item name="layout.align" value="项对齐" /> 
+	<item name="layout.margin" value="外间距(0,0,0,0)" />
+	<item name="layout.minSize" value="最小大小(w,h)" />
+	<item name="layout.alignBaseline" value="基线对齐" />
+	<item name="topmost" value="置顶" />
+	<item name="showButton" value="显示两端按钮" />
+	<item name="textOffsetXY" value="文本偏移" />
+	
+	<item name="windowStyle" value="窗口样式" />
+	<item name="titleColor" value="标题颜色" />
+	<item name="captionMargin" value="标题外间距(0,0,0,0)" />
+	
+	<item name="itemID" value="项ID(itemID)" />
+	
+	
+	<item name="tempExtend.start" value="列延伸-字段名" />
+	<item name="tempExtend.count" value="列延伸-数量" />
+	
+	<item name ="enableBorder" value="描边"/>
+</CustomPropertyName>

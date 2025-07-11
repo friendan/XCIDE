@@ -1,0 +1,153 @@
+{
+	"类型": {
+		"xml_label": "type",
+		"uiType": "comboBox",
+		"flag": "sys",
+		"list": {
+			"应用程序(.exe)": "exe",
+			"动态库(.dll)": "dll",
+			"静态库(.lib)": "lib"
+		}
+	},
+	"SDK": {
+		"xml_label": "sdk",
+		"uiType": "comboBox",
+		"flag": "sys"
+	},
+	"平台工具集": {
+		"xml_label": "platformToolset",
+		"uiType": "comboBox",
+		"flag": "sys"
+	},
+	"运行库": {
+		"xml_label": "runtimeLibrary",
+		"uiType": "comboBox",
+		"flag": "cl",
+		"default_debug": "/MDd",
+		"default": "/MD",
+		"list": {
+			"多线程静态库(MT)": "/MT",
+			"多线程静态库-调试(MTd)": "/MTd",
+			"多线程动态库(MD)": "/MD",
+			"多线程动态库-调试(MDd)": "/MDd"
+		}
+	},
+	"生成调试信息": {
+		"xml_label": "debug",
+		"uiType": "comboBox_bool",
+		"flag": "sys"
+	},
+	"显示版权信息": {
+		"xml_label": "logo",
+		"uiType": "comboBox_bool",
+		"flag": "sys",
+		"list": {
+			"是": "true",
+			"否": "false"
+		}
+	},
+	"帐户控制(UAC)": {
+		"xml_label": "uac",
+		"uiType": "comboBox",
+		"flag": "link",
+		"list": {
+			"管理员权限": "/MANIFESTUAC:\"level='requireAdministrator'\"",
+			"最高权限": "/MANIFESTUAC:\"level='highestAvailable'\""
+		}
+	},
+	"清单文件": {
+		"xml_label": "manifestFile",
+		"uiType": "edit_file",
+		"flag": "sys"
+	},
+	"警告等级": {
+		"xml_label": "warningLevel",
+		"uiType": "comboBox",
+		"flag": "cl",
+		"default_debug": "/W3",
+		"default": "/W3",
+		"list": {
+			"关闭所有警告": "/W0",
+			"等级1": "/W1",
+			"等级2": "/W2",
+			"等级3": "/W3",
+			"等级4": "/W4",
+			"启用所有警告": "/Wall"
+		}
+	},
+	"多处理器编译": {
+		"xml_label": "multipleProcesses",
+		"uiType": "comboBox_bool",
+		"flag": "cl",
+		"default_debug": "/MP",
+		"default": "/MP",
+		"common": "禁止在调用堆栈上创建帧指针",
+		"list": {
+			"是": "/MP",
+			"否": "NULL"
+		}
+	},
+	"SDL检查": {
+		"xml_label": "sdl",
+		"uiType": "comboBox_bool",
+		"flag": "cl",
+		"default_debug": "",
+		"default": "",
+		"list": {
+			"是": "/sdl",
+			"否": "/sdl-"
+		}
+	},
+	"优化": {
+		"xml_label": "optimizeCode",
+		"uiType": "comboBox",
+		"flag": "cl",
+		"default_debug": "/Od",
+		"default": "/O2",
+		"list": {
+			"已禁用": "/Od",
+			"使大小最小化": "/O1",
+			"使速度最大化": "/O2",
+			"完全优化": "/Ox"
+		}
+	},
+	"调用约定": {
+		"xml_label": "callType",
+		"uiType": "comboBox",
+		"flag": "cl",
+		"default_debug": "/Gd",
+		"default": "/Gd",
+		"list": {
+			"__cdecl": "/Gd",
+			"__fastcall": "/Gr",
+			"__stdcall": "/Gz",
+			"__vectorcall": "/Gv"
+		}
+	},
+	"启用C++异常": {
+		"xml_label": "exception",
+		"uiType": "comboBox",
+		"flag": "cl",
+		"default_debug": "/EHsc",
+		"default": "/EHsc",
+		"list": {
+			"是,但是又 SEH 异常(/EHa)": "/EHa",
+			"是(/EHsc)": "/EHsc",
+			"是,且有 Extern C函数(/EHs)": "/EHs",
+			"否": ""
+		}
+	},
+	"C++标准": {
+		"xml_label": "cplusStd",
+		"uiType": "comboBox",
+		"flag": "cl",
+		"default_debug": "/std:c++14",
+		"default": "/std:c++14",
+		"list": {
+			"c++14": "/std:c++14",
+			"c++17": "/std:c++17",
+			"c++20": "/std:c++20",
+			"c++latest": "/std:c++latest"
+		}
+	}
+}

@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<events>
+	<windowUI className="窗口类" >
+		<!--<item  event="事件类型" declare="函数声明" remark="备注" />-->
+		<!--<item event="XWM_WINDPROC" declare="整型 消息过滤(整型 消息类型, 整型 消息参数1, 整型 消息参数2, 逻辑型 *是否拦截)" remark="窗口消息过程" />/>-->
+		
+		<item  event="WM_PAINT" declare="$[UI对象名称]_开始绘制(绘图句柄 绘图,逻辑型 *是否拦截)" remark="窗口绘制事件" />
+		<item  event="XWM_PAINT_END" declare="$[UI对象名称]_绘制完成(绘图句柄 绘图,逻辑型 *是否拦截)" remark="窗口绘制完成消息" />
+
+		<item  event="WM_CLOSE" declare="$[UI对象名称]_即将关闭(逻辑型 *是否拦截)" remark="窗口即将关闭事件" />
+		<item  event="WM_DESTROY" declare="$[UI对象名称]_即将销毁(逻辑型 *是否拦截)" remark="窗口即将销毁事件" />
+		<item  event="WM_NCDESTROY" declare="$[UI对象名称]_非客户区销毁(逻辑型 *是否拦截)" remark="窗口非客户区销毁事件" />
+		<item  event="WM_MOUSEMOVE" declare="$[UI对象名称]_鼠标移动(正整型 标识,点结构 *鼠标位置, 逻辑型 *是否拦截)" remark="窗口鼠标移动事件" />
+		<item  event="WM_LBUTTONDOWN" declare="$[UI对象名称]_鼠标左健按下(正整型 标识,点结构 *鼠标位置, 逻辑型 *是否拦截)" remark="窗口鼠标左键按下事件" />
+		<item  event="WM_LBUTTONUP" declare="$[UI对象名称]_鼠标左键弹起(正整型 标识,点结构 *鼠标位置, 逻辑型 *是否拦截)" remark="窗口鼠标左键弹起事件" />
+		<item  event="WM_RBUTTONDOWN" declare="$[UI对象名称]_鼠标右键按下(正整型 标识,点结构 *鼠标位置, 逻辑型 *是否拦截)" remark="窗口鼠标右键按下事件" />
+		<item  event="WM_RBUTTONUP" declare="$[UI对象名称]_鼠标右键弹起(正整型 标识,点结构 *鼠标位置, 逻辑型 *是否拦截)" remark="窗口鼠标右键弹起事件" />
+		<item  event="WM_LBUTTONDBLCLK" declare="$[UI对象名称]_鼠标左健双击(正整型 标识,点结构 *鼠标位置, 逻辑型 *是否拦截)" remark="窗口鼠标左键双击事件" />
+		<item  event="WM_RBUTTONDBLCLK" declare="$[UI对象名称]_鼠标右键双击(正整型 标识,点结构 *鼠标位置, 逻辑型 *是否拦截)" remark="窗口鼠标右键双击事件" />
+		<item  event="WM_MOUSEWHEEL" declare="$[UI对象名称]_鼠标滚动(正整型 标识,点结构 *鼠标位置,逻辑型 *是否拦截)" remark="窗口鼠标滚轮滚动事件" />
+		<item  event="WM_EXITSIZEMOVE" declare="$[UI对象名称]_退出改变大小或移动(逻辑型 *是否拦截)" remark="窗口退出改变大小或移动事件" />
+		<item  event="WM_MOUSEHOVER" declare="$[UI对象名称]_鼠标悬停(正整型 标识,点结构 *鼠标位置, 逻辑型 *是否拦截)" remark="窗口鼠标悬停事件" />
+		<item  event="WM_MOUSELEAVE" declare="$[UI对象名称]_鼠标离开(逻辑型 *是否拦截)" remark="窗口鼠标离开事件" />
+		<item  event="WM_SIZE" declare="$[UI对象名称]_大小改变(正整型 标识,大小结构 *窗口大小, 逻辑型 *是否拦截)" remark="窗口大小改变事件" />
+		<item  event="WM_TIMER" declare="$[UI对象名称]_定时器(正整型 时钟ID,逻辑型 *是否拦截)" remark="窗口定时器事件" />
+		<item  event="WM_SETFOCUS" declare="$[UI对象名称]_获得焦点(逻辑型 *是否拦截)" remark="窗口获得焦点事件" />
+		<item  event="WM_KILLFOCUS" declare="$[UI对象名称]_失去焦点(逻辑型 *是否拦截)" remark="窗口失去焦点事件" />
+		<item  event="WM_KEYDOWN" declare="$[UI对象名称]_键按下(附加参数1 wParam, 附加参数2 lParam, 逻辑型 *是否拦截)" remark="窗口键盘按键按下事件" />
+		<item  event="WM_KEYUP" declare="$[UI对象名称]_键弹起(附加参数1 wParam, 附加参数2 lParam, 逻辑型 *是否拦截)" remark="窗口键盘按键弹起事件" />
+		
+		<item  event="WM_CAPTURECHANGED" declare="$[UI对象名称]_鼠标捕获改变(HWND hWnd,逻辑型 *是否拦截)" remark="窗口鼠标捕获改变事件" />
+		<item  event="WM_SETCURSOR" declare="$[UI对象名称]_设置光标(附加参数1 wParam,附加参数2 lParam,逻辑型 *是否拦截)" remark="窗口设置鼠标光标事件" />
+		<item  event="WM_CHAR" declare="$[UI对象名称]_字符输入(附加参数1 wParam,附加参数2 lParam,逻辑型 *是否拦截)" remark="窗口字符输入事件" />
+		<item  event="WM_DROPFILES" declare="$[UI对象名称]_文件拖放(HDROP hDropInfo , 逻辑型 *是否拦截)" remark="窗口文件拖入事件" />		
+		
+		<item  event="XWM_WINDPROC" declare="$[UI对象名称]_事件过滤(正整型 事件类型, 附加参数1 wParam, 附加参数2 lParam, 逻辑型 *是否拦截)" remark="窗口消息过程" />
+		<item  event="XWM_XC_TIMER" declare="$[UI对象名称]_炫彩定时器(正整型 时钟ID,逻辑型 *是否拦截)" remark="炫彩定时器,非系统定时器,注册消息XWM_TIMER接收" />
+		
+	
+		<item  event="XWM_SETFOCUS_ELE" declare="$[UI对象名称]_元素获得焦点(元素句柄 获得焦点元素,逻辑型 *是否拦截)" remark="窗口指定元素获得焦点" />
+		
+		<item  event="XWM_MENU_POPUP" declare="$[UI对象名称]_菜单弹出(菜单句柄 hMenu, 逻辑型 *是否拦截)" remark="菜单弹出" />
+		<item  event="XWM_MENU_POPUP_WND"  declare="$[UI对象名称]_菜单弹出窗口(菜单句柄 hMenu,菜单弹出窗口结构 *项信息,逻辑型 *是否拦截)" remark="菜单弹出窗口" />
+		<item  event="XWM_MENU_SELECT"  declare="$[UI对象名称]_菜单项选择(整型 项ID,逻辑型 *是否拦截)" remark="菜单项选择" />
+		<item  event="XWM_MENU_EXIT" declare="$[UI对象名称]_菜单弹出(逻辑型 *是否拦截)" remark="菜单退出" />
+		<item  event="XWM_MENU_DRAW_BACKGROUND" declare="$[UI对象名称]_菜单背景绘制(绘图句柄 绘图句柄1,菜单背景绘制结构 *项信息,逻辑型 *是否拦截)" remark="绘制菜单背景, 启用该功能需要调用XMenu_EnableDrawBackground()." />
+		<item  event="XWM_MENU_DRAWITEM" declare="$[UI对象名称]_菜单项绘制(绘图句柄 绘图句柄1,菜单项绘制结构* 项信息,逻辑型 *是否拦截)" remark="绘制菜单项事件, 启用该功能需要调用XMenu_EnableDrawItem()." />
+		<item  event="XWM_TRAYICON" declare="$[UI对象名称]_托盘事件(附加参数1 wParam, 附加参数2 lParam, 逻辑型 *是否拦截)" remark="托盘事件" />
+
+		<frameWindowUI className="框架窗口类" >
+			<item  event="XWM_FLOAT_PANE" declare="$[UI对象名称]_浮动窗格(窗口句柄 hFloatWnd, 元素句柄 hPane, 逻辑型 *是否拦截)" remark="浮动窗格" />
+		</frameWindowUI>
+	</windowUI>
+	<elementUI className="元素类" >
+		<item  event="XE_ELEPROCE" declare="$[UI对象名称]_事件过滤(正整型 事件类型, 附加参数1 wParam, 附加参数2 lParam, 逻辑型 *是否拦截)" remark="元素处理过程事件." />
+		<item  event="XE_PAINT"  declare="$[UI对象名称]_开始绘制(绘图句柄 绘图句柄1,逻辑型 *是否拦截)" remark="元素绘制事件" />
+		<item  event="XE_PAINT_END"  declare="$[UI对象名称]_绘制完成(绘图句柄 绘图句柄1,逻辑型 *是否拦截)" remark="该元素及子元素绘制完成事件.启用该功能需要调用XEle_EnableEvent_XE_PAINT_END()" />
+		<item  event="XE_PAINT_SCROLLVIEW" declare="$[UI对象名称]_滚动视图绘制(绘图句柄 绘图句柄1,逻辑型 *是否拦截)" remark="滚动视图绘制事件." />
+		<item  event="XE_MOUSEMOVE"  declare="$[UI对象名称]_鼠标移动(正整型 标识, 点结构 *鼠标位置, 逻辑型 *是否拦截)" remark="元素鼠标移动事件." />
+		<item  event="XE_MOUSESTAY"  declare="$[UI对象名称]_鼠标进入(逻辑型 *是否拦截)" remark="元素鼠标进入事件." />
+		<item  event="XE_MOUSEHOVER" declare="$[UI对象名称]_鼠标悬停(正整型 标识, 点结构 *鼠标位置, 逻辑型 *是否拦截)" remark="元素鼠标悬停事件." />
+		<item  event="XE_MOUSELEAVE"  declare="$[UI对象名称]_鼠标离开(元素句柄 hEleStay,逻辑型 *是否拦截)" remark="元素鼠标离开事件." />
+		<item  event="XE_MOUSEWHEEL"  declare="$[UI对象名称]_鼠标滚动(正整型 标识,点结构 *鼠标位置,逻辑型 *是否拦截)" remark="元素鼠标滚轮滚动事件." />
+		<item  event="XE_LBUTTONDOWN" declare="$[UI对象名称]_鼠标左键按下(正整型 标识, 点结构 *鼠标位置,逻辑型 *是否拦截)" remark="鼠标左键按下事件." />
+		<item  event="XE_LBUTTONUP"  declare="$[UI对象名称]_鼠标左键弹出(正整型 标识, 点结构 *鼠标位置,逻辑型 *是否拦截)" remark="鼠标左键弹起事件." />
+		<item  event="XE_RBUTTONDOWN" declare="$[UI对象名称]_鼠标右键按下(正整型 标识, 点结构 *鼠标位置,逻辑型 *是否拦截)" remark="鼠标右键按下事件." />
+		<item  event="XE_RBUTTONUP"  declare="$[UI对象名称]_鼠标右键弹起(正整型 标识, 点结构 *鼠标位置,逻辑型 *是否拦截)" remark="鼠标右键弹起事件." />
+		<item  event="XE_LBUTTONDBCLICK" declare="$[UI对象名称]_鼠标左键双击(正整型 标识, 点结构 *鼠标位置,逻辑型 *是否拦截)" remark="鼠标左键双击事件." />
+		<item  event="XE_XC_TIMER"  declare="$[UI对象名称]_炫彩定时器(正整型 时钟ID,逻辑型 *是否拦截)" remark="炫彩定时器,非系统定时器,定时器消息 XM_TIMER." />
+		
+		<item  event="XE_TOOLTIP_POPUP"  declare="$[UI对象名称]_工具提示弹出(窗口句柄 工具提示窗口, 常量 字符型* 文本内容, 逻辑型 *是否拦截)" remark="元素工具提示弹出事件." />
+		
+		<item  event="XE_SETFOCUS"  declare="$[UI对象名称]_获得焦点(逻辑型 *是否拦截)" remark="元素获得焦点事件." />
+		<item  event="XE_KILLFOCUS" declare="$[UI对象名称]_失去焦点(逻辑型 *是否拦截)" remark="元素失去焦点事件." />
+		<item  event="XE_DESTROY"  declare="$[UI对象名称]_即将销毁(逻辑型 *是否拦截)" remark="元素销毁事件." />
+		<item  event="XE_DESTROY_END" declare="$[UI对象名称]_销毁完成(逻辑型 *是否拦截)" remark="元素销毁完成事件,在销毁子对象之后触发." />
+		<item  event="XE_SIZE"  declare="$[UI对象名称]_大小改变(逻辑型 *是否拦截)" remark="元素大小改变事件." />
+		<item  event="XE_SHOW"  declare="$[UI对象名称]_元素显示(逻辑型 是否显示,逻辑型 *是否拦截)" remark="元素显示隐藏事件." />
+		<item  event="XE_SETFONT" declare="$[UI对象名称]_设置字体(逻辑型 *是否拦截)" remark="元素设置字体事件." />
+		<item  event="XE_KEYDOWN" declare="$[UI对象名称]_键按下(附加参数1 wParam,附加参数2 lParam,逻辑型 *是否拦截)" remark="元素按键按下事件." />
+		<item  event="XE_KEYUP" declare="$[UI对象名称]_键弹起(附加参数1 wParam,附加参数2 lParam,逻辑型 *是否拦截)" remark="元素按键弹起事件." />
+		<item  event="XE_CHAR"  declare="$[UI对象名称]_字符输入(附加参数1 wParam,附加参数2 lParam,逻辑型 *是否拦截)" remark="通过TranslateMessage函数翻译的字符事件." />
+		<item  event="XE_SETCAPTURE" declare="$[UI对象名称]_获得鼠标捕获(逻辑型 *是否拦截)" remark="元素设置鼠标捕获." />
+		<item  event="XE_KILLCAPTURE" declare="$[UI对象名称]_失去鼠标捕获(逻辑型 *是否拦截)" remark="元素失去鼠标捕获." />
+		<item  event="XE_SETCURSOR" declare="$[UI对象名称]_设置光标(附加参数1 wParam,附加参数2 lParam,逻辑型 *是否拦截)" remark="设置鼠标光标" />
+		<item  event="XE_DROPFILES" declare="$[UI对象名称]_文件拖放(HDROP hDropInfo, 逻辑型 *是否拦截)" remark="文件拖放事件." />
+		<buttonUI className="按钮类">
+			<item  event="XE_BNCLICK" declare="$[UI对象名称]_按钮点击(逻辑型 *是否拦截)" remark="按钮点击事件." />
+			<item  event="XE_BUTTON_CHECK" declare="$[UI对象名称]_按钮选中(逻辑型 是否选中,逻辑型 *是否拦截)" remark="按钮选中事件." />
+			<textLinkUI>
+			</textLinkUI>
+		</buttonUI>
+		<tabBarUI className="Tab条类">
+			<item  event="XE_TABBAR_SELECT" declare="$[UI对象名称]_TAB条项选择(整型 项索引, 逻辑型 *是否拦截)" remark="TabBar标签按钮选择改变事件" />
+			<item  event="XE_TABBAR_DELETE"  declare="$[UI对象名称]_TAB条项删除(整型 项索引, 逻辑型 *是否拦截)" remark="TabBar标签按钮删除事件" />
+		</tabBarUI>
+		<menuBarUI className="菜单条类">
+			<item  event="XE_MENU_POPUP"  declare="$[UI对象名称]_弹出菜单(菜单句柄 hMenu, 逻辑型 *是否拦截)" remark="弹出菜单项选择事件." />
+			<item  event="XE_MENU_POPUP_WND"  declare="$[UI对象名称]_弹出菜单完成(菜单句柄 hMenu,菜单弹出窗口结构* pInfo,逻辑型 *是否拦截)" remark="弹出菜单项选择事件." />
+			<item  event="XE_MENU_SELECT"  declare="$[UI对象名称]_菜单项选择(整型 项ID,逻辑型 *是否拦截)" remark="弹出菜单项选择事件." />
+			<item  event="XE_MENU_DRAW_BACKGROUND"  declare="$[UI对象名称]_绘制菜单背景(绘图句柄 绘图句柄1,菜单背景绘制结构 *pInfo,逻辑型 *是否拦截)" remark="绘制菜单背景事件, 启用该功能需要调用XMenu_EnableDrawBACKGROUND()." />
+			<item  event="XE_MENU_DRAWITEM"  declare="$[UI对象名称]_绘制菜单项(绘图句柄 绘图句柄1,菜单项绘制结构* pInfo,逻辑型 *是否拦截)" remark="绘制菜单项事件, 启用该功能需要调用XMenu_EnableDrawItem()." />
+			<item  event="XE_MENU_EXIT"  declare="$[UI对象名称]_菜单退出(逻辑型 *是否拦截)" remark="弹出菜单退出事件." />
+		</menuBarUI>
+		<scrollBarUI className="滚动条类">
+			<item  event="XE_SBAR_SCROLL"  declare="$[UI对象名称]_滚动条滚动(整型 当前位置,逻辑型 *是否拦截)" remark="滚动条元素滚动事件,滚动条触发." />
+		</scrollBarUI>
+		<sliderBarUI className="滑动条类">
+			<item  event="XE_SLIDERBAR_CHANGE" declare="$[UI对象名称]_滑块位置改变(整型 当前位置,逻辑型 *是否拦截)" remark="滑动条元素,滑块位置改变事件." />
+		</sliderBarUI>
+		<progressBarUI className="进度条类">
+			<item  event="XE_PROGRESSBAR_CHANGE" declare="$[UI对象名称]_进度条改变(整型 当前位置,逻辑型 *是否拦截)" remark="进度条元素,进度改变事件." />
+		</progressBarUI>
+		<monthCalUI className="月历卡片类">
+			<item  event="XE_MONTHCAL_CHANGE" declare="$[UI对象名称]_月历改变(逻辑型 *是否拦截)" remark="月历元素日期改变事件, 未开放" />
+		</monthCalUI>
+		<dateTimeUI className="日期时间类">
+			<item  event="XE_DATETIME_CHANGE" declare="$[UI对象名称]_日期改变(逻辑型 *是否拦截)" remark="日期时间元素,内容改变事件, 未开放" />
+			<item  event="XE_DATETIME_POPUP_MONTHCAL" declare="$[UI对象名称]_弹出月历(窗口句柄 hMonthCalWnd,元素句柄 hMonthCal,逻辑型 *是否拦截)" remark="日期时间元素,弹出月历卡片事件, 未开放" />
+			<item  event="XE_DATETIME_EXIT_MONTHCAL" declare="$[UI对象名称]_退出月历(窗口句柄 hMonthCalWnd,元素句柄 hMonthCal,逻辑型 *是否拦截)" remark="日期时间元素,弹出的月历卡片退出事件, 未开放" />
+		</dateTimeUI>
+		<scrollViewUI className="滚动视图类">
+			<item  event="XE_SCROLLVIEW_SCROLL_H" declare="$[UI对象名称]_水平滚动(整型 当前位置,逻辑型 *是否拦截)" remark="滚动视图元素水平滚动事件,滚动视图触发." />
+			<item  event="XE_SCROLLVIEW_SCROLL_V" declare="$[UI对象名称]_重置滚动(整型 当前位置,逻辑型 *是否拦截)" remark="滚动视图元素垂直滚动事件,滚动视图触发." />
+			<listBoxUI className="列表框类">
+				<item  event="XE_LISTBOX_TEMP_CREATE" declare="$[UI对象名称]_项模板创建(列表框项结构* 项信息,整型 标识,逻辑型 *是否拦截)" remark="列表框元素,项模板创建." />
+				<item  event="XE_LISTBOX_TEMP_CREATE_END" declare="$[UI对象名称]_项模板创建完成(列表框项结构* 项信息,整型 标识,逻辑型 *是否拦截)" remark="列表框元素,项模板创建完成事件." />
+				<item  event="XE_LISTBOX_TEMP_DESTROY" declare="$[UI对象名称]_项模板销毁(列表框项结构* 项信息,整型 标识,逻辑型 *是否拦截)" remark="列表框元素,项模板销毁." />
+				<item  event="XE_LISTBOX_DRAWITEM" declare="$[UI对象名称]_项绘制(绘图句柄 绘图,列表框项结构* 项信息,逻辑型 *是否拦截)" remark="列表框元素,项绘制事件." />
+				<item  event="XE_LISTBOX_SELECT"  declare="$[UI对象名称]_项选择(整型 项索引,逻辑型 *是否拦截)" remark="列表框元素,项选择事件." />
+			</listBoxUI>
+			<listUI className="列表类">
+				<item  event="XE_LIST_TEMP_CREATE" declare="$[UI对象名称]_项模板创建(列表项结构* 项信息,整型 标识,逻辑型 *是否拦截)" remark="列表元素,项模板创建." />
+				<item  event="XE_LIST_TEMP_CREATE_END" declare="$[UI对象名称]_项模板创建完成(列表项结构* 项信息,整型 标识,逻辑型 *是否拦截)" remark="列表元素,项模板创建完成事件." />
+				<item  event="XE_LIST_TEMP_DESTROY" declare="$[UI对象名称]_项模板销毁(列表项结构* 项信息,整型 标识,逻辑型 *是否拦截)" remark="列表元素,项模板销毁." />
+				<item  event="XE_LIST_DRAWITEM" declare="$[UI对象名称]_项绘制(绘图句柄 绘图句柄1,列表项结构* 项信息,逻辑型 *是否拦截)" remark="列表元素,绘制项." />
+				<item  event="XE_LIST_SELECT" declare="$[UI对象名称]_项选择(整型 项索引,逻辑型 *是否拦截)" remark="列表元素,项选择事件." />
+				<item  event="XE_LIST_HEADER_DRAWITEM" declare="$[UI对象名称]_列表头项绘制(绘图句柄 绘图句柄1, 列表头项结构* 项信息, 逻辑型 *是否拦截)" remark="列表元素绘制列表头项." />
+				<item  event="XE_LIST_HEADER_CLICK" declare="$[UI对象名称]_列表头项被点击(整型 项索引, 逻辑型 *是否拦截)" remark="列表元素,列表头项点击事件." />
+				<item  event="XE_LIST_HEADER_WIDTH_CHANGE" declare="$[UI对象名称]_列表头项宽度改变(整型 项索引, 整型 列宽, 逻辑型 *是否拦截)" remark="列表元素,列表头项宽度改变事件." />
+				<item  event="XE_LIST_HEADER_TEMP_CREATE" declare="$[UI对象名称]_列表头项模板创建(列表头项结构* 项信息, 逻辑型 *是否拦截)" remark="列表元素,列表头项模板创建." />
+				<item  event="XE_LIST_HEADER_TEMP_CREATE_END" declare="$[UI对象名称]_列表头项模板创建完成(列表头项结构* 项信息,逻辑型 *是否拦截)" remark="列表元素,列表头项模板创建完成事件." />
+				<item  event="XE_LIST_HEADER_TEMP_DESTROY" declare="$[UI对象名称]_列表头项模板销毁(列表头项结构* 项信息,逻辑型 *是否拦截)" remark="列表元素,列表头项模板销毁." />
+			</listUI>
+			<treeUI className="列表树类">
+				<item  event="XE_TREE_TEMP_CREATE" declare="$[UI对象名称]_项模板创建(列表树项结构* 项信息,整型 标识,逻辑型 *是否拦截)" remark="树元素,项模板创建." />
+				<item  event="XE_TREE_TEMP_CREATE_END" declare="$[UI对象名称]_项模板创建完成(列表树项结构* 项信息,整型 标识,逻辑型 *是否拦截)" remark="树元素,项模板创建完成." />
+				<item  event="XE_TREE_TEMP_DESTROY" declare="$[UI对象名称]_项模板销毁(列表树项结构* 项信息,整型 标识,逻辑型 *是否拦截)" remark="树元素,项模板销毁." />
+				<item  event="XE_TREE_DRAWITEM" declare="$[UI对象名称]_绘制项(绘图句柄 绘图句柄1,列表树项结构* 项信息,逻辑型 *是否拦截)" remark="树元素,绘制项." />
+				<item  event="XE_TREE_SELECT" declare="$[UI对象名称]_项选择(整型 项ID,逻辑型 *是否拦截)" remark="树元素,项选择事件." />
+				<item  event="XE_TREE_EXPAND" declare="$[UI对象名称]_项展开收缩(整型 项ID,逻辑型 是否展开,逻辑型 *是否拦截)" remark="树元素,项展开收缩事件." />
+				<item  event="XE_TREE_DRAG_ITEM_ING" declare="$[UI对象名称]_项拖动中(列表树拖动项结构* 项信息, 逻辑型 *是否拦截)" remark="树元素,用户正在拖动项, 可对参数值修改." />
+				<item  event="XE_TREE_DRAG_ITEM" declare="$[UI对象名称]_拖动项(列表树拖动项结构* 项信息, 逻辑型 *是否拦截)" remark="树元素,拖动项事件." />
+			</treeUI>
+			<listViewUI className="列表视图类">
+				<item  event="XE_LISTVIEW_TEMP_CREATE" declare="$[UI对象名称]_项模板创建(列表视图项结构* 项信息,整型 标识,逻辑型 *是否拦截)" remark="列表视元素,项模板创建." />
+				<item  event="XE_LISTVIEW_TEMP_CREATE_END" declare="$[UI对象名称]_项模板创建完成(列表视图项结构* 项信息,整型 标识,逻辑型 *是否拦截)" remark="列表视元素,项模板创建完成事件." />
+				<item  event="XE_LISTVIEW_TEMP_DESTROY" declare="$[UI对象名称]_项模板销毁(列表视图项结构* 项信息,整型 标识,逻辑型 *是否拦截)" remark="列表视元素,项模板销毁." />
+				<item  event="XE_LISTVIEW_DRAWITEM" declare="$[UI对象名称]_绘制项(绘图句柄 绘图句柄1,列表视图项结构* 项信息,逻辑型 *是否拦截)" remark="列表视元素,自绘项." />
+				<item  event="XE_LISTVIEW_SELECT" declare="$[UI对象名称]_项选择(整型 组索引,整型 项索引,逻辑型 *是否拦截)" remark="列表视元素,项选择事件." />
+				<item  event="XE_LISTVIEW_EXPAND" declare="$[UI对象名称]_组展开收缩(整型 组索引,逻辑型 是否展开,逻辑型 *是否拦截)" remark="列表视元素,组展开收缩事件." />
+			</listViewUI>
+			<PropertyGridUI className="属性网格类">
+				<item  event="XE_PGRID_VALUE_CHANGE" declare="$[UI对象名称]_项内容改变(整型 项ID,逻辑型 *是否拦截)" remark="属性网格元素 项值改变事件" />
+				<item  event="XE_PGRID_ITEM_SET" declare="$[UI对象名称]_项设置(整型 项ID, 逻辑型 *是否拦截)" remark="属性网格元素 项值改变事件" />
+				<item  event="XE_PGRID_ITEM_SELECT"  declare="$[UI对象名称]_项选择(整型 项ID, 逻辑型 *是否拦截)" remark="属性网格元素 项值改变事件" />
+				<item  event="XE_PGRID_ITEM_DESTROY" declare="$[UI对象名称]_项销毁(整型 项ID, 逻辑型 *是否拦截)" remark="属性网格项销毁事件" />
+				<item  event="XE_PGRID_ITEM_EXPAND" declare="$[UI对象名称]_项展开(整型 项ID, 逻辑型 是否展开, 逻辑型 *是否拦截)" remark="属性网格项展开事件" />
+			</PropertyGridUI>
+			<editUI className="编辑框类">
+				<item  event="XE_EDIT_SET" declare="$[UI对象名称]_编辑框设置(逻辑型 *是否拦截)" remark="编辑框设置事件" />
+				<item  event="XE_EDIT_CHANGED" declare="$[UI对象名称]_内容改变(逻辑型 *是否拦截)" remark="编辑框内容改变事件" />
+				<item  event="XE_EDIT_POS_CHANGED" declare="$[UI对象名称]_插入符位置改变(整型 当前位置, 逻辑型 *是否拦截)" remark="编辑框插入符位置改变事件" />
+				<comboBoxUI className="下拉组合框类">
+					<item  event="XE_COMBOBOX_SELECT"  declare="$[UI对象名称]_项选择(整型 项索引,逻辑型 *是否拦截)" remark="组合框下拉列表项选择事件." />
+					<item  event="XE_COMBOBOX_SELECT_END" declare="$[UI对象名称]_项选择完成(整型 项索引,逻辑型 *是否拦截)" remark="组合框下拉列表项选择完成事件,编辑框内容已经改变."/>
+					<item  event="XE_COMBOBOX_POPUP_LIST" declare="$[UI对象名称]_弹出列表(窗口句柄 hWindow,元素句柄 列表框句柄,逻辑型 *是否拦截)" remark="组合框下拉列表弹出事件." />
+					<item  event="XE_COMBOBOX_EXIT_LIST" declare="$[UI对象名称]_退出列表(逻辑型 *是否拦截)" remark="组合框下拉列表退出事件." />
+				</comboBoxUI>
+			</editUI>
+		</scrollViewUI>
+	</elementUI>	
+</events>
