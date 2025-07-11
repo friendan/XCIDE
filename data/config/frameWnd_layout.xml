@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<frameWnd_layout x="453" x="453" y="97" width="1295" height="882" maximize="0">
+<frameWnd_layout x="171" x="171" y="36" width="1036" height="659" maximize="1">
 	<cell state="1" dockAlign="0" type="5" size="1194" show="1" calcLayout="1">
 		<cell state="1" dockAlign="0" type="4" size="242" show="1" calcLayout="1">
 			<group activate="0" state="1" dockAlign="0" type="2" size="420" show="1" calcLayout="1">
@@ -9,10 +9,10 @@
 			</group>
 			<pane id="1002" title="文档大纲" state="1" dockAlign="0" type="1" size="366" show="0" calcLayout="1" />
 		</cell>
-		<cell state="1" dockAlign="0" type="4" size="1037" show="1" calcLayout="1">
-			<cell state="1" dockAlign="0" type="5" size="562" show="1" calcLayout="1">
+		<cell state="1" dockAlign="0" type="4" size="1278" show="1" calcLayout="1">
+			<cell state="1" dockAlign="0" type="5" size="504" show="1" calcLayout="1">
 				<pane id="1000" title="快速面板" state="1" dockAlign="0" type="1" size="100" show="0" calcLayout="1" />
-				<view state="1" dockAlign="0" type="3" size="1037" show="1" calcLayout="1" />
+				<view state="1" dockAlign="0" type="3" size="1278" show="1" calcLayout="1" />
 				<cell state="1" dockAlign="0" type="4" size="281" show="1" calcLayout="1">
 					<group activate="-1" state="1" dockAlign="0" type="2" size="294" show="1" calcLayout="1">
 						<pane id="1003" show="0" title="工具箱" />
