@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-列表元素项模板文件-->
+<head />
+<xc_template_list showT="true">
+	<listHeader_item expandT="true" showT="true">
+		<layoutEleUI drawBorder="false" enableCanvas="false" expandT="true" heightT="22" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="2" layout.width="fill" mouseThrough="true" showT="true" tempExtend.count="0" tempExtend.start="1" widthT="300">
+			<shapeText content="{binding field=name}" expandT="true" itemID="0" layout.height="fill" layout.width=":1" showT="true" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" />
+		</layoutEleUI>
+	</listHeader_item>
+	<list_Item expandT="true" showT="true">
+		<layoutEleUI border="1,1,1,2" drawBorder="false" enableCanvas="false" expandT="true" heightT="22" layout.alignBaseline="center" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.overflowHide="true" layout.space="1" layout.width="fill" mouseThrough="true" showT="true" widthT="300">
+			<buttonUI bkInfoM="{99:1.9.9;98:272(2,0)288(2,0)320(2,0)128(2,0,1);5:2(48)3(7,1,0,0)20(1)21(3)26(1)22(-8355712)23(255);5:2(48)3(1,7,100,100)20(1)21(3)26(1)22(-8355712)23(255);5:2(15)10(1)7(1)11(3)16(1)12(-8355712)13(255);}" css.enable="false" expandT="true" itemID="1" layout.height="13" layout.width="13" rect="0,0,60,25" showT="true" transparent="true" />
+			<shapeText content="{binding field=name1}" expandT="true" itemID="5" layout.height="fill" layout.width=":1" rect="0,0,0,0" showT="true" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" />
+		</layoutEleUI>
+		<layoutEleUI border="1,1,1,2" drawBorder="false" enableCanvas="false" expandT="true" heightT="22" layout.alignBaseline="center" layout.alignH="center" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.overflowHide="true" layout.space="1" layout.width="fill" mouseThrough="true" showT="true" tempExtend.count="0" tempExtend.start="3" widthT="300">
+			<shapeText content="{binding field=name}" expandT="true" itemID="5" layout.height="fill" layout.width=":1" showT="true" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" />
+		</layoutEleUI>
+	</list_Item>
+</xc_template_list>

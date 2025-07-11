@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-列表框元素项模板文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<xc_template_listBox>
+	<layoutEleUI drawBorder="false" enableCanvas="false" heightT="50" layout.alignH="left" layout.alignV="top" layout.height="fill" layout.horizon="true" layout.space="2" layout.width="fill" mouseThrough="true" padding="0,0,0,0" showT="true" widthT="500" expandT="true">
+		<layoutEleUI rect="221,26,50,50" showT="true" expandT="true">
+			<shapePicture image="{binding field=namePic}" layout.height="fill" layout.width="fill" rect="46,29,100,100" showT="true" expandT="true" />
+		</layoutEleUI>
+		<layoutEleUI layout.height="fill" layout.horizon="false" layout.width=":1" rect="370,23,100,100" showT="true" expandT="true">
+			<layoutEleUI layout.alignH="left" layout.alignV="bottom" layout.width="fill" rect="130,23,100,30" showT="true" expandT="true">
+				<shapeText content="{binding field=name1}" css.name="style_shapeText" font="@ID_FONT_10" layout.height="20" layout.width="auto" rect="121,17,123,20" showT="true" expandT="true" />
+			</layoutEleUI>
+			<layoutEleUI layout.alignV="top" layout.height=":1" layout.width="fill" padding="0,0,0,0" rect="277,24,100,10" showT="true" expandT="true">
+				<shapeText content="{binding field=name2}" css.name="style_shapeText_caption" layout.height="20" layout.width="auto" rect="101,20,100,20" showT="true" expandT="true" />
+			</layoutEleUI>
+		</layoutEleUI>
+	</layoutEleUI>
+</xc_template_listBox>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-窗口布局文件-->
+<head>
+	<bindJsFile value="" />
+	<bindClassName value="我的主窗口类" />
+</head>
+<windowUI center="true" content="炫彩界面库 - 我的窗口名" rect="20,20,861,635" showT="true" windowStyle="2031">
+	<layoutEleUI layout.height="fill" layout.width="fill" name="布局" rect="483,94,100,100" showT="true" expandT="true" />
+</windowUI>

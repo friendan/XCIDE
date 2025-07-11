@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-窗口布局文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<windowUI bkInfoM="{99:1.9.9;5:2(15)20(1)21(3)26(0)22(-10927566)23(255);98:1(0);}" center="true" content="炫彩界面库 - 我的窗口名" dragWindow="true" enableLayout="true" overlayBorder="true" rect="20,20,350,600" showT="true" transparentAlpha="255" transparentFlag="shadow" windowStyle="0">
+	<layoutEleUI expandT="true" layout.alignH="center" layout.height="fill" layout.horizon="false" layout.space="0" layout.width="fill" padding="0,0,0,0" rect="137,368,100,100" showT="true">
+		<layoutEleUI expandT="true" layout.alignH="center" layout.alignV="center" layout.height="180" layout.horizon="false" layout.space="0" layout.width="fill" padding="0,0,0,0" rect="231,116,100,100" showT="true">
+			<layoutEleUI expandT="true" layout.alignH="right" layout.height="30" layout.width="fill" rect="245,21,100,100" showT="true">
+				<buttonUI bkInfoM="{99:1.9.9;5:2(15)20(1)21(3)26(0)22(-10927566)23(255);5:2(48)8(135.00)3(10,2,10,2)20(1)21(3)26(0)22(-3163991)23(255);5:2(48)8(45.00)3(10,2,10,2)20(1)21(3)26(0)22(-3163991)23(255);5:2(48)8(135.00)3(10,2,10,2)20(1)21(3)26(0)22(-1)23(255);5:2(48)8(45.00)3(10,2,10,2)20(1)21(3)26(0)22(-1)23(255);98:16(0,1,2)32(0,3,4)64(0,4,3);}" buttonType="close" expandT="true" rect="265,17,50,25" showT="true" />
+			</layoutEleUI>
+			<layoutEleUI expandT="true" layout.alignH="center" layout.alignV="center" layout.height=":1" layout.width="fill" rect="267,136,100,100" showT="true">
+				<buttonUI bkInfoM="{99:1.9.9;5:2(15)20(1)21(3)26(1)22(-1)23(255)9(20,0,0,20);5:2(15)20(1)21(3)26(1)22(-13031139)23(255)9(20,0,0,20);5:2(15)20(1)21(3)26(1)22(-1644826)23(255)9(20,0,0,20);98:272(0)288(2)320(2)128(1);}" buttonType="radio" check="true" content="登陆" expandT="true" font="@ID_FONT_12" name="登陆" rect="200,132,90,40" showT="true" textColor="#FFFFFFFF" transparent="true" />
+				<buttonUI bkInfoM="{99:1.9.9;5:2(15)20(1)21(3)26(1)22(-1)23(255)9(0,20,20,0);5:2(15)20(1)21(3)26(1)22(-13031139)23(255)9(0,20,20,0);5:2(15)20(1)21(3)26(1)22(-1644826)23(255)9(0,20,20,0);98:272(0)288(2)320(2)128(1);}" buttonType="radio" content="注册" expandT="true" font="@ID_FONT_12" name="注册" rect="201,93,90,40" showT="true" textColor="#FF000000" transparent="true" />
+			</layoutEleUI>
+		</layoutEleUI>
+		<layoutEleUI expandT="true" layout.height=":1" layout.width="fill" name="content" rect="229,330,100,100" showT="true" />
+	</layoutEleUI>
+</windowUI>

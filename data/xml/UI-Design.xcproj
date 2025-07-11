@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<project name="UI-Design" ui_loadType="0" ui_zipPassword="">
+	<layoutFiles>
+		<param path=".\layout_test.xml" />
+		<param path=".\layout_test2.xml" />
+		<param path="layout_sysSetting.xml" />
+		<param path=".\item_template\CppClass_Item.xml" />
+		<param path=".\item_template\FileView_Item.xml" />
+		<param path=".\item_template\QuickPane_TreeItem.xml" />
+		<param path=".\item_template\QuickPane_TreeItemGroup.xml" />
+		<param path=".\item_template\bkInfoEditor_ListBox_Item.xml" />
+		<param path=".\item_template\bkInfoEditor_ListBox_Item_stateGroup.xml" />
+		<param path=".\item_template\bkInfoEditor_ListBox_Item_sel.xml" />
+		<param path=".\item_template\ObjectView_Item.xml" />
+		<param path=".\item_template\toolBox_ListView_Item.xml" />
+		<param path=".\item_template\toolBox_ListView_Item_simple.xml" />
+		<param path=".\item_template\List_Item_res_font.xml" />
+		<param path=".\item_template\List_Item_res_image.xml" />
+	</layoutFiles>
+	<styleFiles>
+		<param path=".\style2.css" />
+		<param path=".\style1.css" currentCSS="true" />
+	</styleFiles>
+	<resourceFiles>
+		<param path="resource.res" />
+		<param path="resource1.res" />
+		<param path="resource2.res" />
+	</resourceFiles>
+	<default_css path="style1.css" />
+	<codeExpand />
+	<breakpoints />
+</project>

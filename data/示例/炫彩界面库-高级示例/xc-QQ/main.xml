@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-窗口布局文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<windowUI bkInfoM="{99:1.9.9;3:2(15)4(@ID_IMAGE_SKIN1);5:2(15)10(1)7(1)11(3)16(0)12(-1644826)13(255);98:1(0,1);}" border="0" center="true" dragWindow="true" enableLayout="true" layout.horizon="false" padding="0,0,0,0" rect="0,0,300,590" showT="true" transparentFlag="shadow" windowStyle="0">
+	<layoutEleUI expandT="true" id="1" layout.height="30" layout.width="fill" rect="105,78,100,100" showT="true">
+		<layoutEleUI expandT="true" id="2" layout.height="fill" layout.width=":1" padding="5,0,0,0" rect="99,16,100,100" showT="true">
+			<shapePicture expandT="true" image="@ID_IMAGE_qqlogoclassic" layout.height="fill" layout.width="42" rect="65,14,100,100" showT="true" />
+		</layoutEleUI>
+		<layoutEleUI expandT="true" id="3" layout.alignH="right" layout.height="fill" rect="200,17,100,100" showT="true">
+			<buttonUI bkInfoM="{99:1.9.9;3:2(15)4(@ID_IMAGE_btn_medalwall_normal);3:2(15)4(@ID_IMAGE_btn_MedalWall_Hover);3:2(15)4(@ID_IMAGE_btn_MedalWall_Down);98:272(0)288(1)320(2);}" expandT="true" rect="34,11,30,27" showT="true" transparent="true" />
+			<buttonUI bkInfoM="{99:1.9.9;3:2(15)4(@ID_IMAGE_sysbtn_min_normal);3:2(15)4(@ID_IMAGE_sysbtn_min_hover);3:2(15)4(@ID_IMAGE_sysbtn_min_down);98:272(0)288(1)320(2);}" buttonType="min" expandT="true" rect="54,31,30,27" showT="true" transparent="true" />
+			<buttonUI bkInfoM="{99:1.9.9;3:2(15)4(@ID_IMAGE_sysbtn_close_normal);3:2(15)4(@ID_IMAGE_sysbtn_close_hover);3:2(15)4(@ID_IMAGE_sysbtn_close_down);98:272(0)288(1)320(2);}" buttonType="close" expandT="true" rect="74,51,30,27" showT="true" transparent="true" />
+		</layoutEleUI>
+	</layoutEleUI>
+	<layoutEleUI expandT="false" layout.height="70" layout.width="fill" rect="125,98,100,100" showT="true">
+		<layoutEleUI expandT="true" layout.height="fill" layout.width="72" padding="6,0,0,0" rect="78,65,0,0" showT="true">
+			<shapePicture expandT="true" image="@ID_IMAGE_avatar" rect="64,47,60,60" showT="true" />
+		</layoutEleUI>
+		<layoutEleUI expandT="true" layout.height="fill" layout.horizon="false" layout.width=":1" rect="173,59,100,100" showT="true">
+			<layoutEleUI expandT="true" layout.height="20" layout.width="fill" rect="71,16,100,100" showT="true">
+				<shapeText content="炫彩界面库" expandT="true" layout.height="20" layout.width="auto" rect="21,7,0,0" showT="true" />
+				<buttonUI bkInfoM="{99:1.9.9;3:2(15)4(@ID_IMAGE_btn_home_hover);3:2(15)4(@ID_IMAGE_btn_home_down);98:288(0)320(1);}" content="在线" expandT="true" rect="103,10,35,20" showT="true" transparent="true" />
+				<buttonUI bkInfoM="{99:1.9.9;3:2(15)4(@ID_IMAGE_btn_home_hover);3:2(15)4(@ID_IMAGE_btn_home_down);98:288(0)320(1);}" expandT="true" imageIcon="@ID_IMAGE_SuperVIP_LIGHT" rect="150,8,36,20" showT="true" transparent="true" />
+			</layoutEleUI>
+			<layoutEleUI expandT="true" layout.height="20" layout.width="fill" rect="147,23,100,100" showT="true">
+				<shapeText content="XCGUI-软件UI开发框架" expandT="true" layout.height="20" layout.width="auto" rect="42,6,0,0" showT="true" />
+			</layoutEleUI>
+			<layoutEleUI expandT="true" layout.height="22" layout.horizon="true" layout.width="fill" rect="209,35,100,100" showT="true">
+				<layoutEleUI expandT="true" layout.alignV="top" layout.height="fill" layout.space="5" layout.width=":1" rect="112,12,100,100" showT="true">
+					<buttonUI bkInfoM="@ID_bkInfo_Button" expandT="true" imageIcon="@ID_IMAGE_vip0" rect="80,68,22,22" showT="true" transparent="true" />
+					<buttonUI bkInfoM="@ID_bkInfo_Button" expandT="true" imageIcon="@ID_IMAGE_icon" rect="40,28,22,22" showT="true" transparent="true" />
+					<buttonUI bkInfoM="@ID_bkInfo_Button" expandT="true" imageIcon="@ID_IMAGE_menu_help" rect="20,8,22,22" showT="true" transparent="true" />
+					<buttonUI bkInfoM="@ID_bkInfo_Button" expandT="true" imageIcon="@ID_IMAGE_QQZone" rect="60,48,22,22" showT="true" transparent="true" />
+				</layoutEleUI>
+				<layoutEleUI expandT="true" layout.alignH="right" layout.alignV="center" layout.height="fill" layout.space="5" layout.width="60" padding="0,0,5,0" rect="205,8,100,100" showT="true">
+					<buttonUI bkInfoM="@ID_bkInfo_Button" expandT="true" imageIcon="@ID_IMAGE_btn_skin_normal" rect="80,68,22,22" showT="true" transparent="true" />
+					<buttonUI bkInfoM="@ID_bkInfo_Button" expandT="true" imageIcon="@ID_IMAGE_messagebox16" rect="100,88,22,22" showT="true" transparent="true" />
+				</layoutEleUI>
+			</layoutEleUI>
+		</layoutEleUI>
+	</layoutEleUI>
+	<layoutEleUI expandT="false" layout.height="35" layout.width="fill" rect="165,138,100,100" showT="true">
+		<buttonUI alpha="200" bkInfoM="{99:1.9.9;5:2(15)20(1)21(3)26(0)22(-1)23(255);3:2(48)3(60,35,0,-1)4(@ID_IMAGE_icon_contacts_selected);3:2(15)4(@ID_IMAGE_icon_contacts_normal);3:2(15)4(@ID_IMAGE_icon_contacts_hover);3:2(15)4(@ID_IMAGE_icon_contacts_selected);4:2(18)8(270.00)3(6,26,5,12)20(1)21(3)26(0)22(-1)23(255)10(1)7(1)11(3)16(0)12(-2302756)13(255);5:2(13)3(0,1,0,0)20(1)21(3)26(0)22(-2302756)23(255);98:128(0,1,6,5)272(0,2,6)288(0,3,6)320(0,4,6);}" expandT="true" layout.height="35" layout.width=":1" rect="30,10,60,25" showT="true" transparent="true" />
+		<buttonUI alpha="200" bkInfoM="{99:1.9.9;5:2(15)20(1)21(3)26(0)22(-1)23(255);3:2(15)4(@ID_IMAGE_icon_group_selected);5:2(15)20(1)21(3)26(0)22(-1)23(255);3:2(15)4(@ID_IMAGE_icon_group_normal);5:2(15)20(1)21(3)26(0)22(-1)23(255);3:2(15)4(@ID_IMAGE_icon_group_hover);5:2(15)20(1)21(3)26(0)22(-1)23(255);3:2(15)4(@ID_IMAGE_icon_group_selected);4:2(18)8(270.00)3(6,26,5,12)20(1)21(3)26(0)22(-1)23(255)10(1)7(1)11(3)16(0)12(-2302756)13(255);5:2(13)3(0,1,0,0)20(1)21(3)26(0)22(-2302756)23(255);98:128(0,1,9,8)272(2,3,9)288(4,5,9)320(6,7,9);}" expandT="true" layout.height="35" layout.width=":1" rect="50,30,60,25" showT="true" transparent="true" />
+		<buttonUI alpha="200" bkInfoM="{99:1.9.9;5:2(15)20(1)21(3)26(0)22(-1)23(255);3:2(15)4(@ID_IMAGE_icon_last_selected);5:2(15)20(1)21(3)26(0)22(-1)23(255);3:2(15)4(@ID_IMAGE_icon_last_selected);5:2(15)20(1)21(3)26(0)22(-1)23(255);3:2(15)4(@ID_IMAGE_icon_last_normal);5:2(15)20(1)21(3)26(0)22(-1)23(255);3:2(15)4(@ID_IMAGE_icon_last_hover);4:2(18)8(270.00)3(6,26,5,12)20(1)21(3)26(0)22(-1)23(255)10(1)7(1)11(3)16(0)12(-2302756)13(255);5:2(13)3(0,1,0,0)20(1)21(3)26(0)22(-2302756)23(255);98:128(0,1,9,8)320(2,3,9)272(4,5,9)288(6,7,9);}" expandT="true" layout.height="35" layout.width=":1" rect="70,50,60,25" showT="true" transparent="true" />
+	</layoutEleUI>
+	<layoutEleUI expandT="false" layout.height=":1" layout.width="fill" rect="185,158,100,100" showT="true">
+		<treeUI alpha="200" drawBorder="false" drawFocus="false" expandT="true" layout.height="fill" layout.width="fill" name="tree" rect="144,15,100,100" showT="true" />
+	</layoutEleUI>
+	<layoutEleUI alpha="100" bkInfoM="{99:1.9.9;5:2(15)20(1)21(3)26(0)22(-1)23(255);5:2(7)3(0,0,0,1)20(1)21(3)26(0)22(-2960686)23(255);98:16(0,1);}" enableCanvas="true" expandT="false" id="100" layout.height="60" layout.horizon="false" layout.width="fill" rect="205,178,100,100" showT="true" transparent="true">
+		<layoutEleUI expandT="true" layout.height="30" layout.width="fill" rect="109,14,100,100" showT="true">
+			<layoutEleUI expandT="true" layout.alignV="center" layout.height="fill" layout.space="5" layout.width=":1" padding="5,0,0,0" rect="107,16,100,100" showT="true">
+				<buttonUI bkInfoM="@ID_bkInfo_Button" expandT="true" imageIcon="@ID_IMAGE_VASFlagEnable" rect="100,88,24,24" showT="true" transparent="true" />
+				<buttonUI bkInfoM="@ID_bkInfo_Button" expandT="true" imageIcon="@ID_IMAGE_main_musicbtn20_music" rect="120,108,24,24" showT="true" transparent="true" />
+			</layoutEleUI>
+			<layoutEleUI expandT="true" layout.alignH="right" layout.alignV="center" layout.height="fill" layout.width="60" padding="0,0,5,0" rect="176,16,100,100" showT="true">
+				<buttonUI bkInfoM="@ID_bkInfo_Button" expandT="true" imageIcon="@ID_IMAGE_mainmenu_allservices" rect="140,128,24,24" showT="true" transparent="true" />
+			</layoutEleUI>
+		</layoutEleUI>
+		<layoutEleUI expandT="true" layout.height="30" layout.width="fill" rect="206,23,100,100" showT="true">
+			<layoutEleUI expandT="true" layout.alignV="center" layout.height="fill" layout.space="3" layout.width=":1" padding="5,0,0,0" rect="127,36,100,100" showT="true">
+				<buttonUI bkInfoM="@ID_bkInfo_Button" expandT="true" imageIcon="@ID_IMAGE_menu_btn_normal" rect="160,148,24,24" showT="true" transparent="true" />
+				<buttonUI bkInfoM="@ID_bkInfo_Button" expandT="true" imageIcon="@ID_IMAGE_tools_hover" rect="180,168,24,24" showT="true" transparent="true" />
+				<buttonUI bkInfoM="@ID_bkInfo_Button" expandT="true" imageIcon="@ID_IMAGE_filemanager_hover" rect="200,188,24,24" showT="true" transparent="true" />
+				<buttonUI bkInfoM="@ID_bkInfo_Button" expandT="true" imageIcon="@ID_IMAGE_message_highlight" rect="220,208,24,24" showT="true" transparent="true" />
+				<buttonUI bkInfoM="@ID_bkInfo_Button" expandT="true" imageIcon="@ID_IMAGE_myCollection_mainpanel_hover" rect="240,228,24,24" showT="true" transparent="true" />
+				<buttonUI bkInfoM="@ID_bkInfo_Button" content="查找" expandT="true" imageIcon="@ID_IMAGE_find_hover" rect="260,248,60,24" showT="true" transparent="true" />
+			</layoutEleUI>
+			<layoutEleUI expandT="true" layout.alignH="right" layout.alignV="center" layout.height="fill" layout.width="75" padding="0,0,5,0" rect="196,36,100,100" showT="true">
+				<buttonUI bkInfoM="@ID_bkInfo_Button" content="应用宝" expandT="true" imageIcon="@ID_IMAGE_PopTipsTestIcon" rect="280,268,65,24" showT="true" transparent="true" />
+			</layoutEleUI>
+		</layoutEleUI>
+	</layoutEleUI>
+</windowUI>

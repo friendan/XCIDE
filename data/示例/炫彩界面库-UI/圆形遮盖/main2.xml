@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-窗口布局文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<windowUI rect="20,20,517,440" showT="true" windowStyle="2031">
+	<elementUI bkInfoM="{99:1.9.9;98:16(0,1,2);5:2(15)20(1)21(3)26(0)22(-3873541)23(255);3:2(3)3(80,45,171,194)4(@hudie.png);3:2(3)3(85,71,165,150)4(@mask3.png)40(1);}" rect="28,42,453,352" showT="true" expandT="true" />
+</windowUI>

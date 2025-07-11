@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-列表框元素项模板文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<xc_template_listBox>
+	<layoutEleUI drawBorder="false" enableCanvas="false" heightT="63" layout.alignH="left" layout.alignV="top" layout.height="fill" layout.horizon="false" layout.space="0" layout.width="fill" mouseThrough="true" padding="0,0,0,0" showT="true" widthT="300" expandT="true">
+		<layoutEleUI drawBorder="false" enableCanvas="false" layout.alignH="left" layout.alignV="center" layout.height=":1" layout.horizon="true" layout.space="2" layout.width="fill" mouseThrough="true" padding="5,0,5,0" showT="true" expandT="true">
+			<buttonUI buttonType="check" css.enable="false" itemID="1" rect="0,0,15,15" showT="true" transparent="true" expandT="true" />
+			<elementUI css.enable="false" itemID="4" rect="72,39,20,20" showT="true" transparent="true" expandT="true" />
+			<elementUI enableFocus="false" itemID="6" rect="130,32,60,60" showT="true" expandT="true" />
+			<shapeText content="{binding field=name1 source=data bSync=false}" css.enable="false" itemID="2" layout.height="fill" layout.width=":1" showT="true" textColor="#FF3C3C3C" expandT="true" />
+			<buttonUI css.enable="false" imageIcon="@rename.png" itemID="7" rect="247,34,20,20" showT="true" transparent="true" expandT="true" />
+			<buttonUI css.enable="false" imageIcon="@copy.png" itemID="5" rect="250,24,20,20" showT="true" transparent="true" expandT="true" />
+			<buttonUI css.enable="false" itemID="3" rect="0,0,20,20" showT="true" transparent="true" expandT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" layout.alignH="left" layout.alignV="top" layout.height="1" layout.horizon="true" layout.width="fill" mouseThrough="true" showT="true" expandT="true">
+			<elementUI bkInfoM="{99:1.9.9;5:2(15)20(1)21(1)22(-4144960)23(255);98:16(0);}" css.enable="false" drawBorder="false" enableFocus="false" layout.height="fill" layout.width="fill" rect="86,35,100,100" showT="true" expandT="true" />
+		</layoutEleUI>
+	</layoutEleUI>
+</xc_template_listBox>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-树元素项模板文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<xc_template_tree>
+	<layoutEleUI drawBorder="false" enableCanvas="false" heightT="60" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="0" layout.width="auto" mouseThrough="true" padding="5,2,2,2" showT="true" widthT="300" expandT="true">
+		<elementUI bkInfoM="{99:1.9.9;3:2(15)4({binding field=name4});98:16(0);}" height="42" itemID="3" layout.height="fill" layout.width="50" showT="true" transparent="true" width="42" expandT="true" />
+		<layoutEleUI drawBorder="false" enableCanvas="false" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="false" layout.space="0" layout.width="auto" mouseThrough="true" padding="2,2,2,2" showT="true" expandT="true">
+			<layoutEleUI drawBorder="false" enableCanvas="false" layout.alignH="left" layout.alignV="center" layout.height="20" layout.horizon="true" layout.space="6" layout.width="auto" mouseThrough="true" padding="2,2,2,2" showT="true" expandT="true">
+				<shapeText content="{binding field=name1}" itemID="2" layout.height="fill" layout.width="auto" showT="true" expandT="true" />
+				<elementUI bkInfoM="{99:1.9.9;3:2(15)4({binding field=name5});98:16(0);}" enableFocus="false" height="10" itemID="3" layout.height="16" layout.width="16" showT="true" transparent="true" width="30" expandT="true" />
+			</layoutEleUI>
+			<layoutEleUI drawBorder="false" enableCanvas="false" layout.alignH="left" layout.alignV="center" layout.height="20" layout.horizon="true" layout.space="6" layout.width="auto" mouseThrough="true" padding="2,2,2,2" showT="true" expandT="true">
+				<elementUI bkInfoM="{99:1.9.9;3:2(15)4({binding field=name6});98:16(0);}" enableFocus="false" height="20" itemID="3" layout.height="16" layout.width="16" showT="true" transparent="true" width="20" expandT="true" />
+				<shapeText content="{binding field=name2 source=data bSync=false}" itemID="3" layout.height="fill" layout.width="auto" showT="true" expandT="true" />
+			</layoutEleUI>
+		</layoutEleUI>
+	</layoutEleUI>
+</xc_template_tree>

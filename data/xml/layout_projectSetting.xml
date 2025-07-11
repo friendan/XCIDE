@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-布局面板文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<layoutPanel heightT="600" showT="true" widthT="630">
+	<elementUI expandT="true" layout.height="fill" layout.width="fill" rect="0,0,630,446" showT="true">
+		<shapeText content="项目名称:" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="10,15,86,20" showT="true" />
+		<shapeText content="位置:" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="10,49,30,20" showT="true" />
+		<editUI expandT="true" name="项目名称" nameTable="项目设置" rect="71,15,218,22" showT="true" />
+		<editUI expandT="true" name="位置" nameTable="项目设置" rect="71,49,535,22" showT="true" />
+		<shapeGroupBox content="UI资源加载方式" expandT="true" rect="10,88,597,125" showT="true" textColor="#FFC0C0C0" />
+		<buttonUI buttonType="radio" content="从文件" expandT="true" groupID="1" name="从文件" nameTable="项目设置" rect="30,111,65,25" showT="true" style="radio" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" />
+		<buttonUI buttonType="radio" content="从RC资源(打包ZIP)" expandT="true" groupID="1" name="从RC资源" nameTable="项目设置" rect="28,148,138,25" showT="true" style="radio" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" />
+		<shapeText content="ZIP密码" expandT="true" layout.height="20" layout.width="auto" rect="253,149,48,20" showT="true" />
+		<editUI contentTips="可忽略" expandT="true" name="ZIP密码" nameTable="项目设置" rect="307,148,187,22" showT="true" />
+		<shapeText content="*提示: 从RC资源, 编译代码时, 自动将UI资源打包到RC资源中,发布程序时,不需要额外附带UI资源文件" css.name="style_shapeText_caption" expandT="true" layout.height="20" layout.width="auto" rect="29,183,537,20" showT="true" />
+		<shapeText content="炫语言模块优先库类型:" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="10,324,54,20" showT="true" />
+		<buttonUI buttonType="radio" content="静态库(lib)" expandT="true" groupID="2" name="静态库" nameTable="项目设置" rect="158,322,90,25" showT="true" style="radio" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" />
+		<buttonUI buttonType="radio" content="动态库(dll)" expandT="true" groupID="2" name="动态库" nameTable="项目设置" rect="288,322,90,25" showT="true" style="radio" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" />
+		<buttonUI buttonType="check" content="自动生成DEF文件" expandT="true" name="自动生成DEF文件" nameTable="项目设置" rect="10,227,130,25" showT="true" style="check" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" />
+		<shapeText content="*当为DLL项目时, 自动为导出的函数生成DEF文件, &#10;*如果项目属性中指定了def文件,那么优先使用指定的def文件,&#10;*项目属性-&gt;炫语言-&gt;链接-&gt;模块定义文件." css.name="style_shapeText_caption" expandT="true" layout.width="auto" rect="155,222,330,53" showT="true" textColor="#FFC0C0C0" />
+		<editUI expandT="true" name="共享目录列表" nameTable="项目设置" rect="10,394,594,151" showT="true" />
+		<shapeText content="包含外部源码目录:" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="10,373,128,20" showT="true" />
+		<shapeText content="*包含外部炫语言源码目录, 以便多个项目共享公共源码; 一行一个共享目录&#10;*修改后需要关闭项目重新打开以便扫描目录代码" css.name="style_shapeText_caption" expandT="true" layout.width="auto" rect="155,354,102,40" showT="true" textColor="#FFC0C0C0" />
+		<shapeText content="*从文件中加载UI资源文件, 发布程序时, 需要附带UI资源文件" css.name="style_shapeText_caption" expandT="true" layout.height="20" layout.width="auto" rect="98,114,100,20" showT="true" />
+		<buttonUI buttonType="check" content="外部代码是否加载调试信息" expandT="true" name="外部代码是否加载调试信息" nameTable="项目设置" rect="10,286,174,25" showT="true" style="check" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" />
+		<shapeText content="*例如依赖的DLL文件, 若是依赖的外部模块太多会影响调试加载速度&#10;" css.name="style_shapeText_caption" expandT="true" layout.width="auto" rect="189,286,397,27" showT="true" textColor="#FFC0C0C0" />
+	</elementUI>
+</layoutPanel>

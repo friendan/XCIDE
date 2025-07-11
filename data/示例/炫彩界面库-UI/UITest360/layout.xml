@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-窗口布局文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<windowUI bkInfoM="{3:1(1)2(15)3(0,0,0,0)4(@ID_IMAGE_SKIN1);}" bkInfoM_state="1(200*200)" center="true" content="炫彩界面库 - 我的窗口名" dragWindow="true" enableLayout="true" layout.horizon="false" overlayBorder="true" rect="20,20,849,598" showT="true" windowStyle="0">
+	<layoutEleUI expandT="true" layout.height="120" layout.horizon="false" layout.width="fill" rect="338,174,100,100" showT="true">
+		<layoutEleUI expandT="true" layout.height="30" layout.width="fill" rect="242,44,100,100" showT="true">
+			<layoutEleUI expandT="true" layout.alignV="center" layout.height="fill" layout.width=":1" padding="10,0,0,0" rect="334,6,100,100" showT="true">
+				<shapeText content="360安全卫士8.8" expandT="true" layout.height="20" layout.width="auto" rect="163,15,0,0" showT="true" textColor="#FFFFFFFF" />
+			</layoutEleUI>
+			<layoutEleUI expandT="true" layout.alignH="right" layout.height="fill" rect="313,17,200,100" showT="true">
+				<buttonUI buttonType="close" content="关闭" expandT="true" rect="139,18,60,25" showT="true" textColor="#FFFFFFFF" transparent="true" />
+			</layoutEleUI>
+		</layoutEleUI>
+		<layoutEleUI expandT="false" layout.height=":1" layout.space="2" layout.width="fill" padding="5,0,0,0" rect="328,34,100,100" showT="true">
+			<buttonUI bindEle="201" bkInfoM="{99:1.9.9;3:2(15)4(@ID_IMAGE_toolbar_normal);3:2(15)4(@ID_IMAGE_toolbar_hover);3:2(15)4(@ID_IMAGE_toolbar_pushed);3:2(15)4(@ID_IMAGE_toolbar_pushed);98:272(0)288(1)320(2)128(3);}" buttonType="radio" check="true" content="电脑体验" expandT="true" groupID="1" iconAlign="top" imageIcon="@ID_IMAGE_ico_Examin" rect="117,71,74,82" showT="true" textColor="#FFFFFFFF" transparent="true" />
+			<buttonUI bindEle="202" bkInfoM="{99:1.9.9;3:2(15)4(@ID_IMAGE_toolbar_normal);3:2(15)4(@ID_IMAGE_toolbar_hover);3:2(15)4(@ID_IMAGE_toolbar_pushed);3:2(15)4(@ID_IMAGE_toolbar_pushed);98:272(0)288(1)320(2)128(3);}" buttonType="radio" content="电脑体验" expandT="true" groupID="1" iconAlign="top" imageIcon="@ID_IMAGE_ico_dsmain" rect="137,91,74,82" showT="true" textColor="#FFFFFFFF" transparent="true" />
+			<buttonUI bkInfoM="{99:1.9.9;3:2(15)4(@ID_IMAGE_toolbar_normal);3:2(15)4(@ID_IMAGE_toolbar_hover);3:2(15)4(@ID_IMAGE_toolbar_pushed);3:2(15)4(@ID_IMAGE_toolbar_pushed);98:272(0)288(1)320(2)128(3);}" buttonType="radio" content="电脑体验" expandT="true" groupID="1" iconAlign="top" imageIcon="@ID_IMAGE_ico_VulRepair" rect="157,111,74,82" showT="true" textColor="#FFFFFFFF" transparent="true" />
+			<buttonUI bkInfoM="{99:1.9.9;3:2(15)4(@ID_IMAGE_toolbar_normal);3:2(15)4(@ID_IMAGE_toolbar_hover);3:2(15)4(@ID_IMAGE_toolbar_pushed);3:2(15)4(@ID_IMAGE_toolbar_pushed);98:272(0)288(1)320(2)128(3);}" buttonType="radio" content="电脑体验" expandT="true" groupID="1" iconAlign="top" imageIcon="@ID_IMAGE_ico_SysRepair" rect="177,131,74,82" showT="true" textColor="#FFFFFFFF" transparent="true" />
+			<layoutEleUI expandT="true" layout.alignH="right" layout.height="fill" layout.width=":1" rect="482,42,0,0" showT="true">
+				<shapePicture expandT="true" image="@ID_IMAGE_logo" layout.height="fill" rect="436,36,160,100" showT="true" />
+			</layoutEleUI>
+		</layoutEleUI>
+	</layoutEleUI>
+	<layoutEleUI expandT="true" layout.height=":1" layout.width="fill" padding="1,0,1,0" rect="358,194,100,100" showT="true">
+		<layoutEleUI bkInfoM="{99:1.9.9;3:2(15)4(@ID_IMAGE_Panel1);98:16(0);}" expandT="false" id="201" layout.height="fill" layout.width="fill" nameT="电脑体验" rect="303,178,100,100" showT="true">
+			<layoutEleUI expandT="true" layout.height="fill" layout.horizon="false" layout.width=":1" rect="206,172,100,100" showT="true">
+				<layoutEleUI expandT="true" layout.height="180" layout.width="fill" padding="10,10,10,0" rect="172,137,100,100" showT="true">
+					<layoutEleUI expandT="true" layout.height="fill" rect="145,103,150,100" showT="true">
+						<shapePicture expandT="true" image="@ID_IMAGE_PAGE1_Radar0" rect="104,77,150,150" showT="true" />
+					</layoutEleUI>
+					<layoutEleUI expandT="true" layout.height="fill" layout.horizon="false" layout.width=":1" padding="0,25,0,0" rect="283,112,100,100" showT="true">
+						<layoutEleUI expandT="true" layout.height="32" layout.width="fill" rect="115,147,100,100" showT="true">
+							<shapeText content="上次电脑体检得分:" expandT="true" layout.height="20" layout.width="auto" rect="37,15,0,0" showT="true" />
+							<shapeText content="42" expandT="true" layout.height="20" layout.width="auto" rect="57,35,0,0" showT="true" textColor="#FFFF4D4D" />
+						</layoutEleUI>
+						<layoutEleUI expandT="true" layout.height="32" layout.width="fill" rect="183,94,100,100" showT="true">
+							<shapeText content="您的电脑处于非常危险的状态,请立即体检并修复" expandT="true" layout.height="20" layout.width="auto" rect="77,55,0,0" showT="true" textColor="#FFFF4D4D" />
+						</layoutEleUI>
+						<layoutEleUI expandT="true" layout.height="32" layout.width="fill" rect="222,88,100,100" showT="true">
+							<shapeText content="上次体检时间是" expandT="true" layout.height="20" layout.width="auto" rect="97,75,0,0" showT="true" />
+							<shapeText content="23" expandT="true" layout.height="20" layout.width="auto" rect="117,95,0,0" showT="true" textColor="#FFFF4D4D" />
+							<shapeText content="小时前,共发现" expandT="true" layout.height="20" layout.width="auto" rect="137,115,0,0" showT="true" />
+							<shapeText content="9" expandT="true" layout.height="20" layout.width="auto" rect="157,135,0,0" showT="true" textColor="#FFFF4D4D" />
+							<shapeText content="个问题,还有" expandT="true" layout.height="20" layout.width="auto" rect="177,155,0,0" showT="true" />
+							<shapeText content="9" expandT="true" layout.height="20" layout.width="auto" rect="197,175,0,0" showT="true" textColor="#FFFF4D4D" />
+							<shapeText content="个未处理" expandT="true" layout.height="20" layout.width="auto" rect="217,195,0,0" showT="true" />
+						</layoutEleUI>
+					</layoutEleUI>
+				</layoutEleUI>
+				<layoutEleUI expandT="true" layout.alignH="center" layout.alignV="top" layout.width="fill" rect="316,296,100,100" showT="true">
+					<buttonUI bkInfoM="{99:1.9.9;3:2(15)4(@ID_IMAGE_PAGE1_button1_leave);3:2(15)4(@ID_IMAGE_PAGE1_button1_leave);3:2(15)4(@ID_IMAGE_PAGE_button1_stay);98:272(0)320(1)288(2);}" expandT="true" rect="206,42,174,72" showT="true" transparent="true" />
+				</layoutEleUI>
+			</layoutEleUI>
+			<layoutEleUI expandT="true" layout.alignH="center" layout.height="fill" layout.width="265" padding="0,20,0,0" rect="374,130,100,100" showT="true">
+				<buttonUI bkInfoM="{99:1.9.9;3:2(15)4(@ID_IMAGE_PAGE1_all_opened);3:2(15)4(@ID_IMAGE_PAGE2_all_opened_stay);3:2(15)4(@ID_IMAGE_PAGE1_all_opened);98:272(0)288(1)320(2);}" expandT="true" rect="151,71,242,64" showT="true" transparent="true" />
+			</layoutEleUI>
+		</layoutEleUI>
+		<layoutEleUI bkInfoM="{99:1.9.9;3:2(15)4(@ID_IMAGE_Panel2);98:16(0);}" expandT="false" id="202" layout.alignV="top" layout.height="fill" layout.width="fill" padding="0,140,0,0" rect="482,129,100,100" show="false" showT="false">
+			<layoutEleUI expandT="true" layout.alignH="center" layout.space="20" layout.width="fill" padding="0,0,265,0" rect="349,209,100,200" showT="true">
+				<buttonUI bkInfoM="{99:1.9.9;3:2(15)4(@ID_IMAGE_PAGE2_saomiao_leave);3:2(15)4(@ID_IMAGE_PAGE2_saomiao_stay);3:2(15)4(@ID_IMAGE_PAGE2_saomiao_down);98:272(0)288(1)320(2);}" expandT="true" rect="314,241,140,140" showT="true" transparent="true" />
+				<buttonUI bkInfoM="{99:1.9.9;3:2(15)4(@ID_IMAGE_PAGE2_saomiao_leave);3:2(15)4(@ID_IMAGE_PAGE2_saomiao_stay);3:2(15)4(@ID_IMAGE_PAGE2_saomiao_down);98:272(0)288(1)320(2);}" expandT="true" rect="334,261,140,140" showT="true" transparent="true" />
+				<buttonUI bkInfoM="{99:1.9.9;3:2(15)4(@ID_IMAGE_PAGE2_saomiao_leave);3:2(15)4(@ID_IMAGE_PAGE2_saomiao_stay);3:2(15)4(@ID_IMAGE_PAGE2_saomiao_down);98:272(0)288(1)320(2);}" expandT="true" rect="354,281,140,140" showT="true" transparent="true" />
+			</layoutEleUI>
+		</layoutEleUI>
+	</layoutEleUI>
+	<layoutEleUI expandT="true" layout.alignV="center" layout.height="32" layout.width="fill" padding="10,0,0,0" rect="378,214,100,100" showT="true">
+		<shapeText content="炫彩界面库 - 模仿&lt;360安全卫士&gt;软件UI程序,www.xcgui.com" expandT="true" layout.height="20" layout.width="auto" rect="140,18,0,0" showT="true" textColor="#FFFFFFFF" />
+	</layoutEleUI>
+</windowUI>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<projects name="本地模块中包含的示例" activate="..\XC-Module\常规\锐浪报表\示例\模块示例\xc-锐浪报表\锐浪报表.xcproj">
+	<folder name="炫_异步类演示" expand="0" />
+	<folder name="炫_计时器演示" expand="0" />
+	<folder name="模块示例" expand="0">
+		<item path="..\XC-Module\常规\IP查询\示例\模块示例\xc-IP查询\demo.xcproj" />
+		<item path="..\XC-Module\常规\JSON操作\示例\模块示例\xc-json\xc-test.xcproj" />
+		<item path="..\XC-Module\常规\LibXL支持库\示例\模块示例\xc-libxl\test.xcproj" />
+		<item path="..\XC-Module\常规\lua模块\示例\模块示例\xc-lua\xc-lua.xcproj" />
+		<item path="..\XC-Module\常规\minizip-ng\示例\模块示例\xc-minizip\demo.xcproj" />
+		<item path="..\XC-Module\常规\pugixml\示例\模块示例\xc-pugixml\xc-pugixml.xcproj" />
+		<item path="..\XC-Module\常规\YYJSON对象\示例\模块示例\xc-YYJSON对象\demo.xcproj" />
+		<item path="..\XC-Module\常规\zlib\示例\模块示例\xc-zlib\demo.xcproj" />
+		<item path="..\XC-Module\常规\zyZIP实用工具\示例\模块示例\xc-zyZip测试\testZip.xcproj" />
+		<item path="..\XC-Module\常规\线程池\示例\模块示例\xc-线程池\demo.xcproj" />
+		<item path="..\XC-Module\常规\锐浪报表\示例\模块示例\xc-锐浪报表\锐浪报表.xcproj" open="1" />
+		<item path="..\XC-Module\键鼠辅助\OP插件\示例\模块示例\xc-OP采集天气发送QQ源码\test.xcproj" />
+		<item path="..\XC-Module\键鼠辅助\大漠对象模块\示例\模块示例\xc-大漠\demo.xcproj" />
+		<item path="..\XC-Module\核心[官方]\易语言核心模块-\示例-模块示例\正则表达式\demo.xcproj" />
+		<item path="..\XC-Module\炫易模块\炫易模块(MD5)\示例-模块示例\精炫模块_md5\jx_md5.xcproj" />
+		<item path="..\XC-Module\炫易模块\炫易模块(加解密)\示例\模块示例\加解密\demo.xcproj" />
+		<item path="..\XC-Module\炫易模块\炫易模块(文件目录)\示例-模块示例\精炫模块_文件目录\jx_File.xcproj" />
+		<item path="..\XC-Module\炫易模块\炫易模块(程序)\示例-模块示例\精炫模块-内存运行EXE\demo.xcproj" />
+		<item path="..\XC-Module\炫易模块\炫易模块(系统)\示例-模块示例\精炫模块_系统\jx_system.xcproj" />
+	</folder>
+	<folder name="南小鱼_示例" expand="0">
+		<item path="..\XC-Module\键鼠辅助\nanxiaoyu-南_DD鼠标键盘\示例\南小鱼_示例\控制台鼠标键盘测试\南小鱼_控制台鼠标键盘测试.xcproj" />
+		<item path="..\XC-Module\键鼠辅助\nanxiaoyu-南_DD鼠标键盘\示例\南小鱼_示例\窗口鼠标键盘测试\南小鱼_窗口鼠标键盘测试.xcproj" />
+	</folder>
+	<folder name="gdiplus演示" expand="0" />
+	<folder name="数据库" expand="0">
+		<item path="..\XC-Module\数据库\sqlite3\示例\数据库\xc-sqlite3\xc-test.xcproj" />
+		<item path="..\XC-Module\数据库\sqlite3\示例\数据库\xc-sqlite3-类\xc-test.xcproj" />
+		<item path="..\XC-Module\数据库\数据库ADO\示例\数据库\xc-ADO数据库\ADO数据库.xcproj" />
+		<item path="..\XC-Module\数据库\数据库mysql\示例\数据库\xc-mysql类\mysql.xcproj" />
+	</folder>
+	<folder name="易炫彩WO服务器套件示例" expand="0" />
+	<folder name="COM示例" expand="0">
+		<item path="..\XC-Module\核心[官方]\COM操作\示例-COM示例\xc-COM操作ATL组件\COM操作.xcproj" />
+		<item path="..\XC-Module\核心[官方]\COM操作\示例-COM示例\xc-COM操作Excel\COM操作.xcproj" />
+		<item path="..\XC-Module\核心[官方]\COM操作\示例-COM示例\xc-文本到语音\机读文本.xcproj" />
+	</folder>
+	<folder name="欧阳逸洛" expand="1" />
+	<folder name="网络" expand="0">
+		<item path="..\XC-Module\网络\BSPHP网络验证\示例\网络\xc-BSPHP网络验证\窗口程序.xcproj" />
+		<item path="..\XC-Module\网络\CURL网络访问\示例\网络\xc-curl\main.xcproj" />
+		<item path="..\XC-Module\网络\FiddlerXPL\示例\网络\xc-FiddlerXPL\test1.xcproj" />
+		<item path="..\XC-Module\网络\HPSocket\示例\网络\xc-HPSocket-HttpClient\xc-test.xcproj" />
+		<item path="..\XC-Module\网络\HPSocket\示例\网络\xc-HPSocket-HttpServer\xc-test.xcproj" />
+		<item path="..\XC-Module\网络\HPSocket\示例\网络\xc-HPSocket-TcpClient\xc-test.xcproj" />
+		<item path="..\XC-Module\网络\HPSocket\示例\网络\xc-HPSocket-TcpPackClient\xc-test.xcproj" />
+		<item path="..\XC-Module\网络\HPSocket\示例\网络\xc-HPSocket-TcpPackServer\xc-test.xcproj" />
+		<item path="..\XC-Module\网络\HPSocket\示例\网络\xc-HPSocket-TcpServer\xc-test.xcproj" />
+		<item path="..\XC-Module\网络\HPSocket\示例\网络\xc-HPSocket-UdpClient\xc-test.xcproj" />
+		<item path="..\XC-Module\网络\HPSocket\示例\网络\xc-HPSocket-UdpServer\xc-test.xcproj" />
+		<item path="..\XC-Module\网络\WinHttp\示例\网络\xc-WinHttp\httptest.xcproj" />
+	</folder>
+	<folder name="易炫彩示例" expand="1">
+		<item path="..\XC-Module\易炫彩\hyiyle-易炫彩APIHOOK支持库\示例\易炫彩示例\易炫彩APIHOOK-简单示例\易炫彩APIHOOK-简单示例.xcproj" />
+	</folder>
+	<item path="..\XC-Module\网络\WebSocket\示例\WS客户端例子\WS客户端例子.xcproj" />
+	<item path="..\XC-Module\网络\WebSocket\示例\WS服务器例子\WS服务器例子.xcproj" />
+</projects>

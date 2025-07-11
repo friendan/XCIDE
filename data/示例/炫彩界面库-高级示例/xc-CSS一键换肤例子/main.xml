@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-窗口布局文件-->
+<head>
+	<bindJsFile value="" />
+	<bindClassName value="我的主窗口类" />
+</head>
+<windowUI center="true" content="炫彩界面库 - 我的窗口名" rect="20,20,651,413" showT="true" windowStyle="1263">
+	<buttonUI content="皮肤1-黑色" name="皮肤1" rect="31,52,134,45" showT="true" expandT="true" />
+	<buttonUI buttonType="radio" content="Button" groupID="10" offsetXY="10,0" rect="31,134,134,45" showT="true" style="radio" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" expandT="true" />
+	<buttonUI buttonType="check" content="Button" offsetXY="10,0" rect="31,216,134,45" showT="true" style="check" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" expandT="true" />
+	<buttonUI buttonType="radio" content="Button" groupID="10" offsetXY="10,0" rect="209,134,134,45" showT="true" style="radio" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" expandT="true" />
+	<buttonUI buttonType="check" content="Button" offsetXY="10,0" rect="209,216,134,45" showT="true" style="check" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" expandT="true" />
+	<elementUI bkInfoM="{99:1.9.9;5:2(15)20(1)21(3)26(0)22(-10928384)23(255);98:16(0);}" css.enable="false" rect="375,52,251,210" showT="true" expandT="true">
+		<buttonUI content="Button" rect="46,28,134,45" showT="true" expandT="true" />
+		<buttonUI content="Button" css.name="style_自定义按钮" rect="46,89,134,45" showT="true" expandT="true" />
+		<buttonUI buttonType="check" content="Button" offsetXY="10,0" rect="46,150,134,45" showT="true" style="check" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" expandT="true" />
+	</elementUI>
+	<buttonUI content="皮肤2-白色" name="皮肤2" rect="209,52,134,45" showT="true" expandT="true" />
+</windowUI>

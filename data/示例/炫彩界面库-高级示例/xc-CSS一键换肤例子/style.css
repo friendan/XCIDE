@@ -1,0 +1,25 @@
+﻿@resFile{
+	path:"resource1.res";
+}
+windowUI{
+	bkInfoM:@resource1:\ID_普通窗口;
+}
+buttonUI[style:radio]{
+	bkInfoM:@resource1:\ID_单选按钮;
+	textColor:#FFFFFFFF;
+}
+buttonUI[style:check]{
+	bkInfoM:@resource1:\ID_多选按钮;
+	textColor:#FFFFFFFF;
+}
+buttonUI{
+	bkInfoM:@resource1:\ID_默认按钮;
+	textColor:#FFFFFFFF;
+}
+elementUI>buttonUI{
+	bkInfoM:@resource1:\ID_基础元素上按钮;
+}
+.buttonUI style_自定义按钮{
+	bkInfoM:@resource1:\ID_自定义按钮;
+	textColor:#FFFF0000;
+}

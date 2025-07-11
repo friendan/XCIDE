@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-列表框元素项模板文件-->
+<head />
+<xc_template_listBox>
+	<layoutEleUI bkInfoM="{99:1.9.9;98:16(0);5:2(13)3(0,1,0,0)20(1)21(3)26(1)22(-12829636)23(255);}" drawBorder="false" enableCanvas="false" expandT="true" heightT="50" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="2" layout.width="fill" mouseThrough="true" showT="true" widthT="300">
+		<shapeText content="{binding field=name1}" expandT="true" itemID="0" layout.height="26" layout.width=":1" showT="true" textColor="@ID_FONT_10" />
+		<buttonUI content="使用" expandT="true" itemID="1" layout.margin="0,0,10,0" rect="171,15,50,24" showT="true" />
+		<shapeText content="{binding field=name2}" css.name="style_shapeText_caption" expandT="true" layout.height="20" layout.width="fill" layout.wrap="true" rect="220,17,100,20" showT="true" textAlign="DT_LEFT,DT_TOP,DT_SINGLELINE,DT_END_ELLIPSIS" />
+	</layoutEleUI>
+</xc_template_listBox>

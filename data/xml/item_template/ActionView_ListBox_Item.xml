@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-列表框元素项模板文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<xc_template_listBox>
+	<layoutEleUI drawBorder="false" enableCanvas="false" heightT="0" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.width="auto" mouseThrough="true" padding="5,0,2,0" showT="true" widthT="420" expandT="true">
+		<shapeText content="{binding field=name1 source=data bSync=false}" layout.height="20" layout.width="120" rect="85,62,0,0" showT="true" textColor="#FFC8C8C8" expandT="true" />
+		<shapeText content="{binding field=name2 source=data bSync=false}" layout.height="20" layout.width=":1" rect="117,47,0,0" showT="true" textColor="#FFC8C8C8" expandT="true" />
+	</layoutEleUI>
+</xc_template_listBox>

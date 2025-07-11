@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-布局面板文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<layoutPanel heightT="500" showT="true" widthT="340">
+	<layoutEleUI layout.height="fill" layout.horizon="false" layout.space="10" layout.width="fill" padding="25,0,25,0" rect="150,282,100,100" showT="true" expandT="true">
+		<shapeText content="用户名" font="@ID_FONT_2" layout.height="20" layout.width="auto" rect="167,97,100,20" showT="true" textColor="#FF9CA9BC" expandT="true" />
+		<editUI bkInfoM="{99:1.9.9;5:2(15)20(1)21(3)26(0)22(-10927566)23(255);5:2(13)3(0,2,0,0)20(1)21(3)26(0)22(-9215146)23(255);98:16(0,1);}" caretColor="#FFFFFFFF" contentTips="您的用户名" contentTipsColor="#FF6A768C" font="@ID_FONT_2" layout.width="fill" rect="211,154,100,25" showT="true" textColor="#FFFFFFFF" expandT="true" />
+		<layoutEleUI layout.width="fill" rect="186,219,100,10" showT="true" expandT="true" />
+		<shapeText content="密码" font="@ID_FONT_2" layout.height="20" layout.width="auto" rect="187,117,100,20" showT="true" textColor="#FF9CA9BC" expandT="true" />
+		<editUI bkInfoM="{99:1.9.9;5:2(15)20(1)21(3)26(0)22(-10927566)23(255);5:2(13)3(0,2,0,0)20(1)21(3)26(0)22(-9215146)23(255);98:16(0,1);}" caretColor="#FFFFFFFF" contentTips="您的密码" contentTipsColor="#FF6A768C" font="@ID_FONT_2" layout.width="fill" rect="231,174,100,25" showT="true" textColor="#FFFFFFFF" expandT="true" />
+		<layoutEleUI layout.width="fill" rect="206,239,100,10" showT="true" expandT="true" />
+		<shapeText content="忘记密码?" layout.height="20" layout.width="auto" rect="87,328,100,20" showT="true" textColor="#FF9CA9BC" expandT="true" />
+		<layoutEleUI layout.width="fill" rect="226,259,100,10" showT="true" expandT="true" />
+		<layoutEleUI layout.alignH="center" layout.alignV="center" layout.horizon="true" layout.width="fill" rect="246,279,100,50" showT="true" expandT="true">
+			<buttonUI bkInfoM="{99:1.9.9;5:2(15)20(1)21(3)26(1)22(-1)23(255)9(20,20,20,20);5:2(15)20(1)21(3)26(1)22(-1644826)23(255)9(20,20,20,20);5:2(15)20(1)21(3)26(1)22(-2302756)23(255)9(20,20,20,20);98:272(0)288(1)320(2);}" content="确定登陆" font="@ID_FONT_12" rect="220,152,130,40" showT="true" transparent="true" expandT="true" />
+		</layoutEleUI>
+	</layoutEleUI>
+</layoutPanel>

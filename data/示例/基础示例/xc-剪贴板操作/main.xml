@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-窗口布局文件-->
+<head />
+<windowUI center="true" content="炫彩界面库 - 我的窗口名" rect="20,20,485,336" showT="true" windowStyle="2031">
+	<buttonUI content="置数据-到剪贴板" name="置数据" rect="50,73,117,25" showT="true" expandT="true" />
+	<buttonUI content="取数据-从剪贴板" name="取数据" rect="261,73,113,25" showT="true" expandT="true" />
+	<editUI multiLine="true" name="编辑框1" rect="20,110,215,178" showT="true" expandT="true" />
+	<editUI multiLine="true" name="编辑框2" rect="248,110,215,178" showT="true" expandT="true" />
+</windowUI>

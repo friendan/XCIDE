@@ -1,0 +1,309 @@
+﻿@resFile{
+	path:"resource2.res";
+}
+@resColor ID_COLOR_Text{
+	color:#FF505058;
+	remark:"文本颜色";
+}
+@resColor ID_COLOR_Line{
+	color:#FFC8C8C8;
+	remark:"线颜色";
+}
+@resColor ID_COLOR_Text_Tips{
+	color:#FF808080;
+	remark:"提示文本颜色";
+}
+propertyGridUI>comboBoxUI{
+	bkInfoM:@ID_PGrid_comboBox;
+	caretColor:#FF000000;
+	textColor:#FF181818;
+}
+propertyGridUI>editColorUI{
+	bkInfoM:@ID_PGrid_RichEditColor;
+	caretColor:#FF000000;
+	textColor:#FF181818;
+}
+propertyGridUI>editSetUI{
+	bkInfoM:@ID_PGrid_RichEditSet;
+	caretColor:#FF000000;
+	textColor:#FF181818;
+}
+propertyGridUI>editUI{
+	bkInfoM:@ID_PGrid_RichEdit;
+	caretColor:#FF000000;
+	textColor:#FF181818;
+}
+paneUI>editUI{
+	bkInfoM:@ID_Edit_panel;
+	caretColor:#FF000000;
+	textColor:#FF181818;
+}
+paneUI>listBoxUI{
+	bkInfoM:@resource2:\ID_ListBox;
+}
+frameWindowUI{
+	bkInfoM:@ID_FrameWindow;
+}
+modalWindowUI{
+	bkInfoM:@ID_ModalWindow;
+	textColor:#FF505050;
+}
+paneSplitUI{
+	bkInfoM:@ID_PaneSplit;
+}
+paneUI{
+	bkInfoM:@ID_Pane;
+}
+elementUI[style:frameWnd_dock_left]{
+	bkInfoM:@ID_FrameWnd_Dock_Left;
+}
+elementUI[style:frameWnd_dock_top]{
+	bkInfoM:@ID_FrameWnd_Dock_Top;
+}
+elementUI[style:frameWnd_dock_right]{
+	bkInfoM:@ID_FrameWnd_Dock_Right;
+}
+elementUI[style:frameWnd_dock_bottom]{
+	bkInfoM:@ID_FrameWnd_Dock_Bottom;
+}
+elementUI{
+	bkInfoM:@ID_Element;
+}
+scrollBarUI{
+	bkInfoM:@ID_ScrollBar;
+}
+buttonUI[style:scrollbar_left]{
+	bkInfoM:@ID_ScrollBar_Button_Left_H;
+}
+treeUI{
+	bkInfoM:@ID_Tree;
+}
+propertyGridUI{
+	bkInfoM:@ID_PGrid;
+	textColor:#FF181818;
+}
+comboBoxUI{
+	bkInfoM:@ID_ComboBox_onlyRead;
+	caretColor:#FF000000;
+	textColor:#FF181818;
+}
+listViewUI{
+	bkInfoM:@ID_ListView;
+	textColor:#FF181818;
+}
+listUI{
+	bkInfoM:@ID_List;
+}
+listHeaderUI{
+	bkInfoM:@ID_ListHeader;
+}
+editUI{
+	bkInfoM:@ID_RichEdit;
+	caretColor:#FF000000;
+	textColor:#FF181818;
+}
+listBoxUI{
+	bkInfoM:@ID_ListBox;
+}
+elementUI[style:toolBar_separator]{
+	bkInfoM:@ID_ToolBar_Separator;
+}
+editFolderUI{
+	bkInfoM:@ID_RichEditSet;
+	caretColor:#FF000000;
+	textColor:#FF181818;
+}
+editFileUI{
+	bkInfoM:@ID_RichEditSet;
+	caretColor:#FF000000;
+	textColor:#FF181818;
+}
+editSetUI{
+	bkInfoM:@ID_RichEditSet;
+	caretColor:#FF000000;
+	textColor:#FF181818;
+}
+editColorUI{
+	bkInfoM:@ID_RichEditColor;
+	caretColor:#FF000000;
+	textColor:#FF181818;
+}
+listBoxUI[style:listBox_comboBox]{
+	bkInfoM:@ID_ListBox_ComboBox;
+}
+scrollViewUI{
+	bkInfoM:@ID_ScrollView;
+}
+menuBarButtonUI{
+	bkInfoM:@ID_Button_MenuBar;
+	textColor:@ID_COLOR_Text;
+}
+menuBarUI{
+	bkInfoM:@ID_MenuBar;
+}
+buttonUI[style:pane_dock_left]{
+	bkInfoM:@ID_FrameWnd_Button_Left_Right;
+	textColor:#FF181818;
+}
+buttonUI[style:pane_dock_right]{
+	bkInfoM:@ID_FrameWnd_Button_Left_Right;
+	textColor:#FF181818;
+}
+buttonUI[style:pane_dock_top]{
+	bkInfoM:@ID_FrameWnd_Button_Left_Right;
+	textColor:#FF181818;
+}
+buttonUI[style:pane_dock_bottom]{
+	bkInfoM:@ID_FrameWnd_Button_Left_Right;
+	textColor:#FF181818;
+}
+buttonUI[style:scrollbar_slider_h]{
+	bkInfoM:@ID_ScrollBar_Slider;
+}
+buttonUI[style:scrollbar_slider_v]{
+	bkInfoM:@ID_ScrollBar_Slider;
+}
+buttonUI[style:scrollbar_right]{
+	bkInfoM:@ID_ScrollBar_Button_Right_H;
+}
+buttonUI[style:scrollbar_up]{
+	bkInfoM:@ID_ScrollBar_Button_Top_V;
+}
+buttonUI[style:scrollbar_down]{
+	bkInfoM:@ID_ScrollBar_Button_Bottom_V;
+}
+buttonUI[style:tabBar_button]{
+	bkInfoM:@resource2:\ID_TabBar_Button;
+	textColor:#FF181818;
+}
+buttonUI{
+	bkInfoM:@ID_Button;
+	remark:"默认按钮";
+	textColor:#FF181818;
+}
+buttonUI[style:check]{
+	bkInfoM:@ID_Button_Check;
+	remark:"复选按钮";
+	textColor:#FF181818;
+}
+buttonUI[style:radio]{
+	bkInfoM:@ID_Button_Radio;
+	textColor:#FF181818;
+}
+buttonUI[style:icon]{
+	bkInfoM:@ID_IconButton;
+	remark:"图标按钮";
+}
+buttonUI[style:close]{
+	bkInfoM:@ID_Button_Close;
+	remark:"关闭按钮";
+}
+tabBarUI{
+	bkInfoM:@ID_TabBar_DesignView;
+	textColor:#FF181818;
+}
+textLinkUI{
+	textColor:#FF181818;
+	textColorStay:#FF0080FF;
+	transparent:true;
+	underlineColorLeave:#FF9DCEFF;
+	underlineColorStay:#FF0080FF;
+}
+toolBarUI{
+	bkInfoM:@ID_SideBar;
+}
+shapeText{
+	textColor:#FF181818;
+}
+windowUI{
+	bkInfoM:@resource2:\ID_Window;
+	textColor:#FFC8C8C8;
+}
+shapeGroupBox{
+	borderColor:#FFC0C0C0;
+	textColor:#FF505050;
+}
+.buttonUI style_button_tab{
+	bkInfoM:@resource2:\ID_Button_Tab;
+	remark:"tab按钮";
+	textColor:#FF181818;
+	transparent:true;
+}
+.buttonUI style_button_windowCaption{
+	bkInfoM:@ID_Button_WindowCaption;
+}
+.buttonUI style_sideBar_button_expand_right{
+	bkInfoM:@ID_SideBar_button_expand_right;
+}
+.buttonUI style_button_windowCaptionMax{
+	bkInfoM:@ID_Button_WindowCaption_Max;
+}
+.comboBoxUI style_comboBox_onlyRead{
+	bkInfoM:@ID_ComboBox_onlyRead;
+	textColor:#FF181818;
+}
+.comboBoxUI style_comboBox_caption{
+	bkInfoM:@ID_ComboBox_onlyRead;
+	textColor:#FF181818;
+}
+.editSetUI style_editSet_PGrid{
+	bkInfoM:@ID_PGrid_RichEditSet;
+	caretColor:#FF000000;
+	textColor:#FF181818;
+}
+.editUI style_edit_search{
+	bkInfoM:@ID_RichEdit_Search;
+	caretColor:#FF000000;
+	textColor:#FF181818;
+}
+.editUI style_editColorSet{
+	bkInfoM:@ID_RichEditColorSet;
+	caretColor:#FF000000;
+	textColor:#FF181818;
+}
+.editUI style_edit_multiLine{
+	bkInfoM:@ID_RichEdit_MultiLine;
+	caretColor:#FF505050;
+	textColor:#FF181818;
+}
+.editUI style_edit_PGrid{
+	bkInfoM:@ID_PGrid_RichEdit;
+	caretColor:#FF000000;
+	textColor:#FF181818;
+}
+.elementUI style_designView{
+	bkInfoM:@ID_Element_DesignView;
+	textColor:#FF181818;
+}
+.listBoxUI style_listBox{
+	bkInfoM:@ID_ListBox2;
+}
+.shapeText style_shapeText{
+	textColor:#FF181818;
+}
+.shapeText style_shapeText_caption{
+	textColor:#FF181818;
+}
+.shapeText style_shapeText_gray{
+	textColor:#FF181818;
+}
+.buttonUI style_button_tabBar{
+	bkInfoM:@resource2:\ID_Button_TabBar;
+	textColor:#FF181818;
+}
+.treeUI style_tree_border{
+	bkInfoM:@resource2:\ID_Tree_border;
+}
+.treeUI style_tree_dlg{
+	bkInfoM:@resource2:\ID_Tree;
+}
+.buttonUI style_button_caption_project{
+	bkInfoM:@resource2:\ID_button_caption_project;
+	textColor:#FF505050;
+}
+.comboBoxUI style_comboBox_editor_nav1{
+	bkInfoM:@resource2:\ID_ComboBox_editor_nav1;
+}
+.comboBoxUI style_comboBox_editor_nav2{
+	bkInfoM:@resource2:\ID_ComboBox_editor_nav2;
+}

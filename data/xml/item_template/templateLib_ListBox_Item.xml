@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-列表框元素项模板文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<xc_template_listBox>
+	<layoutEleUI drawBorder="false" enableCanvas="false" heightT="60" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="false" layout.width="fill" mouseThrough="true" padding="5,0,2,0" showT="true" widthT="420" expandT="true">
+		<layoutEleUI drawBorder="false" enableCanvas="false" layout.alignH="left" layout.alignV="bottom" layout.height=":1" layout.horizon="true" layout.space="5" layout.width="fill" mouseThrough="true" showT="true" expandT="true">
+			<shapeText content="{binding field=name1 source=data bSync=false}" layout.height="20" layout.width="260" rect="262,66,0,0" showT="true" textColor="#FF00A2E8" expandT="true" />
+			<shapeText content="{binding field=type source=data bSync=false}" layout.height="20" layout.width="auto" rect="66,28,0,0" showT="true" textColor="#FF00A2E8" expandT="true" />
+			<shapeText content="{binding field=objectType source=data bSync=false}" layout.height="20" layout.width=":1" rect="66,28,0,0" showT="true" textColor="#FF646464" expandT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" layout.alignH="left" layout.alignV="top" layout.height=":1" layout.horizon="true" layout.space="5" layout.width="fill" mouseThrough="true" showT="true" expandT="true">
+			<shapeText content="{binding field=folder source=data bSync=false}" layout.height="20" layout.width="260" rect="348,34,0,0" showT="true" textColor="#FF646464" expandT="true" />
+			<shapeText content="{binding field=versionXCGUI source=data bSync=false}" layout.height="20" layout.width=":1" rect="149,60,0,0" showT="true" textColor="#FF646464" expandT="true" />
+		</layoutEleUI>
+	</layoutEleUI>
+</xc_template_listBox>

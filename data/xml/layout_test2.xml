@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-窗口布局文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<windowUI bkInfoM="{sizeT:484,496;99:1.9.9;5:2(15)20(1)21(1)22(-986896)23(255)10(1)7(1)11(1)12(-1531392)13(255);5:2(7)3(2,2,2,28)20(1)21(1)22(-1531392)23(255);5:2(13)3(5,1,5,50)20(1)21(1)22(-4144960)23(255);5:2(13)3(5,1,5,49)20(1)21(1)22(-1)23(255);98:1(0,1,2,3);}" bkInfoM_state="1(300*300)" center="true" dragBorder="false" dragWindow="true" rect="20,20,512,487" showT="true" windowType="modalWindow">
+	<buttonUI bkInfoM="{99:1.9.9;7:2(15)30(18,A'AA'AA&#10;BB&quot;BB&quot;BBB&#10;)21(4)31(@ID_FONT_16)32(37)24(2,0.00,-16776961,10,-65536,90);7:2(15)30(12,AAAA&#10;B&quot;B&quot;BBB)21(4)31(@ID_FONT_16)32(37)24(3,0.00,-13158601,52,-1,100,-1,0);5:2(15)10(1)7(1)11(4)16(1)14(3,0.00,-9276814,53,-1,100,-1,0)9(5,5,5,5);98:16(0,2)32(1,2)64();}" css.enable="false" rect="142,169,171,65" showT="true" transparent="true" expandT="true" />
+	<buttonUI bkInfoM="{99:1.9.9;7:2(15)30(3,123)21(3)31()32(37)22(-16777216)23(255);98:16(0);}" content="Button" iconAlign="top" imageIcon="@bkinfo_picture.png" rect="157,69,132,65" showT="true" expandT="true" />
+</windowUI>

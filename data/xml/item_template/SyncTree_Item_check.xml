@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-树元素项模板文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<xc_template_tree>
+	<layoutEleUI drawBorder="false" enableCanvas="false" expandT="true" heightT="30" layout.alignBaseline="center" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="3" layout.width="auto" mouseThrough="true" padding="0,0,0,0" showT="true" widthT="300">
+		<layoutEleUI drawBorder="false" enableCanvas="false" expandT="true" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.width="15" mouseThrough="true" showT="true">
+			<buttonUI expandButton="true" expandT="true" itemID="1" rect="0,0,11,11" showT="true" transparent="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" expandT="true" layout.alignH="left" layout.alignV="top" layout.height="fill" layout.horizon="true" layout.width="1" mouseThrough="true" showT="true" />
+		<buttonUI bkInfoM="@resource1:\ID_Button_Check_alpha" buttonType="check" css.enable="false" enableFocus="false" expandT="true" itemID="2" rect="181,33,20,20" showT="true" style="check" transparent="true" />
+		<shapeText content="{binding field=name1 source=data bSync=false}" css.name="style_shapeText" expandT="true" itemID="3" layout.height="fill" layout.width="auto" showT="true" />
+		<shapeText content="{binding field=name2}" css.enable="false" expandT="true" itemID="4" layout.height="fill" layout.width="auto" showT="true" textColor="#FF6EBBFF" />
+	</layoutEleUI>
+</xc_template_tree>

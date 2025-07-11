@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-树元素项模板文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<xc_template_tree>
+	<layoutEleUI drawBorder="false" enableCanvas="false" heightT="30" layout.alignBaseline="center" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="0" layout.width="auto" mouseThrough="true" padding="0,0,0,0" showT="true" widthT="300" expandT="true">
+		<layoutEleUI drawBorder="false" enableCanvas="false" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.width="15" mouseThrough="true" showT="true" expandT="false">
+			<buttonUI buttonStyle="expand" expandButton="true" itemID="1" rect="0,0,11,11" showT="true" transparent="true" expandT="true" />
+		</layoutEleUI>
+		<shapePicture itemID="2" layout.height="fill" layout.width="20" showT="true" expandT="true" />
+		<shapeText content="{binding field=name1 source=data bSync=false}" css.name="style_shapeText" itemID="3" layout.height="fill" layout.width="auto" showT="true" expandT="true" />
+		<shapeText content="{binding field=name2}" css.name="style_shapeText_gray" itemID="4" layout.height="fill" layout.width="auto" showT="true" expandT="true" />
+	</layoutEleUI>
+</xc_template_tree>

@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<projects name="示例" activate="项目模板\第一个窗口程序\窗口程序.xcproj">
+	<folder name="-------------界面库-------------" expand="0" />
+	<folder name="界面库-纯UI" expand="1">
+		<item path="炫彩界面库-UI\UITest360\UITest360.xcproj" />
+		<item path="炫彩界面库-UI\圆形遮盖\圆形遮盖.xcproj" />
+	</folder>
+	<folder name="界面库-UI组件示例" expand="0">
+		<item path="炫彩界面库-示例\xc-ComboBox-下拉组合框\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-DateTime-日期时间\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-Edit-编辑框\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-Ele-基础元素\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-LayoutEle-布局元素\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-ListBox-列表框\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-ListView-列表视图\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-List-列表\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-MenuBar-菜单条\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-Menu-弹出菜单\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-MonthCal-月历卡片\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-ProgressBar-进度条\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-ScrollBar-滚动条\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-ScrollView-滚动视图\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-ShapeText-形状对象文本\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-SliderBar-滑动条\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-ToolBar-工具条\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-Tree-列表树\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-窗口\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-窗口注册事件\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-模态窗口\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-元素注册事件\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-元素注册事件-类成员\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-Button-Check-复选按钮\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-Button-Radio-单选按钮\xc-demo.xcproj" />
+		<item path="炫彩界面库-示例\xc-Button-按钮\xc-demo.xcproj" />
+	</folder>
+	<folder name="界面库-高级示例" expand="0">
+		<item path="炫彩界面库-高级示例\xc-QQ音乐\QQ音乐-演示.xcproj" />
+		<item path="炫彩界面库-高级示例\xc-QQ\QQTest.xcproj" />
+		<item path="炫彩界面库-高级示例\xc-模仿百度首页\模仿百度首页.xcproj" />
+		<item path="炫彩界面库-高级示例\xc-深蓝色简约登陆窗口\login.xcproj" />
+		<item path="炫彩界面库-高级示例\xc-异型圆角窗口-登录UI\登录界面.xcproj" />
+		<item path="炫彩界面库-高级示例\xc-CSS一键换肤例子\CSS.xcproj" />
+	</folder>
+	<folder name="------------炫语言入门------------" expand="0" />
+	<folder name="项目模板" expand="1">
+		<item path="项目模板\第一个窗口程序\窗口程序.xcproj" open="1" />
+		<item path="项目模板\第一个控制台程序\控制台程序.xcproj" />
+		<item path="项目模板\窗口程序-纯API方式\demo.xcproj" />
+	</folder>
+	<folder name="基础示例" expand="0">
+		<item path="基础示例\xc-文本操作\xc-test.xcproj" />
+		<item path="基础示例\xc-数组操作\xc-test.xcproj" />
+		<item path="基础示例\xc-字典操作\xc-test.xcproj" />
+		<item path="基础示例\xc-字节集操作\xc-test.xcproj" />
+		<item path="基础示例\xc-类和结构体的定义\xc-test.xcproj" />
+		<item path="基础示例\xc-文件读写\xc-test.xcproj" />
+		<item path="基础示例\xc-日期时间\xc-test.xcproj" />
+		<item path="基础示例\xc-计算代码执行时间\xc-计算代码执行时间.xcproj" />
+		<item path="基础示例\xc-RC资源使用\demo.xcproj" />
+		<item path="基础示例\xc-剪贴板操作\xc-demo.xcproj" />
+		<item path="基础示例\xc-嵌入代码\xc-test.xcproj" />
+		<item path="基础示例\xc-扫描目录\xc-test.xcproj" />
+		<item path="基础示例\xc-注册表操作\xc-demo.xcproj" />
+		<item path="基础示例\xc-定义函数类型\xc-test.xcproj" />
+	</folder>
+	<folder name="DLL动态库使用" expand="0">
+		<item path="DLL动态库使用\xc-DLL导出def\xc-test.xcproj" />
+		<item path="DLL动态库使用\xc-DLL动态调用-导入表\xc-动态调用DLL-导入表.xcproj" />
+		<item path="DLL动态库使用\xc-DLL动态调用\xc-动态调用DLL.xcproj" />
+	</folder>
+	<folder name="线程-进程-内核对象" expand="0">
+		<item path="线程-进程-内核对象\xc-多线程\xc-demo.xcproj" />
+		<item path="线程-进程-内核对象\xc-多线程-临界区\xc-demo.xcproj" />
+		<item path="线程-进程-内核对象\xc-互斥对象\xc-demo.xcproj" />
+		<item path="线程-进程-内核对象\xc-事件对象\xc-demo.xcproj" />
+		<item path="线程-进程-内核对象\xc-信号灯对象\xc-demo.xcproj" />
+	</folder>
+</projects>

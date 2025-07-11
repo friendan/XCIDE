@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-列表元素项模板文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<xc_template_list showT="true">
+	<listHeader_item showT="true" expandT="true">
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="20" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="6" layout.width="fill" mouseThrough="true" padding="5,2,2,2" showT="true" widthT="200" expandT="true">
+			<shapeText content="{binding field=icon source=data bSync=false}" css.name="style_shapeText" itemID="1" layout.height="fill" layout.width="fill" showT="true" expandT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="20" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="6" layout.width="fill" mouseThrough="true" padding="5,2,2,2" showT="true" widthT="200" expandT="true">
+			<shapeText content="{binding field=name1 source=data bSync=false}" css.name="style_shapeText" itemID="2" layout.height="fill" layout.width="fill" showT="true" expandT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="20" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="6" layout.width="fill" mouseThrough="true" padding="5,2,2,2" showT="true" widthT="200" expandT="true">
+			<shapeText content="{binding field=fileType source=data bSync=false}" css.name="style_shapeText" itemID="3" layout.height="fill" layout.width="fill" showT="true" expandT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="20" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="6" layout.width="fill" mouseThrough="true" padding="5,2,2,2" showT="true" widthT="200" expandT="true">
+			<shapeText content="{binding field=loadMethod source=data bSync=false}" css.name="style_shapeText" itemID="4" layout.height="fill" layout.width="fill" showT="true" expandT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="20" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="6" layout.width="fill" mouseThrough="true" padding="5,2,2,2" showT="true" widthT="200" expandT="true">
+			<shapeText content="{binding field=drawType source=data bSync=false}" css.name="style_shapeText" itemID="5" layout.height="fill" layout.width="fill" showT="true" expandT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="20" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="6" layout.width="fill" mouseThrough="true" padding="5,2,2,2" showT="true" widthT="200" expandT="true">
+			<shapeText content="{binding field=lengthWidth source=data bSync=false}" css.name="style_shapeText" itemID="6" layout.height="fill" layout.width="fill" showT="true" expandT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="20" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="6" layout.width="fill" mouseThrough="true" padding="5,2,2,2" showT="true" widthT="200" expandT="true">
+			<shapeText content="{binding field=fileSize source=data bSync=false}" css.name="style_shapeText" itemID="7" layout.height="fill" layout.width="fill" showT="true" expandT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="20" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="6" layout.width="fill" mouseThrough="true" padding="5,2,2,2" showT="true" widthT="200" expandT="true">
+			<shapeText content="{binding field=path source=data bSync=false}" css.name="style_shapeText" itemID="8" layout.height="fill" layout.width="fill" showT="true" expandT="true" />
+		</layoutEleUI>
+	</listHeader_item>
+	<list_Item showT="true" expandT="true">
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="30" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="6" layout.width="fill" mouseThrough="true" padding="2,2,2,2" showT="true" widthT="200" expandT="true">
+			<shapePicture image="{binding field=icon source=data bSync=false}" itemID="1" layout.height="fill" rect="31,192,100,0" showT="true" expandT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="20" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="2" layout.width="fill" mouseThrough="true" padding="2,2,2,2" showT="true" widthT="200" expandT="true">
+			<shapeText content="{binding field=name1 source=data bSync=false}" css.name="style_shapeText" itemID="2" layout.height="fill" layout.width="fill" showT="true" expandT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="20" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="2" layout.width="fill" mouseThrough="true" padding="2,2,2,2" showT="true" widthT="200" expandT="true">
+			<shapeText content="{binding field=fileType source=data bSync=false}" css.name="style_shapeText" itemID="3" layout.height="fill" layout.width="fill" showT="true" expandT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="20" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="2" layout.width="fill" mouseThrough="true" padding="2,2,2,2" showT="true" widthT="200" expandT="true">
+			<shapeText content="{binding field=loadMethod source=data bSync=false}" css.name="style_shapeText" itemID="4" layout.height="fill" layout.width="fill" showT="true" expandT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="20" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="2" layout.width="fill" mouseThrough="true" padding="2,2,2,2" showT="true" widthT="200" expandT="true">
+			<shapeText content="{binding field=drawType source=data bSync=false}" css.name="style_shapeText" itemID="5" layout.height="fill" layout.width="fill" showT="true" expandT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="20" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="2" layout.width="fill" mouseThrough="true" padding="2,2,2,2" showT="true" widthT="200" expandT="true">
+			<shapeText content="{binding field=lengthWidth source=data bSync=false}" css.name="style_shapeText" itemID="6" layout.height="fill" layout.width="fill" showT="true" expandT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="20" layout.alignBaseline="center" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="2" layout.width="fill" mouseThrough="true" padding="2,2,2,2" showT="true" widthT="200" expandT="true">
+			<shapeText content="{binding field=fileSize source=data bSync=false}" css.name="style_shapeText" itemID="7" layout.height="fill" layout.width=":1" showT="true" textAlign="DT_RIGHT | DT_VCENTER | DT_SINGLELINE" expandT="true" />
+			<shapeText content="KB" css.name="style_shapeText" layout.height="20" layout.width="30" rect="206,395,0,0" showT="true" expandT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="20" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="2" layout.width="fill" mouseThrough="true" padding="2,2,2,2" showT="true" widthT="200" expandT="true">
+			<shapeText content="{binding field=path source=data bSync=false}" css.name="style_shapeText" itemID="8" layout.height="fill" layout.width="fill" showT="true" expandT="true" />
+		</layoutEleUI>
+	</list_Item>
+</xc_template_list>

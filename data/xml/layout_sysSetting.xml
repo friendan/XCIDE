@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-布局面板文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<layoutPanel heightT="600" showT="true" widthT="500">
+	<elementUI expandT="true" rect="0,0,500,519" showT="true">
+		<shapeText content="设计视图配置" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="20,19,86,20" showT="true" />
+		<shapeText content="运行预览设置" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="20,181,86,20" showT="true" />
+		<shapeText content="语言设置" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="20,239,54,20" showT="true" />
+		<buttonUI buttonType="check" content="显示布局边界" drawBorder="false" expandT="true" id="@ID_sys_showLayoutFrame" rect="45,44,112,20" showT="true" style="check" textAlign="DT_LEFT | DT_VCENTER | DT_SINGLELINE" />
+		<shapeText content="选中对象控制边界颜色" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="45,73,140,20" showT="true" />
+		<shapeText content="*修改模式后需重启" css.name="style_shapeText_caption" expandT="true" layout.height="20" layout.width="auto" rect="265,389,111,20" showT="true" />
+		<buttonUI buttonType="check" content="显示布局边界" drawBorder="false" expandT="true" id="@ID_sys_showLayoutFrame_run" rect="45,205,99,20" showT="true" style="check" textAlign="DT_LEFT | DT_VCENTER | DT_SINGLELINE" />
+		<buttonUI buttonType="radio" content="中文" expandT="true" groupID="1" id="@ID_sys_language_ch" rect="45,260,63,25" showT="true" style="radio" textAlign="DT_LEFT | DT_VCENTER | DT_SINGLELINE" />
+		<buttonUI buttonType="radio" content="英文" expandT="true" groupID="1" id="@ID_sys_language_en" rect="153,260,59,25" showT="true" style="radio" textAlign="DT_LEFT | DT_VCENTER | DT_SINGLELINE" />
+		<buttonUI content="自定义属性名" expandT="true" id="@ID_sys_customPropertyName" rect="270,260,87,25" showT="true" />
+		<shapeText content="其他" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="20,302,20,20" showT="true" />
+		<buttonUI buttonType="check" check="true" content="启用窗口边框阴影" drawBorder="false" expandT="true" id="@ID_sys_windowShadow" rect="45,328,130,20" showT="true" style="check" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" />
+		<buttonUI buttonType="radio" content="新手模式" expandT="true" groupID="2" id="@ID_sys_language_ch" name="新手模式" rect="44,385,73,25" showT="true" style="radio" textAlign="DT_LEFT | DT_VCENTER | DT_SINGLELINE" />
+		<buttonUI buttonType="radio" content="专家模式" expandT="true" groupID="2" id="@ID_sys_language_ch" name="专家模式" rect="162,385,80,25" showT="true" style="radio" textAlign="DT_LEFT | DT_VCENTER | DT_SINGLELINE" />
+		<shapeText content="设置布局边界颜色" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="45,105,113,20" showT="true" />
+		<buttonUI content="关联炫彩文件类型" expandT="true" id="@ID_regFileType" rect="45,423,130,25" showT="true" />
+		<shapeText content="*关联文件类型后, 可直接双击项目文件打开(*.xcproj, *.xcs)" expandT="true" layout.height="20" layout.width="auto" rect="180,428,171,20" showT="true" />
+		<buttonUI buttonType="radio" content="弹出背景编辑器" drawBorder="false" expandT="true" groupID="3" name="弹出背景编辑器" rect="199,139,114,20" showT="true" style="radio" textAlign="DT_LEFT | DT_VCENTER | DT_SINGLELINE" />
+		<shapeText content="鼠标左键双击首选操作:" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="45,139,102,20" showT="true" />
+		<buttonUI buttonType="radio" content="跳转到代码" drawBorder="false" expandT="true" groupID="3" name="跳转到代码" rect="334,139,90,20" showT="true" style="radio" textAlign="DT_LEFT | DT_VCENTER | DT_SINGLELINE" />
+		<buttonUI content="更新" expandT="true" name="更新" rect="45,462,80,25" showT="true" />
+		<shapeText content="*更新提示!" expandT="true" layout.height="20" layout.width="auto" name="更新提示" rect="132,466,317,20" showT="true" />
+		<buttonUI buttonType="check" content="允许打开多个项目" drawBorder="false" expandT="true" name="允许打开多个项目" rect="207,328,125,20" showT="true" style="check" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" />
+		<shapeText content="*次选操作可通过: Ctrl + 鼠标左键双击" expandT="true" layout.height="20" layout.width="auto" rect="202,158,210,20" showT="true" />
+		<buttonUI buttonType="check" content="底部状态栏内容改变时变色提醒" drawBorder="false" expandT="true" name="状态栏提醒" rect="44,358,201,20" showT="true" style="check" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" />
+	</elementUI>
+</layoutPanel>

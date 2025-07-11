@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-列表框元素项模板文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<xc_template_listBox>
+	<layoutEleUI drawBorder="false" enableCanvas="false" id="100" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="false" layout.space="0" layout.width="fill" mouseThrough="true" padding="0,0,0,0" showT="true" widthT="300" expandT="true">
+		<layoutEleUI drawBorder="false" enableCanvas="false" id="101" layout.alignBaseline="center" layout.alignH="left" layout.alignV="center" layout.height=":1" layout.horizon="true" layout.space="5" layout.width="fill" mouseThrough="true" padding="5,0,5,0" showT="true" expandT="true">
+			<buttonUI css.enable="false" id="1011" itemID="3" rect="0,0,20,20" showT="true" expandT="true" />
+			<shapeText content="{binding field=name1 source=data bSync=false}" css.enable="false" id="1012" itemID="1" layout.height="fill" layout.width=":1" showT="true" textColor="#FF3C3C3C" expandT="true" />
+			<buttonUI css.enable="false" imageIcon="@copy.png" itemID="5" rect="121,31,20,20" showT="true" transparent="true" expandT="true" />
+			<buttonUI css.enable="false" itemID="2" rect="0,0,20,20" showT="true" transparent="true" expandT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" id="102" layout.alignH="left" layout.alignV="top" layout.height="1" layout.horizon="true" layout.width="fill" mouseThrough="true" showT="true" expandT="true">
+			<elementUI bkInfoM="{99:1.9.9;5:2(15)20(1)21(1)22(-4144960)23(255);98:16(0);}" css.enable="false" id="1021" layout.height="fill" layout.width="fill" rect="106,119,100,100" showT="true" expandT="true" />
+		</layoutEleUI>
+	</layoutEleUI>
+</xc_template_listBox>

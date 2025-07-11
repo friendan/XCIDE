@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-布局面板文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<layoutPanel heightT="600" showT="true" widthT="640">
+	<elementUI layout.height="fill" layout.width="fill" rect="20,-40,500,416" showT="true" expandT="true">
+		<elementUI bkInfoM="{99:1.9.9;5:2(15)20(1)21(3)26(0)22(-11318723)23(255);98:16(0);}" css.enable="false" rect="10,8,610,35" showT="true" expandT="true">
+			<shapeText content="配置:" css.name="style_shapeText" layout.height="20" layout.width="auto" rect="10,9,54,20" showT="true" expandT="true" />
+			<comboBoxUI name="配置" nameTable="项目设置" rect="44,7,261,22" showT="true" expandT="true" />
+			<shapeText content="平台:" css.name="style_shapeText" layout.height="20" layout.width="auto" rect="347,9,32,20" showT="true" expandT="true" />
+			<comboBoxUI name="平台" nameTable="项目设置" rect="382,7,131,22" showT="true" expandT="true" />
+			<buttonUI content="新建" name="新建" nameTable="项目设置" rect="525,5,60,25" showT="true" expandT="true" />
+		</elementUI>
+		<shapeText content="附加依赖库" css.name="style_shapeText" layout.height="20" layout.width="auto" rect="10,60,66,20" showT="true" expandT="true" />
+		<editUI name="附加依赖库" nameTable="项目设置" rect="10,82,585,22" showT="true" expandT="true" />
+		<shapeText content="忽略特定库" css.name="style_shapeText" layout.height="20" layout.width="auto" rect="10,177,54,20" showT="true" expandT="true" />
+		<shapeText content="其他选项" css.name="style_shapeText" layout.height="20" layout.width="auto" rect="10,353,42,20" showT="true" expandT="true" />
+		<editUI multiLine="true" name="其他选项" nameTable="项目设置" rect="10,374,585,80" showT="true" expandT="true" />
+		<editUI name="忽略特定库" nameTable="项目设置" rect="10,198,585,22" showT="true" expandT="true" />
+		<editUI name="附加依赖库(继承值)" nameTable="项目设置" rect="10,140,585,22" showT="true" expandT="true" />
+		<shapeText content="附加依赖库(继承值)" css.name="style_shapeText_caption" layout.height="20" layout.width="auto" rect="10,118,66,20" showT="true" expandT="true" />
+		<shapeText content="忽略特定库(继承值)" css.name="style_shapeText_caption" layout.height="20" layout.width="auto" rect="10,235,66,20" showT="true" expandT="true" />
+		<editUI name="忽略特定库(继承值)" nameTable="项目设置" rect="10,256,585,22" showT="true" expandT="true" />
+		<editUI name="模块定义文件" nameTable="项目设置" rect="10,315,585,22" showT="true" expandT="true" />
+		<shapeText content="模块定义文件(*.def)" css.name="style_shapeText" layout.height="20" layout.width="auto" rect="10,294,112,20" showT="true" expandT="true" />
+	</elementUI>
+</layoutPanel>

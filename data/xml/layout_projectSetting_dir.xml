@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-布局面板文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<layoutPanel heightT="800" showT="true" widthT="640">
+	<scrollViewUI expandT="true" layout.height="fill" layout.width="fill" rect="0,0,640,678" showT="true">
+		<elementUI bkInfoM="{99:1.9.9;5:2(15)20(1)21(3)26(0)22(-11318723)23(255);98:16(0);}" css.enable="false" expandT="true" rect="10,8,610,35" showT="true">
+			<shapeText content="配置:" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="10,9,54,20" showT="true" />
+			<comboBoxUI expandT="true" name="配置" nameTable="项目设置" rect="44,7,261,22" showT="true" />
+			<shapeText content="平台:" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="347,9,32,20" showT="true" />
+			<comboBoxUI expandT="true" name="平台" nameTable="项目设置" rect="382,7,131,22" showT="true" />
+			<buttonUI content="新建" expandT="true" name="新建" nameTable="项目设置" rect="525,5,60,25" showT="true" />
+		</elementUI>
+		<shapeText content="输出文件名" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="10,61,66,20" showT="true" />
+		<editUI expandT="true" name="输出文件名" nameTable="项目设置" rect="77,60,245,22" showT="true" />
+		<shapeText content="包含目录-$(支持系统宏)" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="10,161,54,20" showT="true" />
+		<shapeText content="输出目录" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="10,97,54,20" showT="true" />
+		<shapeText content="中间目录" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="10,127,54,20" showT="true" />
+		<shapeText content="库目录-$(支持系统宏)" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="10,417,42,20" showT="true" />
+		<editUI expandT="true" multiLine="true" name="包含目录" nameTable="项目设置" rect="10,182,585,60" showT="true" />
+		<editUI expandT="true" multiLine="true" name="库目录" nameTable="项目设置" rect="10,438,585,60" showT="true" />
+		<shapeText content="包含目录(继承值)" css.name="style_shapeText_caption" expandT="true" layout.height="20" layout.width="auto" rect="10,256,54,20" showT="true" />
+		<editUI expandT="true" multiLine="true" name="包含目录(继承值)" nameTable="项目设置" rect="10,277,585,130" showT="true" />
+		<shapeText content="库目录(继承值)" css.name="style_shapeText_caption" expandT="true" layout.height="20" layout.width="auto" rect="10,509,87,20" showT="true" />
+		<editUI expandT="true" multiLine="true" name="库目录(继承值)" nameTable="项目设置" rect="10,531,585,100" showT="true" />
+		<buttonUI content="查看系统环境变量" expandT="true" name="查看系统环境变量" rect="486,152,109,25" showT="true" />
+	</scrollViewUI>
+</layoutPanel>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-列表框元素项模板文件-->
+<head />
+<xc_template_listBox>
+	<layoutEleUI bkInfoM="{99:1.9.9;98:16(0);5:2(13)3(0,1,0,0)20(1)21(3)26(1)22(-12829636)23(255);}" drawBorder="false" enableCanvas="false" expandT="true" heightT="60" layout.alignH="left" layout.alignV="center" layout.autoWrap="false" layout.height="fill" layout.horizon="true" layout.space="2" layout.width="fill" mouseThrough="true" showT="true" widthT="330">
+		<shapeText content="{binding field=name1}" expandT="true" font="@ID_FONT_10" itemID="0" layout.height="20" layout.width="auto" rect="0,0,181,20" showT="true" />
+		<buttonUI bkInfoM="{99:1.9.9;98:16(0)32(0)64(0);5:2(15)20(1)21(3)26(1)22(-16741955)23(255)9(0,3,0,3);}" border="0,0,0,0" content="官方" css.enable="false" expandT="true" itemID="2" layout.height="17" layout.width="auto" padding="0,0,0,0" rect="130,18,60,25" showT="true" textColor="#FFFFFFFF" transparent="true" />
+		<shapeText content="下载:" css.name="style_shapeText_caption" expandT="true" layout.float="true" layout.height="20" layout.width="auto" rect="304,61,100,20" showT="true" />
+		<shapeText content="{binding field=name2}" expandT="true" itemID="0" layout.float="true" layout.height="20" layout.width="40" showT="true" />
+		<buttonUI content="已最新" expandT="true" itemID="1" layout.float="true" layout.wrap="false" rect="196,32,55,22" showT="true" />
+		<shapeText content="作者:" css.name="style_shapeText_caption" expandT="true" layout.height="20" layout.width="auto" layout.wrap="true" rect="284,41,100,20" showT="true" />
+		<shapeText content="{binding field=name3}" css.name="style_shapeText_caption" expandT="true" layout.height="20" layout.width="115" rect="182,19,90,20" showT="true" />
+		<shapeText content="日期:" css.name="style_shapeText_caption" expandT="true" layout.height="20" layout.width="auto" rect="266,22,100,20" showT="true" />
+		<shapeText content="{binding field=name4}" css.name="style_shapeText_caption" expandT="true" rect="216,44,130,20" showT="true" />
+	</layoutEleUI>
+</xc_template_listBox>

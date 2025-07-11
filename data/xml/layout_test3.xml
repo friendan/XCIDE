@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-窗口布局文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<windowUI bkInfoM="{sizeT:484,496;99:1.9.9;5:2(15)20(1)21(3)26(0)22(-986896)23(255)10(1)7(1)11(3)16(0)12(-1531392)13(255);5:2(7)3(2,2,2,28)20(1)21(3)26(0)22(-1531392)23(255);5:2(13)3(5,1,5,50)20(1)21(3)26(0)22(-4144960)23(255);5:2(13)3(5,1,5,49)20(1)21(3)26(0)22(-1)23(255);98:1(0,1,2,3);}" rect="0,0,300,200" showT="true">
+	<shapeText content="TextBlock" layout.height="20" layout.width="auto" rect="63,78,99,29" showT="true" textColor="#FFFF0000" expandT="true" />
+	<buttonUI content="Button" rect="193,47,60,25" showT="true" expandT="true" />
+</windowUI>

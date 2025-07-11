@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-布局面板文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<layoutPanel heightT="600" showT="true" widthT="640">
+	<scrollViewUI layout.height="fill" layout.width="fill" rect="0,0,500,328" showT="true" expandT="true">
+		<elementUI bkInfoM="{99:1.9.9;5:2(15)20(1)21(3)26(0)22(-11318723)23(255);98:16(0);}" css.enable="false" rect="10,8,610,35" showT="true" expandT="true">
+			<shapeText content="配置:" css.name="style_shapeText" layout.height="20" layout.width="auto" rect="10,9,54,20" showT="true" expandT="true" />
+			<comboBoxUI name="配置" nameTable="项目设置" rect="44,7,261,22" showT="true" expandT="true" />
+			<shapeText content="平台:" css.name="style_shapeText" layout.height="20" layout.width="auto" rect="347,9,32,20" showT="true" expandT="true" />
+			<comboBoxUI name="平台" nameTable="项目设置" rect="382,7,131,22" showT="true" expandT="true" />
+			<buttonUI content="新建" name="新建" nameTable="项目设置" rect="525,5,60,25" showT="true" expandT="true" />
+		</elementUI>
+	</scrollViewUI>
+</layoutPanel>
