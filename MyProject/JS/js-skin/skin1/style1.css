@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!--炫彩界面库-样式文件-->
+<style>
+    <style_common>
+        <item bkInfoM="@resource1:\ID_button" objectStyle="0" objectType="22" objectTypeEx="0" remarkName="普通按钮" textColor="@resource1:\ID_text_color" />
+        <item bkInfoM="@resource1:\ID_button_radio" objectStyle="0" objectType="22" objectTypeEx="1" remarkName="单选按钮" textColor="@resource1:\ID_text_color" />
+        <item bkInfoM="@resource1:\ID_button_check" objectStyle="0" objectType="22" objectTypeEx="2" remarkName="多选按钮" textColor="@resource1:\ID_text_color" />
+        <item bkInfoM="@resource1:\ID_window" objectStyle="0" objectType="1" objectTypeEx="0" textColor="@resource1:\ID_text_color" />
+        <item bkInfoM="@resource1:\ID_button_close" objectStyle="0" objectType="22" objectTypeEx="3" remarkName="窗口关闭按钮" />
+        <item objectStyle="0" objectType="62" objectTypeEx="0" textColor="@resource1:\ID_text_color" />
+        <item bkInfoM="@resource1:\ID_comboBox" caretColor="#FFFFFFFF" objectStyle="0" objectType="24" objectTypeEx="0" textColor="@resource1:\ID_text_color" />
+        <item bkInfoM="@resource1:\ID_richEdit" caretColor="#FFFFFFFF" objectStyle="0" objectType="23" objectTypeEx="0" textColor="@resource1:\ID_text_color" />
+        <item bkInfoM="@resource1:\ID_element" objectStyle="0" objectType="21" objectTypeEx="0" />
+        <item bkInfoM="@resource1:\ID_textLink" objectStyle="0" objectType="41" objectTypeEx="0" textColor="@resource1:\ID_text_color" />
+        <item bkInfoM="@resource1:\ID_listBox" objectStyle="0" objectType="28" objectTypeEx="0" />
+        <item bkInfoM="@resource1:\ID_list" objectStyle="0" objectType="27" objectTypeEx="0" />
+        <item bkInfoM="@resource1:\ID_tree" objectStyle="0" objectType="30" objectTypeEx="0" />
+        <item bkInfoM="@resource1:\ID_listView" objectStyle="0" objectType="29" objectTypeEx="0" />
+        <item bkInfoM="@resource1:\ID_scrollView" objectStyle="0" objectType="26" objectTypeEx="0" />
+        <item bkInfoM="@resource1:\ID_scrollBar" objectStyle="0" objectType="25" objectTypeEx="0" />
+        <item bkInfoM="@resource1:\ID_scrollBar_left" objectStyle="4" objectType="22" objectTypeEx="0" />
+        <item bkInfoM="@resource1:\ID_scrollBar_right" objectStyle="5" objectType="22" objectTypeEx="0" />
+        <item bkInfoM="@resource1:\ID_scrollBar_top" objectStyle="6" objectType="22" objectTypeEx="0" />
+        <item bkInfoM="@resource1:\ID_scrollBar_bottom" objectStyle="7" objectType="22" objectTypeEx="0" />
+        <item bkInfoM="@resource1:\ID_scrollBar_button" objectStyle="8" objectType="22" objectTypeEx="0" />
+        <item bkInfoM="@resource1:\ID_scrollBar_button" objectStyle="9" objectType="22" objectTypeEx="0" />
+        <item bkInfoM="@resource1:\ID_listHeader" objectStyle="0" objectType="52" objectTypeEx="0" />
+        <item bkInfoM="@resource1:\ID_toolBar" objectStyle="0" objectType="34" objectTypeEx="0" />
+        <item bkInfoM="@resource1:\ID_menuBar" objectStyle="0" objectType="31" objectTypeEx="0" />
+        <item bkInfoM="@resource1:\ID_tabBar" objectStyle="0" objectType="40" objectTypeEx="0" />
+        <item bkInfoM="@resource1:\ID_sliderBar" objectStyle="0" objectType="32" objectTypeEx="0" />
+        <item bkInfoM="@resource1:\ID_progressBar" objectStyle="0" objectType="33" objectTypeEx="0" />
+    </style_common>
+    <style_class>
+        <item bkInfoM="@resource1:\ID_button_style" objectType="22" remarkName="888" styleName="style_button" textColor="#FFFF0000" />
+    </style_class>
+    <style_resource>
+        <item color="#FFFF8000" remarkName="style_color_666" resourceType="5" />
+    </style_resource>
+    <resourceFile path=".\resource1.res" />
+</style>

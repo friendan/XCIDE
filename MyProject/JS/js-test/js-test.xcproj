@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project name="js-test">
+	<js_start path="main.js" />
+	<breakpoints>
+		<file value="main.js">
+			<item row="1" />
+		</file>
+		<file value="main2.js">
+			<item row="9" />
+			<item row="4" />
+			<item row="13" />
+		</file>
+	</breakpoints>
+</project>

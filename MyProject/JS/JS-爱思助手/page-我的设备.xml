@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-布局面板文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<layoutPanel showT="true">
+	<layoutEleUI height="500" layout.height="fill" layout.horizon="false" layout.width="fill" left="61" showT="true" top="99" width="600" expandT="true">
+		<layoutEleUI bkInfoM="{99:1.9.9;3:2(15)4(@img01.png);98:16(0);}" height="100" layout.height="300" layout.width="fill" left="305" top="112" width="100" showT="true" expandT="true" />
+		<layoutEleUI height="100" layout.height=":1" layout.width="fill" left="338" top="114" width="100" showT="true" expandT="true" />
+	</layoutEleUI>
+</layoutPanel>

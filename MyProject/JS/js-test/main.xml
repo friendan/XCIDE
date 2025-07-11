@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-窗口布局文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<windowUI center="true" content="炫彩界面库 - 我的窗口名" height="200" layoutBottom="8" layoutLeft="8" layoutRight="8" layoutTop="30" left="0" showT="true" top="0" width="300" showT="true">
+	<buttonUI content="Button" height="25" left="112" name="button" showT="true" top="59" width="60" showT="true" expandT="true" />
+</windowUI>

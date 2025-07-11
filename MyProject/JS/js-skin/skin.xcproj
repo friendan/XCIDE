@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<project name="js-skin">
+	<default_css path="skin1\style1.css" />
+	<js_start path="main.js" />
+	<breakpoints />
+</project>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-窗口布局文件-->
+<head>
+	<bindJsFile value="js\layout.js" />
+</head>
+<windowUI center="true" content="炫彩界面库 - 我的窗口名" height="372" layoutBottom="0" layoutLeft="0" layoutRight="0" layoutTop="30" left="20" showT="true" top="20" width="556">
+	<buttonUI content="Button" css.name="style_button" height="53" left="329" showT="true" top="77" width="180" expandT="true" />
+	<buttonUI content="Button" height="47" left="55" showT="true" top="77" width="106" expandT="true" />
+	<buttonUI content="Button" font="@resource1:\ID_FONT_16" height="53" left="199" showT="true" top="77" width="100" expandT="true" />
+	<buttonUI buttonStyle="check" buttonType="check" content="Button" css.enable="false" height="25" left="365" name="button" showT="true" top="206" width="82" expandT="true" />
+	<elementUI height="168" left="72" showT="true" top="163" width="209" expandT="true">
+		<layoutEleUI height="120" left="39" showT="true" top="25" width="120" expandT="true">
+			<buttonUI content="Button" height="25" left="45" showT="true" top="46" width="60" expandT="true" />
+		</layoutEleUI>
+	</elementUI>
+</windowUI>

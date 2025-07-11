@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<project name="js-英文">
+	<js_start path="main.js" />
+	<breakpoints>
+		<file value="main.js">
+			<item row="6" />
+		</file>
+	</breakpoints>
+</project>

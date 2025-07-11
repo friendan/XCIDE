@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-窗口布局文件-->
+<head>
+	<bindJsFile value="layout_bind_js.js" />
+</head>
+<windowUI center="true" content="炫彩界面库 - 我的窗口名" height="575" id="100" layoutBottom="0" layoutLeft="0" layoutRight="0" layoutTop="30" left="20" showT="true" top="20" width="688" showT="true">
+	<buttonUI buttonType="close" height="27" left="657" showT="true" top="2" width="30" showT="true" expandT="true" />
+	<buttonUI content="普通按钮" height="25" left="40" showT="true" top="58" width="70" showT="true" expandT="true" />
+	<shapeText content="黑色风格皮肤演示" layout.height="20" layout.width="auto" left="37" showT="true" top="6" width="20" showT="true" expandT="true" />
+	<buttonUI buttonType="radio" check="true" content="单选按钮1" height="25" left="142" showT="true" top="58" width="94" showT="true" expandT="true" />
+	<buttonUI buttonType="check" check="true" content="多选按钮1" height="25" left="255" showT="true" top="57" width="99" showT="true" expandT="true" />
+	<buttonUI buttonType="radio" content="单选按钮2" height="25" left="142" showT="true" top="100" width="92" showT="true" expandT="true" />
+	<buttonUI buttonType="check" content="多选按钮2" height="25" left="254" showT="true" top="102" width="98" showT="true" expandT="true" />
+	<elementUI height="100" left="561" showT="true" top="43" width="100" showT="true" expandT="true" />
+	<comboBoxUI content="ComboBox1" height="22" left="414" showT="true" top="97" width="100" showT="true" expandT="true" />
+	<richEditUI content="RichEdit1" height="22" left="414" name="richEdit" showT="true" top="51" width="100" showT="true" expandT="true" />
+	<shapePicture height="24" image="@resource1:\logo.png" left="9" showT="true" top="3" width="24" showT="true" expandT="true" />
+	<textLinkUI content="www.xcgui.com" height="20" left="28" showT="true" top="107" width="100" showT="true" expandT="true" />
+	<layoutEleUI height="400" left="31" name="mainLayout" showT="true" top="167" width="600" showT="true" expandT="true" />
+	<buttonUI buttonType="radio" check="true" content="ListBox" height="25" left="43" name="tab1" showT="true" top="136" width="89" showT="true" expandT="true" />
+	<buttonUI buttonType="radio" content="List" height="25" left="156" name="tab2" showT="true" top="134" width="76" showT="true" expandT="true" />
+	<buttonUI buttonType="radio" content="Button" height="25" left="262" name="tab3" showT="true" top="133" width="76" showT="true" expandT="true" />
+	<buttonUI content="Button-class" css.enable="true" css.name="style_button" height="25" left="385" showT="true" top="132" width="122" showT="true" expandT="true" />
+</windowUI>

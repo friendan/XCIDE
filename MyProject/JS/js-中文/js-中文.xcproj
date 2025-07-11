@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<project name="js-中文">
+	<js_start path="main.js" />
+	<breakpoints />
+</project>

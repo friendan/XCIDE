@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<project name="JS-爱思助手">
+	<js_start path="main.js" />
+	<breakpoints>
+		<file value="main.js">
+			<item row="8" />
+		</file>
+	</breakpoints>
+</project>

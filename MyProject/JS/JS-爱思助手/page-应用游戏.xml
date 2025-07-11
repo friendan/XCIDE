@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-布局面板文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<layoutPanel showT="true">
+	<layoutEleUI height="400" layout.horizon="true" left="63" top="74" width="600" showT="true" expandT="true">
+		<layoutEleUI height="100" layout.height="fill" layout.horizon="false" left="417" top="123" width="200" showT="true" expandT="true">
+			<layoutEleUI height="100" layout.alignH="center" layout.alignV="center" layout.width="fill" left="62" top="104" width="100" showT="true" expandT="true">
+				<shapeText content="未连接设备" layout.height="20" layout.width="auto" left="116" top="73" showT="true" expandT="true" />
+			</layoutEleUI>
+			<layoutEleUI height="100" layout.width="fill" left="131" top="206" width="100" showT="true" expandT="true" />
+		</layoutEleUI>
+		<layoutEleUI height="100" layout.height="fill" layout.horizon="false" layout.width=":1" left="487" top="127" width="100" showT="true" expandT="true">
+			<layoutEleUI height="100" layout.alignV="center" layout.height="40" layout.padding="20,0,0,0" layout.width="fill" left="260" top="73" width="100" showT="true" expandT="true">
+				<buttonUI content="刷新" height="25" left="46" top="33" width="60" showT="true" expandT="true" />
+			</layoutEleUI>
+		</layoutEleUI>
+	</layoutEleUI>
+</layoutPanel>

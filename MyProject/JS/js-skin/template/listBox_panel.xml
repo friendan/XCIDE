@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!--炫彩界面库-布局面板文件-->
+<head>
+    <bindJsFile value="" />
+</head>
+<layoutPanel showT="true">
+    <listBoxUI height="393" layout.height="fill" layout.width="fill" left="20" name="listBox" top="20" width="327" showT="true" expandT="true" />
+</layoutPanel>
