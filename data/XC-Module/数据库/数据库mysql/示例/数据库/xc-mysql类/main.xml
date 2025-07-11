@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-窗口布局文件-->
+<head />
+<windowUI center="true" content="炫彩界面库 - 我的窗口名" rect="20,20,671,437" showT="true" windowStyle="2031">
+	<buttonUI content="连接mysql" name="连接mysql" rect="60,79,118,42" showT="true" expandT="true" />
+	<buttonUI content="执行sql" name="执行sql" rect="231,81,95,41" showT="true" expandT="true" />
+</windowUI>

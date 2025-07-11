@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-窗口布局文件-->
+<head />
+<windowUI center="true" content="炫彩界面库 - 我的窗口名" rect="20,20,632,451" showT="true" windowStyle="2031">
+	<buttonUI content="绝对移动鼠标" name="Button" rect="48,253,148,53" showT="true" expandT="true" />
+	<buttonUI content="ctrl+alt+del" name="BUTTON2" rect="422,262,116,56" showT="true" expandT="true" />
+	<buttonUI content="Keyboard L.win" name="button3" rect="461,331,132,63" showT="true" expandT="true" />
+	<buttonUI content="键盘输入" name="button4" rect="46,339,134,60" showT="true" expandT="true" />
+	<buttonUI content="模拟鼠标滚轮" name="button5" rect="262,344,160,66" showT="true" expandT="true" />
+</windowUI>

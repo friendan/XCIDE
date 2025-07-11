@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-窗口布局文件-->
+<head />
+<windowUI center="true" content="炫彩界面库 - 我的窗口名" enableLayout="true" layout.space="2" layout.spaceRow="2" padding="5,5,5,5" rect="20,20,970,599" showT="true" windowStyle="2031">
+	<buttonUI content="打印预览-预览工具栏按钮控制演示" name="打印预览" rect="20,49,154,25" showT="true" expandT="true" />
+	<buttonUI content="自动调整列宽适应区域" name="自动调整列宽适应区域" rect="126,130,133,25" showT="true" expandT="true" />
+	<buttonUI content="自动调整列宽适应文字" name="自动调整列宽适应文字" rect="283,68,132,25" showT="true" expandT="true" />
+	<buttonUI content="自动调整列宽适应页面" name="自动调整列宽适应页面" rect="289,144,130,25" showT="true" expandT="true" />
+	<buttonUI content="显示工具栏" name="显示工具栏" rect="432,186,75,25" showT="true" expandT="true" />
+	<buttonUI content="执行工具栏按钮功能" name="执行工具栏按钮功能" rect="426,323,121,25" showT="true" expandT="true" />
+	<buttonUI content="恢复工具栏按钮" name="恢复工具栏按钮" rect="487,436,99,25" showT="true" expandT="true" />
+	<buttonUI content="遍历查找" name="遍历查找" rect="583,67,64,25" showT="true" expandT="true" />
+	<editUI rect="817,109,100,20" showT="true" expandT="true" />
+</windowUI>

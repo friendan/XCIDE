@@ -1,0 +1,15 @@
+﻿MySQL 默认用户 root 密码 haosql 端口3306
+
+默认已经开启了远程连接功能，也可通过如下命令自己修改，命令中的haosql代码密码
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%'IDENTIFIED BY 'haosql' WITH GRANT OPTION;
+
+
+提示缺少什么DLL，就复制对应的DLL到系统目录下：
+
+1、如果你是32位系统：请复制SysWOW64里的文件到系统Windows\System32目录下
+
+2、如果你是64位系统：请复制System32里的文件到系统Windows\System32目录下
+                     请复制SysWOW64里的文件到系统Windows\SysWOW64目录下
+
+
+

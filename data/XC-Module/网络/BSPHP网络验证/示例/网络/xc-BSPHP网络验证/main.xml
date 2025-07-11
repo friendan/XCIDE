@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-窗口布局文件-->
+<head />
+<windowUI center="true" content="炫彩界面库 - 我的窗口名" rect="20,20,441,290" showT="true" windowStyle="2031">
+	<buttonUI content="登入" name="登入" rect="331,77,73,27" showT="true" expandT="true" />
+	<buttonUI content="注册" name="注册" rect="331,124,73,27" showT="true" expandT="true" />
+	<buttonUI content="充值" name="充值" rect="331,171,73,27" showT="true" expandT="true" />
+	<shapeGroupBox content="首页公告" rect="28,55,279,193" showT="true" expandT="true" />
+	<shapeText content="TextBlock" name="形状文本1" rect="47,86,234,143" showT="true" textAlign="DT_CENTER,DT_VCENTER" expandT="true" />
+</windowUI>

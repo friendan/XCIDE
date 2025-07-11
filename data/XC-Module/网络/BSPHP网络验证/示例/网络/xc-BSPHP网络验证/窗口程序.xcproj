@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<project name="" ui_loadType="0" ui_zipPassword="" expand="1">
+	<language value="xc">
+		<compile debug="true" />
+	</language>
+	<vc config="2015-EXE调试版" platform="x64" moduleLib="" autoDefFile="1" />
+	<modules>
+		<item path="module_base.h" name="基础模块" />
+		<item path="module_curl.h" name="CURL网络访问" />
+		<item path="module_BsPhpClass.h" name="BSPHP网络验证" />
+		<item path="module_xcgui.h" name="炫彩界面库" />
+		<item path="module_xcgui_class.h" name="炫彩界面库-类" />
+	</modules>
+	<codeExpand>
+		<item file="main.xc" state="2," />
+	</codeExpand>
+	<watches />
+	<breakpoints>
+		<file value="main.xc">
+			<item lineno="26" />
+			<item lineno="23" />
+			<item lineno="33" />
+		</file>
+	</breakpoints>
+</project>

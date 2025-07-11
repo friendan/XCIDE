@@ -1,0 +1,25 @@
+﻿//预编译头文件, 提高修改代码时的编译速度
+//将不常修改的内容放在此文件中
+//包含外部头文件,库文件(lib)
+//申明外部函数, 变量, 宏, 枚举, 数据类型等
+//调试快捷键:  F5: 编译和调试, F7: 编译, F9:下断点, F10: 单步, F11: 步入
+
+#外部类型 SOCKET
+#外部类型 UINT_PTR
+
+#外部类型 CHPObjectPtr
+#智能指针_仅声明    CHPObjectPtr<IHttpServer>   CHttpServerPtr   HTTP服务端_智能指针
+#智能指针_仅声明    CHPObjectPtr<IHttpClient>   CHttpClientPtr   HTTP客户端_智能指针
+#智能指针_仅声明    CHPObjectPtr<ITcpServer>    CTcpServerPtr    TCP服务端_智能指针
+#智能指针_仅声明    CHPObjectPtr<ITcpClient>    CTcpClientPtr    TCP客户端_智能指针
+
+#智能指针_仅声明    CHPObjectPtr<ITcpAgent>         CTcpAgentPtr         TCP代理_智能指针
+#智能指针_仅声明    CHPObjectPtr<ITcpPullServer>   CTcpPullServerPtr   TCPPull服务端_智能指针
+#智能指针_仅声明    CHPObjectPtr<ITcpPullAgent>    CTcpPullAgentPtr    TCPPull代理_智能指针
+#智能指针_仅声明    CHPObjectPtr<ITcpPullClient>   CTcpPullClientPtr   TCPPull客户端_智能指针
+
+#智能指针_仅声明    CHPObjectPtr<ITcpPackServer>   CTcpPackServerPtr    TCP包服务端_智能指针
+#智能指针_仅声明    CHPObjectPtr<ITcpPackAgent>    CTcpPackAgentPtr     TCP包代理_智能指针
+#智能指针_仅声明    CHPObjectPtr<ITcpPackClient>   CTcpPackClientPtr    TCP包客户端_智能指针
+
+

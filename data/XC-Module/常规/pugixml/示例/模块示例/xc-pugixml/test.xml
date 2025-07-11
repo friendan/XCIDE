@@ -1,0 +1,7 @@
+<root name="test_xml" >
+	<item  name="item1"/>
+	<item name="item2"/>
+	<item name="item3"></item>
+	<text>文本内容</text>
+</root>
+

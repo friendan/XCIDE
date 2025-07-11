@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<project name="" ui_loadType="0" ui_zipPassword="" expand="0">
+	<language value="xc">
+		<compile debug="true" />
+	</language>
+	<vc config="调试版" platform="x86" moduleLib="lib" autoDefFile="1">
+		<setting>
+			<config name="My-Debug">
+				<x86>
+					<common callType="/Gd" debug="0" exception="/EHsc" manifestFile="123.txt" multipleProcesses="/MP" optimizeCode="/Od" platformToolset="vs2019" runtimeLibrary="/MDd" sdk="Windows7" sdl="/sdl" type="exe" warningLevel="/W3" />
+					<options value="" />
+					<options_link value="" />
+					<def_file path="" />
+					<out name="" out_path="" obj_path="" />
+					<include_path />
+					<lib_path />
+					<exe_path />
+					<lib_import />
+					<lib_ignore />
+					<macro>
+						<item name="DEBUG" />
+						<item name="_DEBUG" />
+					</macro>
+				</x86>
+				<x64>
+					<common debug="1" logo="/nologo" platformToolset="vs2015" runtimeLibrary="/MDd" sdk="Windows7" type="exe" />
+					<options value="" />
+					<options_link value="" />
+					<def_file path="" />
+					<out name="" out_path="" obj_path="" />
+					<include_path />
+					<lib_path />
+					<exe_path />
+					<lib_import />
+					<lib_ignore />
+					<macro />
+				</x64>
+			</config>
+			<config name="调试版">
+				<x86>
+					<common debug="1" platformToolset="vs2015" runtimeLibrary="/MDd" sdk="Windows7" type="exe" warningLevel="/W3" />
+					<options value="" />
+					<options_link value="" />
+					<def_file path="" />
+					<out name="" out_path="" obj_path="" />
+					<include_path />
+					<lib_path />
+					<exe_path />
+					<lib_import>
+						<item name="kernel32.lib" />
+						<item name="user32.lib" />
+						<item name="gdi32.lib" />
+					</lib_import>
+					<lib_ignore />
+					<macro />
+				</x86>
+				<x64>
+					<common debug="1" platformToolset="vs2015" runtimeLibrary="/MDd" sdk="Windows7" type="exe" warningLevel="/W3" />
+					<options value="" />
+					<options_link value="" />
+					<def_file path="" />
+					<out name="" out_path="" obj_path="" />
+					<include_path />
+					<lib_path />
+					<exe_path />
+					<lib_import>
+						<item name="kernel32.lib" />
+						<item name="user32.lib" />
+						<item name="gdi32.lib" />
+					</lib_import>
+					<lib_ignore />
+					<macro />
+				</x64>
+			</config>
+			<config name="发布版">
+				<x86>
+					<common debug="0" platformToolset="vs2015" runtimeLibrary="/MT" sdk="Windows7" type="exe" warningLevel="/W3" />
+					<options value="" />
+					<options_link value="" />
+					<def_file path="" />
+					<out name="" out_path="" obj_path="" />
+					<include_path />
+					<lib_path />
+					<exe_path />
+					<lib_import>
+						<item name="kernel32.lib" />
+						<item name="user32.lib" />
+						<item name="gdi32.lib" />
+					</lib_import>
+					<lib_ignore />
+					<macro />
+				</x86>
+				<x64>
+					<common debug="0" platformToolset="vs2015" runtimeLibrary="/MT" sdk="Windows7" type="exe" warningLevel="/W3" />
+					<options value="" />
+					<options_link value="" />
+					<def_file path="" />
+					<out name="" out_path="" obj_path="" />
+					<include_path />
+					<lib_path />
+					<exe_path />
+					<lib_import>
+						<item name="kernel32.lib" />
+						<item name="user32.lib" />
+						<item name="gdi32.lib" />
+					</lib_import>
+					<lib_ignore />
+					<macro />
+				</x64>
+			</config>
+		</setting>
+	</vc>
+	<modules>
+		<item path="module_base.h" />
+		<item path="module_windowsApi.h" />
+		<item path="module_dmcom.h" />
+	</modules>
+	<codeExpand />
+	<watches />
+	<breakpoints>
+		<file value="main.xc">
+			<item lineno="43" />
+			<item lineno="55" />
+			<item lineno="16" />
+			<item lineno="21" />
+		</file>
+	</breakpoints>
+	<bookmarks />
+</project>

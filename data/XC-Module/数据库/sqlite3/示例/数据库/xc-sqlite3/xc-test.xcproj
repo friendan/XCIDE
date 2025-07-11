@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<project name="" ui_loadType="0" ui_zipPassword="" expand="1">
+	<language value="xc">
+		<compile bit="x32" Debug="true" debug="true" />
+	</language>
+	<modules>
+		<item path="module_base.h" />
+		<item path="module_sqlite3.h" />
+	</modules>
+	<vc config="2015-EXE调试版" platform="x86" moduleLib="" autoDefFile="1" />
+	<codeExpand />
+	<watches />
+	<breakpoints>
+		<file value="main.xc">
+			<item lineno="136" />
+			<item lineno="11" />
+			<item lineno="139" />
+			<item lineno="132" />
+		</file>
+	</breakpoints>
+</project>

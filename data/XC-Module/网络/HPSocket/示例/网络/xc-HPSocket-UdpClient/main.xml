@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-窗口布局文件-->
+<head />
+<windowUI center="true" content="炫彩界面库 - 我的窗口名" rect="20,20,365,219" showT="true" windowStyle="2031">
+	<buttonUI content="发送" name="发送" rect="282,112,60,45" showT="true" expandT="true" />
+	<buttonUI content="启动" name="启动" rect="40,47,60,25" showT="true" expandT="true" />
+	<buttonUI content="关闭" name="关闭" rect="111,47,60,25" showT="true" expandT="true" />
+	<editUI content="123456" multiLine="true" name="编辑框1" rect="20,107,254,89" showT="true" expandT="true" />
+</windowUI>
