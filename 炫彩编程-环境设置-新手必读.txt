@@ -1,0 +1,35 @@
+
+炫彩编程-环境设置
+
+******VC环境设置***********************************************
+	方式一: 下载VC环境包, 解压到目录:IDE\data\VC\, 请到QQ群下载, 群号:2283362, 1653999, 2283812, 验证:XCGUI
+	方式二: 菜单->工具->炫语言-VC编译环境管理(使用本地已安装的Visual Studio环境)
+	
+
+*如果IDE外部运行编译的exe提示缺少DLL
+	系统设置->炫语言->复制调试版DLL到exe目录
+	或者 将DLL复制到系统目录或exe目录
+	或者 将DLL路径添加到系统环境变量PATH (如果不生效, 可能需要重启电脑)
+
+
+*窗口程序外部运行, 需要把UI文件复制到exe目录(*.xml, *.res, *.css)
+
+
+调试版DLL目录:
+	32位: "\data\VC\VC14.0-Debug-DLL"
+	64位: "\data\VC\VC14.0-Debug-DLL-x64"
+
+
+***************************************************************
+
+[视频]<炫语言> 入门教程: https://www.bilibili.com/video/BV1KM411h7KK
+[视频]<炫语言> 旧教程[视频]: https://www.bilibili.com/video/BV1PG411V7eD
+[文档]<炫语言> 手册: http://www.xcgui.com/doc
+
+[视频]<炫彩界面库> 之火山PC[视频]: https://www.bilibili.com/video/BV15a411s7hK
+[视频]<炫彩界面库> 通用教程[视频]: https://www.bilibili.com/video/BV1kA411A71p/
+[文档]<炫彩界面库> 最新在线文档:http://www.xcgui.com/doc-ui
+[商城]炫彩资源商城: http://mall.xcgui.com
+
+*QQ群:
+炫彩官网有加群链接
