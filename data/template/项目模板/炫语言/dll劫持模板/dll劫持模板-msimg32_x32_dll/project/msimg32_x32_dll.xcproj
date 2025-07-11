@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<project name="" ui_loadType="1" ui_zipPassword="" expand="1">
+	<language value="xc">
+		<compile debug="true" />
+	</language>
+	<vc config="msimg32-x86" platform="x86" moduleLib="lib" autoDefFile="0">
+		<setting>
+			<config name="msimg32-x86">
+				<x86>
+					<common debug="0" logo="/nologo" platformToolset="vs2019" runtimeLibrary="/MD" sdk="Windows10" type="dll" />
+					<options value="" />
+					<options_link value="" />
+					<def_file path="" />
+					<out name="msimg32" out_path="" obj_path="" />
+					<include_path />
+					<lib_path />
+					<exe_path />
+					<lib_import>
+						<item name="kernel32.lib" />
+						<item name="user32.lib" />
+						<item name="gdi32.lib" />
+					</lib_import>
+					<lib_ignore />
+					<macro />
+				</x86>
+				<x64>
+					<common debug="0" logo="/nologo" platformToolset="vs2015" runtimeLibrary="/MT" sdk="Windows7" type="exe" />
+					<options value="" />
+					<options_link value="" />
+					<def_file path="" />
+					<out name="" out_path="" obj_path="" />
+					<include_path />
+					<lib_path />
+					<exe_path />
+					<lib_import>
+						<item name="kernel32.lib" />
+						<item name="user32.lib" />
+						<item name="gdi32.lib" />
+					</lib_import>
+					<lib_ignore />
+					<macro />
+				</x64>
+			</config>
+		</setting>
+	</vc>
+	<modules>
+		<item path="module_base.h" name="基础模块" />
+		<item path="module_windowsApi.h" name="系统API" />
+		<item path="module_yyy.h" name="易语言核心模块" />
+		<item path="module_e_ProcessThread.h" name="精炫模块(进程线程)" />
+	</modules>
+	<codeExpand />
+	<watches />
+	<breakpoints />
+</project>

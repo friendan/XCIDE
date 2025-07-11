@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!--炫彩界面库-布局文件-->
+<xc_template_object>
+    <buttonUI bkInfoM="{3:1(16)2(15)3(0,0,0,0)4(@ID_IMAGE_BUTTON_LEAVE);3:1(32)2(15)3(0,0,0,0)4(@ID_IMAGE_BUTTON_STAY);3:1(64)2(15)3(0,0,0,0)4(@ID_IMAGE_BUTTON_DOWN);}" bkInfoM_state="16(300*300),32(300*300),64(300*300)" />
+</xc_template_object>

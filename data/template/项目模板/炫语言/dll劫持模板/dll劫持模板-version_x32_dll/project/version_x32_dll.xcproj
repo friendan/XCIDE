@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<project name="" ui_loadType="1" ui_zipPassword="" expand="0">
+	<language value="xc">
+		<compile debug="true" />
+	</language>
+	<vc config="version-x32" platform="x86" moduleLib="" autoDefFile="1">
+		<setting>
+			<config name="version-x32">
+				<x86>
+					<common debug="0" logo="/nologo" platformToolset="vs2019" runtimeLibrary="/MD" sdk="Windows10" type="dll" />
+					<options value="" />
+					<options_link value="" />
+					<def_file path="" />
+					<out name="version" out_path="" obj_path="" />
+					<include_path />
+					<lib_path />
+					<exe_path />
+					<lib_import>
+						<item name="kernel32.lib" />
+						<item name="user32.lib" />
+						<item name="gdi32.lib" />
+					</lib_import>
+					<lib_ignore />
+					<macro />
+				</x86>
+				<x64>
+					<common callType="/Gr" cplusStd="/std:c++17" debug="0" logo="/nologo" multipleProcesses="/MP" platformToolset="vs2019" runtimeLibrary="/MT" sdk="Windows10" type="dll" />
+					<options value="" />
+					<options_link value="" />
+					<def_file path="" />
+					<out name="msimg32" out_path="" obj_path="" />
+					<include_path />
+					<lib_path />
+					<exe_path />
+					<lib_import>
+						<item name="kernel32.lib" />
+						<item name="user32.lib" />
+						<item name="gdi32.lib" />
+					</lib_import>
+					<lib_ignore />
+					<macro />
+				</x64>
+			</config>
+		</setting>
+	</vc>
+	<modules>
+		<item path="module_base.h" name="基础模块" />
+	</modules>
+	<codeExpand />
+	<watches />
+	<breakpoints />
+</project>

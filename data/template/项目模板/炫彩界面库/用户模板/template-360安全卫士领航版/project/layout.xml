@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!--炫彩界面库-窗口布局文件-->
+<windowUI left="20" top="20" width="900" height="600" content="炫彩界面库 - 我的窗口名" layoutLeft="0" layoutTop="0" layoutRight="0" layoutBottom="0" drawBk="false" transparentFlag="shaped" transparentAlpha="255" dragWindow="true" bkInfoM="{3:1(1)2(15)3(0,0,0,0)4(@window_shadow.png);3:1(1)2(15)3(5,3,5,5)4(@skin.png);3:1(1)2(15)3(5,3,5,5)4(@wenli.png);}" bkInfoM_state="1(300*300)" showT="true">
+    <layoutObject layout.width="fill" layout.height="fill" layout.alignH="left" layout.alignV="top" layout.horizon="false" layout.space="0" layout.padding="0,0,0,0" layout.flag="window_position_body" showT="true">
+        <layoutObject layout.width="fill" layout.height="fill" layout.alignH="left" layout.alignV="top" layout.horizon="false" layout.padding="5,3,5,5" showT="true">
+            <layoutObject layout.width="fill" layout.height="30" layout.alignH="left" layout.alignV="top" layout.horizon="true" showT="true">
+                <layoutObject layout.width="100" layout.height="fill" layout.alignH="left" layout.alignV="top" layout.horizon="true" showT="true" layout.padding="10,4,0,0">
+                    <shapePicture left="22" top="5" width="16" height="16" image="@360logo.png" showT="true" />
+                </layoutObject>
+                <layoutObject layout.width=":1" layout.height="fill" layout.alignH="right" layout.alignV="top" layout.horizon="true" showT="true">
+                    <buttonUI left="269" top="11" width="35" height="25" showT="true" drawFocus="false" transparent="true" bkInfoM="{3:1(272)2(15)3(0,0,0,0)4(@min_01.png);3:1(288)2(15)3(0,0,0,0)4(@min_02.png);3:1(320)2(15)3(0,0,0,0)4(@min_03.png);3:1(2)2(15)3(0,0,0,0)4(@min_04.png);}" bkInfoM_state="272(300*300),288(300*300),320(300*300),2(300*300)" />
+                    <buttonUI left="328" top="19" width="35" height="25" showT="true" drawFocus="false" transparent="true" bkInfoM="{3:1(272)2(15)3(0,0,0,0)4(@max_01.png);3:1(288)2(15)3(0,0,0,0)4(@max_02.png);3:1(320)2(15)3(0,0,0,0)4(@max_03.png);3:1(2)2(15)3(0,0,0,0)4(@max_04.png);}" bkInfoM_state="272(300*300),288(300*300),320(300*300),2(300*300)" />
+                    <buttonUI left="361" top="20" width="40" height="25" buttonType="close" showT="true" transparent="true" drawFocus="false" bkInfoM="{3:1(272)2(15)3(0,0,0,0)4(@close_01.png);3:1(288)2(15)3(0,0,0,0)4(@close_02.png);3:1(320)2(15)3(0,0,0,0)4(@close_03.png);3:1(2)2(15)3(0,0,0,0)4(@close_04.png);}" bkInfoM_state="272(300*300),288(300*300),320(300*300),2(300*300)" />
+                </layoutObject>
+            </layoutObject>
+            <layoutObject layout.width="fill" layout.height=":1" layout.alignH="left" layout.alignV="top" layout.horizon="false" showT="true">
+                <layoutObject layout.width="fill" layout.height="60" layout.alignH="left" layout.alignV="top" layout.horizon="true" showT="true" />
+                <layoutObject layout.width="fill" layout.height=":1" layout.alignH="left" layout.alignV="top" layout.horizon="true" showT="true">
+                    <layoutObject layout.width="250" layout.height="fill" layout.alignH="left" layout.alignV="top" layout.horizon="true" showT="true">
+                        <elementUI left="153" top="145" width="100" height="100" mouseThrough="true" layout.width="fill" layout.height="fill" transparent="true" showT="true" bkInfoM="{3:1(16)2(15)3(0,0,0,0)4(@examine_score.png);3:1(16)2(15)3(0,0,0,0)4(@exclamation.png);}" bkInfoM_state="16(300*300)" />
+                    </layoutObject>
+                    <layoutObject layout.width=":1" layout.height="fill" layout.alignH="left" layout.alignV="top" layout.horizon="false" showT="true" layout.padding="40,20,0,0" layout.space="1">
+                        <shapeText left="305" top="184" layout.width="auto" layout.height="auto" content="您的电脑非常健康！" font="@ID_FONT_0" showT="true" textColor="#FFE8E8E8" />
+                        <shapeText left="326" top="207" layout.width="auto" layout.height="20" content="请您继续保持！" showT="true" textColor="#FFEFEFEF" font="@ID_FONT_1" />
+                    </layoutObject>
+                </layoutObject>
+                <layoutObject layout.width="fill" layout.height="80" layout.alignH="center" layout.alignV="center" layout.horizon="true" showT="true">
+                    <buttonUI left="399" top="364" width="212" height="74" transparent="true" drawFocus="false" showT="true" bkInfoM="{3:1(272)2(15)3(0,0,0,0)4(@btn_examine_now_01.png);3:1(288)2(15)3(0,0,0,0)4(@btn_examine_now_02.png);3:1(320)2(15)3(0,0,0,0)4(@btn_examine_now_03.png);}" bkInfoM_state="272(300*300),288(300*300),320(300*300)" />
+                </layoutObject>
+                <layoutObject layout.width="fill" layout.height="80" layout.alignH="left" layout.alignV="center" layout.horizon="true" showT="true" layout.padding="0,0,0,0">
+                    <buttonUI left="35" top="385" width="100" height="80" content="安全防护中心" textAlign="DT_CENTER | DT_VCENTER | " transparent="true" showT="true" textColor="#FFF0F0F0" offsetY="25" drawFocus="false" bkInfoM="{3:1(272)2(18)3(44,10,0,44)4(@security_safe_normal.png);3:1(288)2(18)3(44,10,0,44)4(@security_safe_hover.png);3:1(320)2(18)3(44,10,0,44)4(@security_safe_press.png);}" bkInfoM_state="272(300*300),288(300*300),320(300*300)" />
+                    <shapeLine pointX1="146" pointY1="416" pointX2="145" pointY2="486" showT="true" color="#FFCDCDCD" />
+                    <buttonUI left="189" top="434" width="100" height="80" content="网购先赔" showT="true" textAlign="DT_CENTER | DT_VCENTER | " offsetY="25" textColor="#FFEFEFEF" transparent="true" drawFocus="false" bkInfoM="{3:1(272)2(18)3(44,10,0,44)4(@payinsure_safe_normal.png);3:1(288)2(18)3(44,10,0,44)4(@payinsure_safe_hover.png);3:1(320)2(18)3(44,10,0,44)4(@payinsure_safe_press.png);}" bkInfoM_state="272(300*300),288(300*300),320(300*300)" />
+                </layoutObject>
+            </layoutObject>
+            <layoutObject layout.width="fill" layout.height="150" layout.alignH="left" layout.alignV="top" layout.horizon="true" showT="true">
+                <elementUI left="115" top="506" width="100" height="100" layout.width="fill" layout.height="fill" showT="true">
+                    <layoutObject layout.width="fill" layout.height="fill" layout.alignH="left" layout.alignV="top" layout.horizon="true" layout.space="0" layout.padding="0,0,0,0" showT="true">
+                        <layoutObject layout.width="400" layout.height="fill" layout.alignH="left" layout.alignV="bottom" layout.horizon="true" layout.padding="20,0,0,10" layout.space="20" showT="true">
+                            <buttonUI left="146" top="51" width="95" height="120" content="查杀修复" font="@ID_FONT_1" imageIcon="@clean.png" showT="true" iconAlign="top" textAlign="DT_CENTER | DT_VCENTER | " transparent="true" />
+                            <buttonUI left="135" top="20" width="95" height="120" content="电脑清理" offsetY="0" font="@ID_FONT_1" showT="true" imageIcon="@safe_check.png" iconAlign="top" transparent="true" />
+                            <buttonUI left="183" top="31" width="95" height="120" content="优化加速" offsetY="0" font="@ID_FONT_1" showT="true" imageIcon="@youhua.png" iconAlign="top" transparent="true" />
+                        </layoutObject>
+                        <layoutObject layout.width=":1" layout.height="fill" layout.alignH="left" layout.alignV="top" layout.horizon="false" showT="true">
+                            <layoutObject layout.width="fill" layout.height="60" layout.alignH="right" layout.alignV="top" layout.horizon="true" showT="true">
+                                <layoutObject layout.width=":1" layout.height="fill" layout.alignH="right" layout.alignV="center" layout.horizon="false" showT="true" layout.padding="0,20,0,0">
+                                    <shapeText left="638" top="14" layout.width="auto" layout.height="20" content="360XP遁甲已开启" showT="true" />
+                                    <shapeText left="575" top="22" layout.width="auto" layout.height="20" content="将永久加固您的电脑" textColor="#FF6D6D6D" showT="true" />
+                                </layoutObject>
+                                <layoutObject layout.width="50" layout.height="fill" layout.alignH="left" layout.alignV="center" layout.horizon="true" showT="true" layout.padding="0,20,0,0">
+                                    <buttonUI left="839" top="15" width="37" height="32" showT="true" bkInfoM="{3:1(272)2(15)3(0,0,0,0)4(@xpguard_safe_01.png);3:1(288)2(15)3(0,0,0,0)4(@xpguard_safe_02.png);3:1(320)2(15)3(0,0,0,0)4(@xpguard_safe_03.png);3:1(2)2(15)3(0,0,0,0)4(@xpguard_safe_04.png);}" bkInfoM_state="272(300*300),288(300*300),320(300*300),2(300*300)" />
+                                </layoutObject>
+                            </layoutObject>
+                            <layoutObject layout.width="fill" layout.height=":1" layout.alignH="right" layout.alignV="center" layout.horizon="true" layout.space="0" layout.padding="0,0,20,0" showT="true">
+                                <buttonUI left="454" top="65" width="80" height="80" imageIcon="@tool_1.png" showT="true" iconAlign="top" bkInfoM="{2:1(272)2(15)3(0,0,0,0)5(-65536)6(0)7(0);2:1(288)2(15)3(0,0,0,0)5(-4144960)6(255)7(1);}" bkInfoM_state="272(300*300),288(300*300)" />
+                                <buttonUI left="616" top="47" width="80" height="80" imageIcon="@tool_2.png" showT="true" iconAlign="top" bkInfoM="{2:1(272)2(15)3(0,0,0,0)5(-65536)6(0)7(1);2:1(288)2(15)3(0,0,0,0)5(-4144960)6(255)7(1);}" bkInfoM_state="272(300*300),288(300*300)" />
+                                <buttonUI left="665" top="52" width="80" height="80" imageIcon="@tool_3.png" showT="true" iconAlign="top" bkInfoM="{2:1(272)2(15)3(0,0,0,0)5(-65536)6(0)7(1);2:1(288)2(15)3(0,0,0,0)5(-4144960)6(255)7(1);}" bkInfoM_state="272(300*300),288(300*300)" />
+                                <buttonUI left="642" top="67" width="80" height="80" imageIcon="@tool_4.png" showT="true" iconAlign="top" bkInfoM="{2:1(272)2(15)3(0,0,0,0)5(-65536)6(0)7(1);2:1(288)2(15)3(0,0,0,0)5(-4144960)6(255)7(1);}" bkInfoM_state="272(300*300),288(300*300)" />
+                                <buttonUI left="687" top="86" width="80" height="80" imageIcon="@more.png" showT="true" iconAlign="top" bkInfoM="{2:1(272)2(15)3(0,0,0,0)5(-65536)6(0)7(1);2:1(288)2(15)3(0,0,0,0)5(-4144960)6(255)7(1);}" bkInfoM_state="272(300*300),288(300*300)" />
+                            </layoutObject>
+                        </layoutObject>
+                    </layoutObject>
+                </elementUI>
+            </layoutObject>
+        </layoutObject>
+    </layoutObject>
+</windowUI>

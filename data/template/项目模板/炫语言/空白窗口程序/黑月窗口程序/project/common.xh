@@ -1,0 +1,43 @@
+﻿//预编译头文件, 提高修改代码时的编译速度
+//将不常修改的内容放在此文件中
+//包含外部头文件,库文件(lib)
+//申明外部函数, 变量, 宏, 枚举, 数据类型等, 不会生成实际代码
+#外部宏 LRESULT
+#外部宏 MB_ICONEXCLAMATION
+#外部宏 MB_OK
+#外部宏 IDC_ARROW
+#外部宏 COLOR_WINDOW
+#外部宏 IDI_APPLICATION
+#外部宏 WS_EX_CLIENTEDGE
+#外部宏 WS_EX_ACCEPTFILES
+#外部宏 WS_VISIBLE
+#外部宏 WS_OVERLAPPEDWINDOW
+#外部宏 CW_USEDEFAULT
+#外部宏 SW_SHOW
+#外部宏 CS_HREDRAW
+#外部宏 CS_VREDRAW
+#外部宏 CS_DBLCLKS
+#外部宏 WM_QUIT
+#外部宏 WM_SETFONT
+#外部宏 WM_DESTROY
+#外部宏 WM_DROPFILES
+#外部宏 OFN_PATHMUSTEXIST
+#外部宏 OFN_FILEMUSTEXIST
+#外部宏 IMAGE_ICON
+#外部宏 LR_LOADFROMFILE
+#外部宏 WM_COMMAND
+#外部宏 WM_PAINT
+#外部宏 WS_VISIBLE
+#外部宏 WS_CHILD
+#外部宏 MF_POPUP
+#外部宏 MF_STRING
+#外部宏 MF_SEPARATOR
+#外部宏 WM_CREATE
+#外部宏 HMENU
+#外部宏 LOWORD
+#外部宏 LPWSTR
+
+#外部宏 SM_CXSCREEN
+#外部宏 SM_CYSCREEN
+#外部宏 WS_BORDER
+

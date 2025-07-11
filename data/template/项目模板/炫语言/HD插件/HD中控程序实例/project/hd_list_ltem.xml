@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-列表元素项模板文件-->
+<head />
+<xc_template_list showT="true">
+	<listHeader_item expandT="true" showT="true">
+		<layoutEleUI drawBorder="false" enableCanvas="false" expandT="true" heightT="30" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="2" layout.width="fill" mouseThrough="true" showT="true" widthT="300">
+			<shapeText content="{binding field=name1}" expandT="true" itemID="0" layout.height="fill" layout.width="fill" showT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" expandT="true" heightT="30" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="2" layout.width="fill" mouseThrough="true" showT="true" widthT="300">
+			<shapeText content="{binding field=name2}" expandT="true" itemID="0" layout.height="fill" layout.width="fill" showT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="30" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.width="fill" mouseThrough="true" widthT="300" showT="true" expandT="true">
+			<shapeText content="{binding field=name3}" expandT="true" itemID="0" layout.height="fill" layout.width="fill" showT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="30" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.width="fill" mouseThrough="true" widthT="300" showT="true" expandT="true">
+			<shapeText content="{binding field=name4}" expandT="true" itemID="0" layout.height="fill" layout.width="fill" showT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="30" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.width="fill" mouseThrough="true" widthT="300" showT="true" expandT="true">
+			<shapeText content="{binding field=name5}" expandT="true" itemID="0" layout.height="fill" layout.width="fill" showT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="30" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.width="fill" mouseThrough="true" widthT="300" showT="true" expandT="true">
+			<shapeText content="{binding field=name6}" expandT="true" itemID="0" layout.height="fill" layout.width="fill" showT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="30" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.width="fill" mouseThrough="true" widthT="300" showT="true" expandT="true">
+			<shapeText content="{binding field=name7}" expandT="true" itemID="0" layout.height="fill" layout.width="fill" showT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="30" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.width="fill" mouseThrough="true" widthT="300" showT="true" expandT="true">
+			<shapeText content="{binding field=name8}" expandT="true" itemID="0" layout.height="fill" layout.width="fill" showT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="30" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.width="fill" mouseThrough="true" widthT="300" showT="true" expandT="true">
+			<shapeText content="{binding field=name9}" expandT="true" itemID="0" layout.height="fill" layout.width="fill" showT="true" />
+		</layoutEleUI>
+	</listHeader_item>
+	<list_Item expandT="true" showT="true">
+		<layoutEleUI drawBorder="false" enableCanvas="false" expandT="true" heightT="30" layout.alignBaseline="center" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="2" layout.width="fill" mouseThrough="true" padding="10" showT="true" widthT="300">
+			<buttonUI buttonType="check" content="按钮1" expandT="true" itemID="1" rect="5,5,20,20" showT="true" style="check" transparent="true" />
+			<shapeText content="{binding field=name1}" expandT="true" itemID="0" layout.height="fill" layout.width=":1" showT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" expandT="true" heightT="30" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.space="2" layout.width="fill" mouseThrough="true" showT="true" widthT="300">
+			<shapeText content="{binding field=name2}" expandT="true" itemID="0" layout.height="fill" layout.width="fill" showT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="30" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.width="fill" mouseThrough="true" widthT="300" showT="true" expandT="true">
+			<shapeText content="{binding field=name3}" expandT="true" itemID="0" layout.height="fill" layout.width="fill" showT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="30" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.width="fill" mouseThrough="true" widthT="300" showT="true" expandT="true">
+			<shapeText content="{binding field=name4}" expandT="true" itemID="0" layout.height="fill" layout.width="fill" showT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="30" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.width="fill" mouseThrough="true" widthT="300" showT="true" expandT="true">
+			<shapeText content="{binding field=name5}" expandT="true" itemID="0" layout.height="fill" layout.width="fill" showT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="30" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.width="fill" mouseThrough="true" widthT="300" showT="true" expandT="true">
+			<shapeText content="{binding field=name6}" expandT="true" itemID="0" layout.height="fill" layout.width="fill" showT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="30" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.width="fill" mouseThrough="true" widthT="300" showT="true" expandT="true">
+			<shapeText content="{binding field=name7}" expandT="true" itemID="0" layout.height="fill" layout.width="fill" showT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="30" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.width="fill" mouseThrough="true" widthT="300" showT="true" expandT="true">
+			<shapeText content="{binding field=name8}" expandT="true" itemID="0" layout.height="fill" layout.width="fill" showT="true" />
+		</layoutEleUI>
+		<layoutEleUI drawBorder="false" enableCanvas="false" heightT="30" layout.alignH="left" layout.alignV="center" layout.height="fill" layout.horizon="true" layout.width="fill" mouseThrough="true" widthT="300" showT="true" expandT="true">
+			<shapeText content="{binding field=name9}" expandT="true" itemID="0" layout.height="fill" layout.width="fill" showT="true" />
+		</layoutEleUI>
+	</list_Item>
+</xc_template_list>

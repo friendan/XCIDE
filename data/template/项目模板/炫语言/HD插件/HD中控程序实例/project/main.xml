@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-窗口布局文件-->
+<head />
+<windowUI center="true" content="炫彩界面库 - 我的窗口名" rect="20,20,1165,529" showT="true" windowStyle="2031">
+	<listUI enable="true" expandT="true" list.dragChangeColumnWidth="true" list.fixedRowHeight="true" list.multiSel="false" list.rowBkFull="true" list.splitLineColor="@ID_COLOR_2" list.virtualTable="false" name="账号信息List" rect="25,43,1111,311" show="true" showT="true" textColor="@ID_COLOR_1" />
+	<buttonUI content="选择开启" expandT="true" name="开启" rect="29,373,84,25" showT="true" />
+	<buttonUI content="选择暂停" expandT="true" name="暂停" rect="132,373,84,25" showT="true" />
+	<buttonUI content="选择恢复" expandT="true" name="恢复" rect="235,373,84,25" showT="true" />
+	<buttonUI content="选择结束" expandT="true" name="结束" rect="338,373,84,25" showT="true" />
+	<buttonUI content="全部开启" expandT="true" name="全部开启" rect="28,412,84,25" showT="true" />
+	<buttonUI content="全部暂停" expandT="true" name="全部暂停" rect="131,412,84,25" showT="true" />
+	<buttonUI content="全部恢复" expandT="true" name="全部恢复" rect="235,412,84,25" showT="true" />
+	<buttonUI content="全部结束" expandT="true" name="全部结束" rect="337,412,84,25" showT="true" />
+	<buttonUI content="选择重启" expandT="true" name="重启" rect="440,373,84,25" showT="true" />
+	<buttonUI content="全部重启" expandT="true" name="全部重启" rect="440,412,84,25" showT="true" />
+	<editUI edit.autoWrap="false" edit.type="richedit" expandT="true" multiLine="true" name="中控日志编辑框" rect="811,370,319,122" scrollBarAuto="true" scrollBarShowV="true" showT="true" textAlign="DT_LEFT,DT_TOP" />
+</windowUI>
