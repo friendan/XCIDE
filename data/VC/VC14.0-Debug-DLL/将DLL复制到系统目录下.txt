@@ -1,0 +1,6 @@
+
+(如果已安装了VC14 可忽略)
+
+将文件夹"VC14.0-Debug-DLL" 中dll放入系统目录下"C:\Windows\System32\"  
+或者 "C:\Windows\"
+或者 把文件夹"VC14.0-Debug-DLL"路径添加到环境变量PATH里
