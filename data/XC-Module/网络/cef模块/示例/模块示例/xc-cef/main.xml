@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--炫彩界面库-窗口布局文件-->
+<head>
+	<bindJsFile value="" />
+</head>
+<windowUI height="300" layoutBottom="8" layoutLeft="8" layoutRight="8" layoutTop="28" left="100" showT="true" top="100" width="300">
+	<buttonUI bkInfoM="{99:1.9.9;5:2(15)20(1)21(3)26(0)22(-855310)23(255);5:2(15)20(1)21(3)26(0)22(-1644826)23(255);5:2(15)20(1)21(3)26(0)22(-2302756)23(255);5:2(15)20(1)21(3)26(0)22(-9813)23(255);98:272(0)288(1)320(2)128(3);}" content="Button" height="25" left="74" showT="true" top="122" width="60" expandT="true" />
+</windowUI>
