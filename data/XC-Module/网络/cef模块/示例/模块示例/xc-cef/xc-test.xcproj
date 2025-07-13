@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<project name="xc-测试-cef" ui_loadType="0" ui_zipPassword="">
-	<vc config="Debug vs2015 14.0">
+<project name="xc-测试-cef" ui_loadType="0" ui_zipPassword="" expand="1">
+	<vc config="调试版" platform="x64" moduleLib="lib" autoDefFile="1" loadDllSymbol="0" moduleBeta="0">
 		<vc_setting name="Debug vs2015 14.0" platform="x86" type="应用程序(.exe)" runtimeLibrary="多线程静态库-调试(MTd)">
 			<opitons value="" />
 			<opitons_link value="" />
@@ -34,14 +34,100 @@
 				<item name="_WINDOWS" />
 			</macro>
 		</vc_setting>
+		<setting>
+			<config name="调试版">
+				<x86>
+					<common debug="1" platformToolset="vs2022" runtimeLibrary="/MDd" sdk="Windows10" type="exe" warningLevel="/W3" />
+					<options value="" />
+					<options_link value="" />
+					<def_file path="" />
+					<out name="" out_path="" obj_path="" />
+					<include_path />
+					<lib_path />
+					<exe_path />
+					<lib_import>
+						<item name="kernel32.lib" />
+						<item name="user32.lib" />
+						<item name="gdi32.lib" />
+					</lib_import>
+					<lib_ignore />
+					<macro>
+						<item name="DEBUG" />
+						<item name="_DEBUG" />
+					</macro>
+				</x86>
+				<x64>
+					<common cplusStd="/std:c++20" debug="1" platformToolset="vs2022" runtimeLibrary="/MTd" sdk="Windows10" type="exe" warningLevel="/W3" />
+					<options value="" />
+					<options_link value="" />
+					<def_file path="" />
+					<out name="" out_path="" obj_path="" />
+					<include_path />
+					<lib_path />
+					<exe_path />
+					<lib_import>
+						<item name="kernel32.lib" />
+						<item name="user32.lib" />
+						<item name="gdi32.lib" />
+					</lib_import>
+					<lib_ignore />
+					<macro>
+						<item name="DEBUG" />
+						<item name="_DEBUG" />
+					</macro>
+				</x64>
+			</config>
+			<config name="发布版">
+				<x86>
+					<common debug="0" platformToolset="vs2015" runtimeLibrary="/MT" sdk="Windows7" type="exe" warningLevel="/W3" />
+					<options value="" />
+					<options_link value="" />
+					<def_file path="" />
+					<out name="" out_path="" obj_path="" />
+					<include_path />
+					<lib_path />
+					<exe_path />
+					<lib_import>
+						<item name="kernel32.lib" />
+						<item name="user32.lib" />
+						<item name="gdi32.lib" />
+					</lib_import>
+					<lib_ignore />
+					<macro>
+						<item name="NDEBUG" />
+					</macro>
+				</x86>
+				<x64>
+					<common debug="0" platformToolset="vs2015" runtimeLibrary="/MT" sdk="Windows7" type="exe" warningLevel="/W3" />
+					<options value="" />
+					<options_link value="" />
+					<def_file path="" />
+					<out name="" out_path="" obj_path="" />
+					<include_path />
+					<lib_path />
+					<exe_path />
+					<lib_import>
+						<item name="kernel32.lib" />
+						<item name="user32.lib" />
+						<item name="gdi32.lib" />
+					</lib_import>
+					<lib_ignore />
+					<macro>
+						<item name="NDEBUG" />
+					</macro>
+				</x64>
+			</config>
+		</setting>
 	</vc>
 	<modules>
-		<item path="module_base.h" />
-		<item path="module_cef.h" />
-		<item path="module_xcgui.h" />
-		<item path="module_windowsApi.h" />
+		<item path="module_base.h" name="基础模块" />
+		<item path="module_cef.h" name="cef模块" />
+		<item path="module_xcgui.h" name="炫彩界面库" />
+		<item path="module_windowsApi.h" name="系统API(前缀分类法)" />
+		<item path="module_xcgui_class.h" name="炫彩界面库-类" />
 	</modules>
 	<codeExpand />
+	<watches />
 	<breakpoints>
 		<file value="main.xc">
 			<item lineno="110" />
@@ -51,4 +137,5 @@
 			<item lineno="60" />
 		</file>
 	</breakpoints>
+	<bookmarks />
 </project>

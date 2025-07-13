@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <historyRecord>
+	<item name="xc-测试-cef(项目)" path="data\XC-Module\网络\cef模块\示例\模块示例\xc-cef\xc-test.xcproj" />
 	<item name="炫语言WebView2(项目)" path="D:\huangyx\sdk\炫语言\demo\炫语言WebView2\WebView2.xcproj" />
 	<item name="示例(解决方案)" path="data\示例\示例.xcs" />
 	<item name="本地模块中包含的示例(解决方案)" path="data\模块示例\示例.xcs" />

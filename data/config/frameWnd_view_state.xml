@@ -2,7 +2,7 @@
 <!--炫彩IDE-配置文件-->
 <frameWnd_view_state>
 	<nullView>
-		<file value="3" />
+		<file value="1" />
 		<layoutTree value="0" />
 		<toolBox value="0" />
 		<property value="0" />
@@ -16,7 +16,7 @@
 		<output value="3" />
 		<output_findRef value="0" />
 		<output_search value="0" />
-		<module_ value="1" />
+		<module_ value="3" />
 		<help value="0" />
 		<quickPane value="0" />
 		<bookmark value="0" />
