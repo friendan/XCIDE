@@ -20,6 +20,7 @@
 		<help value="0" />
 		<quickPane value="0" />
 		<bookmark value="1" />
+		<ai_ value="0" />
 	</nullView>
 	<design>
 		<file value="3" />
@@ -40,6 +41,7 @@
 		<help value="0" />
 		<quickPane value="0" />
 		<bookmark value="0" />
+		<ai_ value="0" />
 	</design>
 	<code>
 		<file value="3" />
@@ -60,6 +62,7 @@
 		<help value="1" />
 		<quickPane value="0" />
 		<bookmark value="1" />
+		<ai_ value="0" />
 	</code>
 	<debug>
 		<file value="3" />
@@ -80,6 +83,7 @@
 		<help value="1" />
 		<quickPane value="0" />
 		<bookmark value="1" />
+		<ai_ value="0" />
 	</debug>
 	<resource>
 		<file value="3" />
@@ -100,6 +104,7 @@
 		<help value="0" />
 		<quickPane value="0" />
 		<bookmark value="0" />
+		<ai_ value="0" />
 	</resource>
 	<css>
 		<file value="3" />
@@ -120,6 +125,7 @@
 		<help value="0" />
 		<quickPane value="0" />
 		<bookmark value="0" />
+		<ai_ value="0" />
 	</css>
 	<module>
 		<file value="3" />
@@ -140,5 +146,6 @@
 		<help value="0" />
 		<quickPane value="0" />
 		<bookmark value="0" />
+		<ai_ value="0" />
 	</module>
 </frameWnd_view_state>

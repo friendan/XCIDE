@@ -4,7 +4,7 @@
 	<bindJsFile value="" />
 </head>
 <layoutPanel heightT="600" showT="true" widthT="500">
-	<elementUI expandT="true" rect="0,0,500,519" showT="true">
+	<elementUI expandT="true" rect="0,0,500,515" showT="true">
 		<shapeText content="设计视图配置" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="20,19,86,20" showT="true" />
 		<shapeText content="运行预览设置" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="20,181,86,20" showT="true" />
 		<shapeText content="语言设置" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="20,239,54,20" showT="true" />
@@ -26,9 +26,10 @@
 		<shapeText content="鼠标左键双击首选操作:" css.name="style_shapeText" expandT="true" layout.height="20" layout.width="auto" rect="45,139,102,20" showT="true" />
 		<buttonUI buttonType="radio" content="跳转到代码" drawBorder="false" expandT="true" groupID="3" name="跳转到代码" rect="334,139,90,20" showT="true" style="radio" textAlign="DT_LEFT | DT_VCENTER | DT_SINGLELINE" />
 		<buttonUI content="更新" expandT="true" name="更新" rect="45,462,80,25" showT="true" />
-		<shapeText content="*更新提示!" expandT="true" layout.height="20" layout.width="auto" name="更新提示" rect="132,466,317,20" showT="true" />
+		<shapeText content="*更新提示!" expandT="true" layout.height="20" layout.width="auto" name="更新提示" rect="46,490,63,20" showT="true" />
 		<buttonUI buttonType="check" content="允许打开多个项目" drawBorder="false" expandT="true" name="允许打开多个项目" rect="207,328,125,20" showT="true" style="check" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" />
 		<shapeText content="*次选操作可通过: Ctrl + 鼠标左键双击" expandT="true" layout.height="20" layout.width="auto" rect="202,158,210,20" showT="true" />
 		<buttonUI buttonType="check" content="底部状态栏内容改变时变色提醒" drawBorder="false" expandT="true" name="状态栏提醒" rect="44,358,201,20" showT="true" style="check" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" />
+		<buttonUI buttonType="check" content="启用检测更新" drawBorder="false" expandT="true" name="启用检测更新" rect="145,465,104,20" showT="true" style="check" textAlign="DT_LEFT,DT_VCENTER,DT_SINGLELINE" />
 	</elementUI>
 </layoutPanel>
